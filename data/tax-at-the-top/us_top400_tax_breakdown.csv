@@ -1,0 +1,5 @@
+group,group_order,households,total_rate,income_and_payroll,corporate,estate_and_gift,other_property_sales,rate_of_wealth,fiscal_share_of_economic_income
+All US households,1,183000000,0.302,0.205,0.017,0.001,0.079,0.056,
+Next 300 richest,2,276,0.266,0.156,0.071,0.009,0.030,0.017,0.55
+Top 400 richest,3,367,0.238,0.110,0.089,0.006,0.034,0.013,0.42
+Top 100 richest,4,92,0.220,0.080,0.101,0.004,0.036,0.012,0.33
