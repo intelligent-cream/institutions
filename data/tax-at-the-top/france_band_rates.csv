@@ -1,0 +1,7 @@
+group,rate,note
+P90-99,0.331,"Mean of the ten chart points P90-P99, IPP Note 92 Figure 1b"
+P99-99.9,0.420,"Approximate mean of chart points in band, IPP Note 92 Figure 1b"
+P99.9-99.99,0.444,"Approximate mean of chart points in band, IPP Note 92 Figure 1b"
+P99.99-99.999,0.370,"Approximate mean of chart points in band, IPP Note 92 Figure 1b"
+P99.999-99.9998,0.288,"Approximate mean of chart points in band, IPP Note 92 Figure 1b"
+P99.9998-100,0.262,"IPP Note 92 Figure 1b and text"

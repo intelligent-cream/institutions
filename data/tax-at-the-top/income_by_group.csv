@@ -1,0 +1,41 @@
+country,year,group,income_share,income_bn,source
+Netherlands,2016,P90-99,,125.30,"Bruil et al. 2025 Table 2 (pre-tax national income: adults x average income), top 10% minus top 1%"
+Netherlands,2016,P99-99.9,,47.46,Bruil et al. 2025 Table 2
+Netherlands,2016,P99.9-99.99,,21.36,Bruil et al. 2025 Table 2
+Netherlands,2016,P99.99-99.999,,9.13,Bruil et al. 2025 Table 2
+Netherlands,2016,P99.999-99.9999,,3.88,Bruil et al. 2025 Table 2
+Netherlands,2016,P99.9999-100,,1.56,Bruil et al. 2025 Table 2
+France,2016,P90-99,,298.9,"IPP Note 92 Table 1 (households x mean economic income above threshold), top 10% minus top 1%"
+France,2016,P99-99.9,,91.5,IPP Note 92 Table 1
+France,2016,P99.9-99.99,,39.0,IPP Note 92 Table 1
+France,2016,P99.99-99.999,,24.0,IPP Note 92 Table 1
+France,2016,P99.999-99.9998,,17.3,IPP Note 92 Table 1
+France,2016,P99.9998-100,,47.6,IPP Note 92 Table 1
+Italy,2015,P0-10,0.0033,,WID sptincj992
+Italy,2015,P10-20,0.0262,,WID sptincj992
+Italy,2015,P20-30,0.0463,,WID sptincj992
+Italy,2015,P30-40,0.0600,,WID sptincj992
+Italy,2015,P40-50,0.0739,,WID sptincj992
+Italy,2015,P50-60,0.0891,,WID sptincj992
+Italy,2015,P60-70,0.1067,,WID sptincj992
+Italy,2015,P70-80,0.1277,,WID sptincj992
+Italy,2015,P80-90,0.1593,,WID sptincj992
+Italy,2015,P90-95,0.1045,,WID sptincj992 (p90p100 - p95p100)
+Italy,2015,P95-99,0.1250,,WID sptincj992 (p95p100 - p99p100)
+Italy,2015,P99-99.9,0.0579,,WID sptincj992 (p99p100 - p99.9p100)
+Italy,2015,P99.9-100,0.0201,,WID sptincj992
+United States,2018,P0-10,0.0024,,WID sptincj992
+United States,2018,P10-20,0.0163,,WID sptincj992
+United States,2018,P20-30,0.0266,,WID sptincj992
+United States,2018,P30-40,0.0376,,WID sptincj992
+United States,2018,P40-50,0.0505,,WID sptincj992
+United States,2018,P50-60,0.0656,,WID sptincj992
+United States,2018,P60-70,0.0837,,WID sptincj992
+United States,2018,P70-80,0.1085,,WID sptincj992
+United States,2018,P80-90,0.1507,,WID sptincj992
+United States,2018,P90-95,0.1102,,WID sptincj992 (p90p100 - p95p100)
+United States,2018,P95-99,0.1555,,WID sptincj992 (p95p100 - p99p100)
+United States,2018,P99-99.9,0.1048,,WID sptincj992 (p99p100 - p99.9p100)
+United States,2018,P99.9-99.99,0.0477,,WID sptincj992 (p99.9p100 - p99.99p100)
+United States,2018,P99.99-99.999,0.0218,,WID sptincj992 (p99.99p100 - p99.999p100)
+United States,2018,P99.999-100,0.0181,,WID sptincj992

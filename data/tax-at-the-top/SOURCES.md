@@ -25,3 +25,27 @@ companies they own. Groups are ranked by income, not wealth.
   which, if anything, understates how low rates fall for the wealthiest.
 - Critics (e.g. Auten & Splinter) argue that assigning retained profits and corporate tax to owners
   is a choice; Bruil et al. (Figure A.20) test other assignment methods and the drop at the top remains.
+
+## Missed revenue estimate (`analysis/missing_revenue.py`)
+
+For each income group in the top 1%: `income × max(0, floor rate − rate paid)`, summed. Two floors:
+
+- **P90–99 floor:** the income-weighted rate that high earners (P90–99, mostly salaried) pay.
+- **Peak floor:** the highest rate any group in the top 10% pays, where the system stops being progressive.
+
+| Input file | Source |
+|---|---|
+| `income_by_group.csv` | Netherlands: Bruil et al. (2025) Table 2 (adults × average pre-tax national income). France: IPP Note 92 Table 1 (households × average economic income). Italy and US: World Inequality Database, `sptincj992` (pre-tax national income shares, equal-split adults). |
+| `national_income.csv` | World Inequality Database `mnninci999` (national income, 2025 prices) and `inyixxi999` (price index), used to convert to current prices and scale to 2024. |
+| `france_band_rates.csv` | IPP Note 92 Figure 1b, averaged over the chart points inside each band. |
+
+Outputs: `missing_revenue_summary.csv` (per country) and `missing_revenue_by_group.csv` (per band).
+
+**Why not WID for every country:** WID's Dutch series gives the top 1% 6.9% of national income in 2016;
+the Dutch study, which links retained company profits to their owners, finds 14.1%. Each country therefore
+takes incomes and rates from the same study wherever possible.
+
+**Limits:** static (no behavioural response, so an upper bound for a reform); the Italian study reports the top
+0.1% as one group, which understates the drop; the US WID series stops at the top 0.001%, so its two top
+Saez–Zucman points are averaged; bottom groups the studies don't report get the lowest reported group's rate
+(only affects the total-revenue denominator).

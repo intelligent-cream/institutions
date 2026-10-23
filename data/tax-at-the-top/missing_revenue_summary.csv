@@ -1,0 +1,5 @@
+country,year,currency,national_income_bn,total_tax_revenue_bn,p90_99_income_bn,p90_99_tax_bn,p90_99_rate,top1_income_bn,top1_tax_bn,top1_rate,top1_share_of_income,top1_share_of_tax_revenue,peak_rate,shortfall_vs_p90_99_bn,shortfall_vs_peak_bn,shortfall_vs_p90_99_pct_ni,shortfall_vs_peak_pct_ni,shortfall_vs_peak_pct_revenue,shortfall_vs_p90_99_today_bn,shortfall_vs_peak_today_bn
+Netherlands,2016,EUR,591.6,266.2,125.3,55.3,0.441,83.4,20.3,0.244,0.141,0.0763,0.478,16.5,19.6,0.0279,0.033,0.0734,26.2,31.0
+France,2016,EUR,1912.6,,298.9,98.9,0.331,219.4,82.1,0.374,0.1147,,0.46,4.0,18.8,0.0021,0.0099,,5.2,24.5
+Italy,2015,EUR,1352.8,750.5,310.5,172.8,0.556,105.5,45.3,0.429,0.078,0.0603,0.581,13.4,16.0,0.0099,0.0118,0.0214,17.9,21.3
+United States,2018,USD,17654.7,4875.1,4690.9,1312.2,0.28,3396.8,1007.3,0.297,0.1924,0.2066,0.33,13.0,113.6,0.0007,0.0064,0.0233,18.0,156.7
