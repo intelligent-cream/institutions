@@ -60,17 +60,24 @@ USGAAP = {
         "IncomeTaxesPaidNet",
         "IncomeTaxesPaid",
     ],
+    # gross-of-excise ("IncludingAssessedTax") last: for tobacco it includes excise duties
     "revenue": [
         "Revenues",
         "RevenueFromContractWithCustomerExcludingAssessedTax",
         "RevenuesNetOfInterestExpense",
-        "RevenueFromContractWithCustomerIncludingAssessedTax",
         "SalesRevenueNet",
         "SalesRevenueGoodsNet",
+        "RevenueFromContractWithCustomerIncludingAssessedTax",
     ],
 }
 IFRS = {
-    "pretax_income": ["ProfitLossBeforeTax"],
+    # IFRS issuers that do not present a pre-tax subtotal (common in France: TotalEnergies,
+    # LVMH, Danone, L'Oreal, Airbus, Sanofi) get pre-tax = profit (continuing ops) + income tax.
+    "pretax_income": [
+        "ProfitLossBeforeTax",
+        "ProfitLossFromContinuingOperations+IncomeTaxExpenseContinuingOperations",
+        "ProfitLoss+IncomeTaxExpenseContinuingOperations",
+    ],
     "income_tax_expense": [
         "IncomeTaxExpenseContinuingOperations",
     ],
@@ -81,11 +88,14 @@ IFRS = {
         "IncomeTaxesPaid",
     ],
     "revenue": [
-        "Revenue",
-        "RevenueFromContractsWithCustomers",
+        ("Revenue", "RevenueFromContractsWithCustomers"),
         "RevenueAndOperatingIncome",
     ],
 }
+# Per-company revenue concept overrides, where the generic priority picks a partial figure:
+# BlackRock tags a sub-total as us-gaap:Revenues in FY2022-24 (e.g. 12.8bn vs 20.4bn total).
+REVENUE_OVERRIDE = {"blackrock": ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues"]}
+
 # used only for derivation / sign checks
 IFRS_PL_CONT = "ProfitLossFromContinuingOperations"
 
@@ -196,16 +206,48 @@ def sec_series(facts_list, taxonomy, concept):
     return out
 
 
-def sec_company(ciks):
+def sec_company(ciks, cid=""):
     facts_list = [f for f in (sec_facts(c) for c in ciks) if f.get("facts")]
     if not facts_list:
         return None
     best = None
-    for source, taxonomy, concepts in (("sec_usgaap", "us-gaap", USGAAP), ("sec_ifrs", "ifrs-full", IFRS)):
+    usgaap = dict(USGAAP, revenue=REVENUE_OVERRIDE[cid]) if cid in REVENUE_OVERRIDE else USGAAP
+    for source, taxonomy, concepts in (("sec_usgaap", "us-gaap", usgaap), ("sec_ifrs", "ifrs-full", IFRS)):
         res = extract(lambda c, t=taxonomy: sec_series(facts_list, t, c), concepts)
         if res and (best is None or len(res[0]) > len(best[1][0])):
             best = (source, res)
-    return best
+    if best is None:
+        return None
+    source, (rows, used, currency) = best
+    notes = []
+    if source == "sec_ifrs":
+        pl = {fy: v[1] for (u, fy), v in sec_series(facts_list, "ifrs-full", IFRS_PL_CONT).items()
+              if u == currency}
+        flips = fix_signs(rows, pl)
+        if flips:
+            notes.append("sign flipped: " + flips)
+    return source, rows, used, currency, notes
+
+
+def fix_signs(rows, pl):
+    """IFRS sign sanity checks (in place). `pl` = {fy: profit from continuing operations}.
+
+    * income tax expense is flipped when it is clearly the negative of (pre-tax - profit);
+    * cash taxes paid tagged as a negative outflow are flipped when book tax is positive.
+    Returns a short description of the flips made."""
+    flips = []
+    for fy, r in sorted(rows.items()):
+        t, p = r.get("income_tax_expense"), r["pretax_income"]
+        if t and fy in pl and "+" not in r["_pretax_income"]:
+            implied = p - pl[fy]
+            if abs(t + implied) < abs(t - implied) * 0.1:
+                r["income_tax_expense"] = -t
+                flips.append(f"tax{fy}")
+        t, c = r.get("income_tax_expense"), r.get("cash_taxes_paid")
+        if c is not None and c < 0 and t and t > 0 and abs(c) > 0.2 * t:
+            r["cash_taxes_paid"] = -c
+            flips.append(f"cash{fy}")
+    return " ".join(flips)
 
 
 def extract(series_fn, concepts):
@@ -214,7 +256,14 @@ def extract(series_fn, concepts):
 
     def series(concept):
         if concept not in cache:
-            if "+" in concept:  # sum of components, same unit/year
+            if isinstance(concept, tuple):  # largest value among alternatives
+                merged = {}
+                for c in concept:
+                    for k, v in series(c).items():
+                        if k not in merged or v[1] > merged[k][1]:
+                            merged[k] = v + (c,)
+                cache[concept] = merged
+            elif "+" in concept:  # sum of components, same unit/year
                 parts = [series(p) for p in concept.split("+")]
                 keys = set(parts[0]).intersection(*parts[1:])
                 cache[concept] = {k: (max(p[k][0] for p in parts), sum(p[k][1] for p in parts), parts[0][k][2])
@@ -234,13 +283,15 @@ def extract(series_fn, concepts):
     rows, used = {}, defaultdict(set)
     for field in FIELDS:
         for c in concepts[field]:
-            for (unit, fy), (_, val, _) in series(c).items():
+            for (unit, fy), (_, val, _, *member) in series(c).items():
                 if unit != currency or fy not in YEARS:
                     continue
                 row = rows.setdefault(fy, {})
                 if field not in row:
+                    name = member[0] if member else c
                     row[field] = val
-                    used[field].add(c)
+                    row["_" + field] = name
+                    used[field].add(name)
     rows = {fy: r for fy, r in rows.items() if "pretax_income" in r}
     if not rows:
         return None
@@ -316,36 +367,12 @@ def esef_company(lei):
     res = extract(lambda c: series.get(c, {}), IFRS)
     notes = []
     if res is None:
-        # derive pre-tax income = profit from continuing operations + income tax expense
-        derived = {}
-        for k, (f, pl, e) in series.get(IFRS_PL_CONT, {}).items():
-            t = series.get("IncomeTaxExpenseContinuingOperations", {}).get(k)
-            if t:
-                derived[k] = (f, pl + t[1], e)
-        if derived:
-            series["ProfitLossBeforeTax"] = derived
-            res = extract(lambda c: series.get(c, {}), IFRS)
-            if res:
-                res[1]["pretax_income"] = {f"{IFRS_PL_CONT}+IncomeTaxExpenseContinuingOperations"}
-                notes.append("pretax derived as profit from continuing ops + tax")
-    if res is None:
         return None, len(filings)
     rows, used, currency = res
     pl = {fy: v[1] for (u, fy), v in series.get(IFRS_PL_CONT, {}).items() if u == currency}
-    flips = []
-    for fy, r in rows.items():
-        t, p = r.get("income_tax_expense"), r["pretax_income"]
-        if t and fy in pl:
-            implied = p - pl[fy]
-            if abs(t + implied) < abs(t - implied) * 0.1:
-                r["income_tax_expense"] = -t
-                flips.append(f"tax{fy}")
-        t, c = r.get("income_tax_expense"), r.get("cash_taxes_paid")
-        if c is not None and c < 0 and t and t > 0 and abs(c) > 0.2 * t:
-            r["cash_taxes_paid"] = -c
-            flips.append(f"cash{fy}")
+    flips = fix_signs(rows, pl)
     if flips:
-        notes.append("sign flipped: " + " ".join(sorted(flips)))
+        notes.append("sign flipped: " + flips)
     return (rows, used, currency, notes), len(filings)
 
 
@@ -372,14 +399,15 @@ def build():
         print(cid, flush=True)
         per_year = {}  # fy -> (source, row, currency)
         if ciks:
-            res = sec_company(ciks)
+            res = sec_company(ciks, cid)
             if res:
-                source, (rows, used, currency) = res
+                source, rows, used, currency, notes = res
                 for fy, r in rows.items():
                     per_year[fy] = (source, r, currency)
                 src_rows.append({"company_id": cid, "source": source, "identifier": ";".join(ciks),
                                  "concepts": "; ".join(f"{k}={'|'.join(sorted(v))}" for k, v in used.items()),
-                                 "years_found": years_str(rows), "note": f"currency {currency}"})
+                                 "years_found": years_str(rows),
+                                 "note": "; ".join([f"currency {currency}"] + notes)})
             else:
                 src_rows.append({"company_id": cid, "source": "sec", "identifier": ";".join(ciks),
                                  "concepts": "", "years_found": "",
