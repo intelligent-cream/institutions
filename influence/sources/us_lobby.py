@@ -425,6 +425,16 @@ def bills_in(text):
     return out
 
 
+_NOT_GOV = re.compile(r"(N ?A|NONE|NO|NOT APPLICABLE|PARTNER|PRINCIPAL|OWNER|PRESIDENT|CONSULTANT|LOBBYIST"
+                      r"|LEGISLATIVE CONSULTANT|GOVERNMENT RELATIONS|COUNSEL|ATTORNEY|N A N A)?")
+
+
+def covered_ok(cov):
+    """A real covered-position entry (not blank, 'N/A', or a private-sector job title)."""
+    n = norm(cov)
+    return len(n) >= 3 and not _NOT_GOV.fullmatch(n)
+
+
 def lobbyist_key(name):
     return re.sub(r"[^A-Z ]", "", norm(name)).strip()
 
@@ -441,7 +451,7 @@ def _scan_zip(path):
         rq = int(t[1]) if t[:1] == "Q" and t[1:2].isdigit() else (int(t[0]) if t[:1].isdigit() else q0)
         reg_id = r["senate_id"].split("-")[0] if r["senate_id"] else norm(r["registrant"])
         for name, cov in r["lobbyists"]:
-            if cov:
+            if covered_ok(cov):
                 k = (reg_id, lobbyist_key(name))
                 covered[k] = min(covered.get(k, 9999), ry)
         kind, hits, note = classify(r["client"])
@@ -532,7 +542,7 @@ def aggregate(assigned, covered, years=YEARS):
                     if not k:
                         continue
                     lobbyists.add(k)
-                    if cov or covered.get((r["reg_id"], k), 9999) <= y:
+                    if covered_ok(cov) or covered.get((r["reg_id"], k), 9999) <= y:
                         former.add(k)
                 codes = set()
                 for code, desc in r["issues"]:

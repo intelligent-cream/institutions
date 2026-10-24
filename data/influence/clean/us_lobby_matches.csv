@@ -1,0 +1,1087 @@
+company_id,client_or_registrant_name,source_id,match_method,note
+3m,3M,12631-1006411;18444-69292;304736-1005130;34158-1005558;401096059-36;5153-1006028,alias_regex,entity=3M; reports=86; years=2015-2025
+3m,3M COGENT,401103813-24,alias_regex,entity=3M; reports=2; years=2015-2015
+3m,3M COMPANY,17966-125;25465-12;283696-1294;314237-1006082;400531586-64449;401054971-862;401103565-67386;401103834-188;401104288-70022;401105121-176;401105219-0005;401105219-51;41534-52535,alias_regex,entity=3M; reports=167; years=2015-2025
+3m,3M COMPANY (FORMERLY KNOWN AS MINNESOTA MINING & MANUFACTURING),76217-51,alias_regex,entity=3M; reports=10; years=2016-2019
+3m,3M HEALTH INFORMATION SYSTEMS,284950-1006462;401103367-56283;401104406-12,alias_regex,entity=3M; reports=61; years=2017-2025
+3m,"BREWER, ATTORNEYS & COUNSELORS (ON BEHALF OF 3M)",86196-1006156,alias_regex_subcontract,"entity=3M; reports=7; years=2016-2018; subcontract via BREWER ATTORNEYS AND COUNSELORS; counted as activity, not spend (prime firm's income already includes it)"
+3m,THE 3M COMPANY,292094-1000925,alias_regex,entity=3M; reports=13; years=2020-2024
+abbvie,ABBVIE,2057-68092;30952-1026;65976-2792;7257-1007096,alias_regex,entity=AbbVie; reports=92; years=2015-2025
+abbvie,ABBVIE INC.,20744-1005472;304736-1005142;400384774-87;400534596-404;400605842-191;401103773-12;401105121-57032;48827-1006943;75557-1008718,alias_regex,entity=AbbVie; reports=149; years=2015-2025
+abbvie,"ABBVIE, INC.",401049961-12;401104703-125;5131-3045,alias_regex,entity=AbbVie; reports=104; years=2015-2025
+abbvie,ALLERGAN,61516-1003426,excluded_outside_ownership_window,entity=Allergan; reports=1; ownership_window=2020Q2..; excluded_years=2015
+abbvie,ALLERGAN (FORMERLY KNOWN AS ACTAVIS),321874-621,excluded_outside_ownership_window,entity=Allergan; reports=1; ownership_window=2020Q2..; excluded_years=2015
+abbvie,ALLERGAN PLC,4208-1005270,excluded_outside_ownership_window,"entity=Allergan; reports=7; ownership_window=2020Q2..; excluded_years=2015,2016,2017"
+abbvie,"ALLERGAN PLC (F/K/A ACTAVIS, INC.)",4208-1005270,excluded_outside_ownership_window,entity=Allergan; reports=1; ownership_window=2020Q2..; excluded_years=2015
+abbvie,"ALLERGAN USA, INC.",400635921-327;400976792-494;401104934-12;63837-12,alias_regex,"entity=Allergan; reports=28; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+abbvie,"ALLERGAN, INC",46038-378,alias_regex,"entity=Allergan; reports=22; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+abbvie,"ALLERGAN, INC.",12868-1005801;24338-36;286096-253;296271-696;400531586-470;400534596-280;51398-12;933-12,alias_regex,"entity=Allergan; reports=46; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+abbvie,"ALLERGAN, INC. (FORMERLY ACTAVIS, INC.)",401103162-51,alias_regex,"entity=Allergan; reports=20; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+abbvie,"ALLERGAN, PLC (FORMERLY KNOWN AS ACTAVIS)",321874-621,alias_regex,"entity=Allergan; reports=20; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+abbvie,"ALLERGAN, PLC.",286096-416,excluded_outside_ownership_window,entity=Allergan; reports=2; ownership_window=2020Q2..; excluded_years=2015
+abbvie,PECK MADIGAN JONES (ON BEHALF OF ABBVIE INC.),400712135-90,alias_regex_subcontract,"entity=AbbVie; reports=2; years=2015-2015; subcontract via PECK MADIGAN JONES; counted as activity, not spend (prime firm's income already includes it)"
+ahold,FOOD LION,682-2994,alias_regex,"entity=Food Lion; reports=8; years=2016-2016; ownership_window=2016Q3..; excluded_years=2015,2016"
+airbnb,AIRBNB,320918-1005356;400761276-48;61458-62114;70175-1006322,alias_regex,entity=Airbnb; reports=56; years=2015-2025
+airbnb,"AIRBNB, INC.",305054-44478;31680-1007820;401104446-12;401104735-51;401105159-12;5142-1005305,alias_regex,entity=Airbnb; reports=91; years=2016-2025
+airbus,"AIRBUS AMERICA'S, INC",18433-12,alias_regex,entity=Airbus; reports=1; years=2019-2019
+airbus,"AIRBUS AMERICA'S, INC (FORMERLY KNOWN AS AIRBUS)",18433-1004125,alias_regex,entity=Airbus; reports=5; years=2019-2020
+airbus,AIRBUS AMERICAS,401104413-12,alias_regex,entity=Airbus; reports=21; years=2017-2022
+airbus,AIRBUS AMERICAS (FORMERLY AIRBUS GROUP),30906-1007464,alias_regex,entity=Airbus; reports=4; years=2019-2020
+airbus,AIRBUS AMERICAS INC.  (FORMERLY AIRBUS GROUP),5357-1006334,alias_regex,entity=Airbus; reports=8; years=2019-2021
+airbus,"AIRBUS AMERICAS, INC",330-12;8453-1005938,alias_regex,entity=Airbus; reports=54; years=2018-2025
+airbus,"AIRBUS AMERICAS, INC (FKA AIRBUS GROUP, INC)",330-12,alias_regex,entity=Airbus; reports=3; years=2017-2018
+airbus,"AIRBUS AMERICAS, INC(FORMERLY AIRBUS GROUP, INC.)",8453-1005938,alias_regex,entity=Airbus; reports=2; years=2019-2020
+airbus,"AIRBUS AMERICAS, INC.",20744-1006830;314237-1006777;400532589-1371;401109033-63246,alias_regex,entity=Airbus; reports=51; years=2015-2025
+airbus,"AIRBUS AMERICAS, INC. (FORMERLY KNOWN AS AIRBUS GROUP, INC.)",18422-1005926,alias_regex,entity=Airbus; reports=28; years=2017-2024
+airbus,"AIRBUS AMERICAS, INC. (FORMERLY REPORTED AS AIRBUS GROUP,INC)",86196-36,alias_regex,entity=Airbus; reports=8; years=2019-2021
+airbus,AIRBUS GROUP,30906-1007464,alias_regex,entity=Airbus; reports=19; years=2015-2019
+airbus,AIRBUS GROUP INC,18422-1005926,alias_regex,entity=Airbus; reports=7; years=2015-2017
+airbus,AIRBUS GROUP INC F/K/A AIRBUS AMERICAS INC,18422-1005926,alias_regex,entity=Airbus; reports=2; years=2015-2015
+airbus,AIRBUS GROUP INC.,401103500-1014;401103500-470,alias_regex,entity=Airbus; reports=41; years=2015-2024
+airbus,"AIRBUS GROUP, INC(FORMERLY AIRBUS GROUP)",8453-1005938,alias_regex,entity=Airbus; reports=19; years=2015-2019
+airbus,"AIRBUS GROUP, INC.",330-12;49635-1004520;5357-1006334,alias_regex,entity=Airbus; reports=30; years=2015-2019
+airbus,"AIRBUS GROUP, INC. (FORMERLY EADS NORTH AMERICA, INC.)",5357-1006334,alias_regex,entity=Airbus; reports=8; years=2015-2016
+airbus,"AIRBUS GROUP,INC FORMERLY REPORTED AS (AIRBUS IND. & AIRBUS IND. NA HLDS, INC.)",86196-36,alias_regex,entity=Airbus; reports=19; years=2015-2019
+airbus,"AIRBUS HELICOPTERS, INC.",311371-1001802,alias_regex,entity=Airbus; reports=41; years=2015-2025
+airbus,AIRBUS INC.,400391830-113,alias_regex,entity=Airbus; reports=12; years=2015-2017
+allianz,ALLIANZ,65191-66584,alias_regex,entity=Allianz; reports=3; years=2025-2025
+allianz,ALLIANZ CAPITAL PARTNERS GMBH,294930-294930;294930-295424;294930-37434,alias_regex,entity=Allianz; reports=12; years=2018-2022
+allianz,ALLIANZ GLOBAL CORPORATE AND SPECIALTY,400326528-36,alias_regex,entity=Allianz; reports=28; years=2016-2022
+allianz,ALLIANZ LIFE INSURANCE COMPANY OF NORTH AMERICA,400326528-48,alias_regex,entity=Allianz; reports=28; years=2016-2022
+allianz,ALLIANZ OF AMERICA,7257-1009456,alias_regex,entity=Allianz; reports=13; years=2019-2022
+allianz,ALLIANZ OF AMERICA CORPORATION,313715-1007084,alias_regex,entity=Allianz; reports=6; years=2019-2021
+allianz,ALLIANZ REAL ESTATE OF AMERICA LLC,294930-295400,alias_regex,entity=Allianz; reports=7; years=2017-2018
+allianz,AZOA SERVICES CORP(ALLIANZ OF AMERICA) AND AFFILIATES,14611-12,alias_regex,entity=Allianz; reports=40; years=2016-2025
+allianz,AZOA SERVICES CORP/FIREMAN'S FUND (ALLIANZ OF AMERICA),14611-12,alias_regex,entity=Allianz; reports=4; years=2015-2015
+allianz,PIMCO,39941-1007134,alias_regex,entity=Allianz; reports=5; years=2017-2018
+allianz,PIMCO FUNDS,32098-1006346,alias_regex,entity=Allianz; reports=24; years=2015-2020
+allianz,THE WASHINGTON TAX & PUBLIC POLICY GROUP OBO ALLIANZ CAPITAL PARTNERS GMBH,401105113-75,alias_regex_subcontract,"entity=Allianz; reports=5; years=2021-2022; subcontract via WASHINGTON TAX AND PUBLIC POLICY GROUP; counted as activity, not spend (prime firm's income already includes it)"
+alphabet,CORNERSTONE GOVERNMENT AFFAIRS OBO GOOGLE CLIENT SERVICES LLC,401017872-59919,alias_regex_subcontract,"entity=Google; reports=8; years=2024-2025; subcontract via CORNERSTONE GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+alphabet,DEEPMIND TECHNOLOGIES LIMITED,40013096-886,alias_regex,entity=DeepMind; reports=6; years=2021-2022
+alphabet,GOOGLE,284050-1005294;315717-1005014;320793-1005228;401104048-87;401104224-0003;401104224-12;401104787-24,alias_regex,entity=Google; reports=79; years=2015-2022
+alphabet,GOOGLE (ON BEHALF OF WAYMO LLC),18466-1008543,alias_regex,entity=Google; reports=13; years=2017-2020; company is principal ('on behalf of' WAYMO LLC)
+alphabet,GOOGLE CLIENT SERVICES,284050-1005294;75557-1006955,alias_regex,entity=Google; reports=38; years=2021-2025
+alphabet,GOOGLE CLIENT SERVICES (FORMERLY GOOGLE INC.),75557-1006955,alias_regex,entity=Google; reports=1; years=2021-2021
+alphabet,GOOGLE CLIENT SERVICES (PREVIOUSLY REPORTED AS GOOGLE),315717-1005014,alias_regex,entity=Google; reports=7; years=2021-2022
+alphabet,GOOGLE CLIENT SERVICES L.L.C.,401104374-24,alias_regex,entity=Google; reports=22; years=2020-2025
+alphabet,GOOGLE CLIENT SERVICES L.L.C. FORMERLY REPORTED AS GOOGLE SERVICES L.L.C.,401104374-24,alias_regex,entity=Google; reports=1; years=2020-2020
+alphabet,GOOGLE CLIENT SERVICES LLC,25603-52683;320510-12;400531586-188;401017872-12;401103235-90;401103327-63;401104454-51;401105121-238;401105159-51;401106905-52687;401107779-57175;401109102-63549;682-64974,alias_regex,entity=Google; reports=178; years=2020-2025
+alphabet,GOOGLE CLIENT SERVICES LLC (FFA GOOGLE INC.),400531586-188,alias_regex,entity=Google; reports=1; years=2022-2022
+alphabet,GOOGLE CLIENT SERVICES LLC (FKA GOOGLE INC.),401103235-90,alias_regex,entity=Google; reports=1; years=2021-2021
+alphabet,GOOGLE CLIENT SERVICES LLC (FKA GOOGLE LLC),287771-1130,alias_regex,entity=Google; reports=2; years=2022-2023
+alphabet,GOOGLE CLIENT SERVICES LLC (FKA GOOGLE),401104048-87,alias_regex,entity=Google; reports=10; years=2022-2024
+alphabet,"GOOGLE CLIENT SERVICES LLC (FKA GOOGLE, INC.)",401017872-12,alias_regex,entity=Google; reports=8; years=2020-2021
+alphabet,GOOGLE CLIENT SERVICES LLC (FORMERLY GOOGLE LLC),401104454-51,alias_regex,entity=Google; reports=2; years=2020-2020
+alphabet,GOOGLE CLIENT SERVICES LLC (FORMERLY GOOGLE),320793-1005228,alias_regex,entity=Google; reports=1; years=2020-2020
+alphabet,GOOGLE CLIENT SERVICES LLC (FORMERLY REPORTING AS GOOGLE LLC),320510-12,alias_regex,entity=Google; reports=1; years=2020-2020
+alphabet,GOOGLE CLIENT SERVICES LLC (FORMERLY REPORTING AS GOOGLE),320793-1005228,alias_regex,entity=Google; reports=19; years=2020-2024
+alphabet,"GOOGLE CLIENT SERVICES LLC (FORMERLY REPORTING AS GOOGLE, INC.)",401105159-51,alias_regex,entity=Google; reports=8; years=2020-2022
+alphabet,"GOOGLE CLIENT SERVICES, LLC",320918-70262;400432093-140;400774330-517;401105569-54828,alias_regex,entity=Google; reports=54; years=2020-2025
+alphabet,GOOGLE CLOUD,400886595-595;401106285-63122,alias_regex,entity=Google; reports=27; years=2020-2025
+alphabet,GOOGLE INC,40013096-113;400791383-51,alias_regex,entity=Google; reports=45; years=2015-2021
+alphabet,GOOGLE INC.,12868-1005231;25818-898;285871-1003085;320510-12;39941-1006982;400531586-188;400532589-990;400577737-164;400774330-188;400774330-517;401103235-90;401103327-63;401104374-24;44641- 125;44641-125;61458-62052;75557-1006955,alias_regex,entity=Google; reports=261; years=2015-2022
+alphabet,GOOGLE LLC,287771-1130;320510-12;400531586-56828;401104454-51;401104735-75,alias_regex,entity=Google; reports=24; years=2018-2023
+alphabet,GOOGLE LLC (FORMERLY REPORTING AS GOOGLE INC.),320510-12,alias_regex,entity=Google; reports=1; years=2018-2018
+alphabet,GOOGLE LLC AND ITS AFFILIATES (FORMERLY GOOGLE),284050-1005294,alias_regex,entity=Google; reports=5; years=2020-2021
+alphabet,GOOGLE PUBLIC SECTOR (FKA GOOGLE CLOUD),400886595-595,alias_regex,entity=Google; reports=1; years=2025-2025
+alphabet,GOOGLE SERVICES L.L.C. FORMERLY REPORTED AS GOOGLE INC.,401104374-24,alias_regex,entity=Google; reports=1; years=2020-2020
+alphabet,"GOOGLE, INC.",18978-1004381;31680-3110;320510-12;400432093-140;400740216-24;400885593-36;401017872-12;401103869-12;401103869-24;401105159-51;401106132-68381;5142-1005344;51753-315;682-1006082;73271-1005130,alias_regex,entity=Google; reports=126; years=2015-2025
+alphabet,"GOOGLE, INC. ON BEHALF OF X",320918-1005344,alias_regex,entity=Google; reports=15; years=2017-2021; company is principal ('on behalf of' X)
+alphabet,VERILY LIFE SCIENCES LLC,401103287-56945;79175-1003682,alias_regex,entity=Verily; reports=16; years=2021-2025
+alphabet,"VERILY LIFE SCIENCES, LLC",284950-1006524,alias_regex,entity=Verily; reports=13; years=2017-2020
+alphabet,WAYMO LLC,18466-1008543;308775-1003628;400774330-69497;401103585-64452;401105128-12,alias_regex,entity=Waymo; reports=74; years=2018-2025
+alphabet,WAYMO LLC  F/D/B/A GOOGLE (ON BEHALF OF WAYMO LLC),18466-1008543,alias_regex,entity=Waymo; reports=12; years=2020-2023; company is principal ('on behalf of' WAYMO LLC)
+alphabet,WING (FORMERLY X (GOOGLE INC.)),40013096-606,alias_regex,entity=Wing; reports=13; years=2018-2021
+alphabet,WING AVIATION LLC,18466-1010320;401104762-58050,alias_regex,entity=Wing; reports=29; years=2021-2025
+alphabet,X (GOOGLE INC.),40013096-606,alias_regex,entity=X; reports=5; years=2017-2018
+altria,ALTRIA,322911-323005;322911-39647,alias_regex,entity=Altria; reports=12; years=2021-2023
+altria,ALTRIA CLIENT SERVICES,24486-1004012;25818-900;284551-1004785;308913-90;401105121-63;401108916-61468;63451-1004912;7257-1008594,alias_regex,entity=Altria; reports=93; years=2015-2025
+altria,ALTRIA CLIENT SERVICES INC,30187-647,alias_regex,entity=Altria; reports=4; years=2015-2015
+altria,ALTRIA CLIENT SERVICES INC.,31406-12;39941-1005507;400531586-164;401103938-24;57475-1006028;59411-12;65976-0734,alias_regex,entity=Altria; reports=43; years=2015-2023
+altria,"ALTRIA CLIENT SERVICES INC. (FORMERLY ALTRIA CORPORATE SERVICES, INC.)",18433-176;314215-12,alias_regex,entity=Altria; reports=4; years=2015-2015
+altria,ALTRIA CLIENT SERVICES LLC,18433-176;22688-63;25818-900;284551-1004785;294930-0087;294930-295335;307730-1001865;31406-12;39941-1005507;400531586-164;400976792-912;401091050-63;401103327-67254;401103475-52601;401103523-54392;401103834-152;401103938-24;401104313-101;401104449-24;401104787-12;401105551-63494;401105551-64208;401107373-31406;401107373-55297;59411-12;63451-1004912;65976-0734;682-1007743;70175-1006881;81511-1005178,alias_regex,entity=Altria; reports=663; years=2015-2025
+altria,"ALTRIA CLIENT SERVICES LLC (FORMERLY ALTRIA CLIENT SERVICES, INC.)",314215-12,alias_regex,entity=Altria; reports=18; years=2015-2019
+altria,ALTRIA CLIENT SERVICES LLC (FORMERLY: ALTRIA CLIENT SERVICES INC.),31406-12,alias_regex,entity=Altria; reports=1; years=2015-2015
+altria,ALTRIA CLIENT SERVICES LLC AND ITS AFFILIATES,401104498-12;401104498-31406,alias_regex,entity=Altria; reports=7; years=2017-2018
+altria,ALTRIA CLIENT SERVICES LLC FKA ALTRIA,322911-323005,alias_regex,entity=Altria; reports=4; years=2020-2024
+altria,ALTRIA CLIENT SERVICES LLC FKA ALTRIA CLIENT SERVICES INC.,400531586-164,alias_regex,entity=Altria; reports=1; years=2015-2015
+altria,ALTRIA CLIENT SERVICES LLC FORMERLY ALTRIA CLIENT SERVICES INC.,22688-63,alias_regex,entity=Altria; reports=1; years=2015-2015
+altria,ALTRIA CLIENT SERVICES LLC FORMERLY KNOWN AS ALTRIA CLIENT SERVICES INC.,39941-1005507,alias_regex,entity=Altria; reports=2; years=2015-2015
+altria,"ALTRIA CLIENT SERVICES, INC.",22688-63;400290378-137;400432093-36;400534596-1421;400689052-87;401016871-125;81511-1005178;91774-1004517,alias_regex,entity=Altria; reports=72; years=2015-2023
+altria,"ALTRIA CLIENT SERVICES, INC. (FORMERLY ALTRIA)",18570-684,alias_regex,entity=Altria; reports=2; years=2015-2015
+altria,"ALTRIA CLIENT SERVICES, LLC",400290378-137;400432093-36;400534596-1421;400689052-87;401105068-51;401105906-60839;91774-1004517,alias_regex,entity=Altria; reports=142; years=2015-2025
+altria,"ALTRIA CLIENT SERVICES, LLC (FORMERLY ALTRIA)",18570-684,alias_regex,entity=Altria; reports=6; years=2015-2016
+altria,"ALTRIA CLIENT SERVICES, LLC FKA ALTRIA CLIENT SERVICES, INC.",400534596-1421,alias_regex,entity=Altria; reports=1; years=2023-2023
+altria,NJOY,400348604-280;84217-303,excluded_outside_ownership_window,"entity=NJOY; reports=8; ownership_window=2023Q3..; excluded_years=2018,2019,2020,2021,2022"
+altria,NJOY LLC,49635-  49635;49635-1005356,excluded_outside_ownership_window,"entity=NJOY; reports=3; ownership_window=2023Q3..; excluded_years=2018,2019"
+altria,"NJOY, INC.",401105569-75,excluded_outside_ownership_window,"entity=NJOY; reports=6; ownership_window=2023Q3..; excluded_years=2021,2022,2023"
+altria,"NJOY, LLC",401104422-63;401104966-12;5357-1007895,excluded_outside_ownership_window,"entity=NJOY; reports=9; ownership_window=2023Q3..; excluded_years=2018,2019"
+altria,"NJOY, LLC.",1171-45472,excluded_outside_ownership_window,"entity=NJOY; reports=6; ownership_window=2023Q3..; excluded_years=2022,2023"
+altria,"THE LIVINGSTON GROUP, LLC (ON BEHALF OF NJOY LLC)",401104914-48,excluded_outside_ownership_window,"entity=NJOY; reports=2; ownership_window=2023Q3..; excluded_years=2018,2019; subcontract via LIVINGSTON GROUP LLC; counted as activity, not spend (prime firm's income already includes it)"
+amazon,AMAZON,39815-1003224;400646949-330;401036920-125;401104048-51;401108637-64159;7257-1007868,alias_regex,entity=Amazon; reports=96; years=2015-2025
+amazon,AMAZON CORPORATE,401104742-90,alias_regex,entity=Amazon; reports=32; years=2018-2025
+amazon,AMAZON CORPORATE LLC,39941-1006613;401104703-87;5142-1005317;5357-1007351,alias_regex,entity=Amazon; reports=40; years=2015-2025
+amazon,"AMAZON CORPORATE, LLC",39837-1008885;401105514-53262;54494-12;682-1008326;84775-1004645,alias_regex,entity=Amazon; reports=110; years=2015-2025
+amazon,AMAZON PRIME AIR,682-1006792,alias_regex,entity=Amazon; reports=10; years=2015-2017
+amazon,AMAZON WEB SERVICES,21632-1005902;2194-1006257;296271-1115;39815-1003224;400459252-45802;401103558-24;401104228-137;401104982-52885,alias_regex,entity=Amazon; reports=122; years=2015-2025
+amazon,"AMAZON WEB SERVICES, INC",401105158-51192;401105158-51992,alias_regex,entity=Amazon; reports=13; years=2022-2024
+amazon,"AMAZON WEB SERVICES, INC.",31895-59582;40013096-746;401104313-467;401105637-50864,alias_regex,entity=Amazon; reports=51; years=2019-2025
+amazon,AMAZON.COM,24486-1004188;30906-1008365;400493431-48;401104288-87;401107217-57998;65976-2854;682-1006803,alias_regex,entity=Amazon; reports=145; years=2015-2025
+amazon,AMAZON.COM (FRA PILLPACK AN AMAZON COMPANY),401104750-64566;84217-202,alias_regex,entity=Amazon; reports=9; years=2024-2025
+amazon,AMAZON.COM SERVICES LLC,12675-1002638;18466-1010647;304736- 58803;401106545-50892;401106905-54243;51478-1004621;54494-12;62778-1004898,alias_regex,entity=Amazon; reports=124; years=2020-2025
+amazon,"AMAZON.COM SERVICES, INC.",313271-1005092;400579747-90;54494-12,alias_regex,entity=Amazon; reports=54; years=2018-2025
+amazon,"AMAZON.COM, INC.",308775-1003224;400740216-176;401106302-12,alias_regex,entity=Amazon; reports=70; years=2015-2025
+amazon,"AWS PUBLIC POLICY, AMERICAS",1171-63312,alias_regex,entity=Amazon; reports=5; years=2024-2025
+amazon,"MILLER STRATEGIES, LLC ON BEHALF OF AMAZON WEB SERVICES, INC.",401105158-90,alias_regex_subcontract,"entity=Amazon; reports=5; years=2021-2022; subcontract via MILLER STRATEGIES LLC; counted as activity, not spend (prime firm's income already includes it)"
+amazon,ONE MEDICAL,12631-1006296;304736-1005406;314911-52979;7304-31681;7304-51093,alias_regex,"entity=One Medical; reports=31; years=2023-2024; ownership_window=2023Q1..; excluded_years=2020,2021,2022"
+amazon,PILLPACK,84217-202,alias_regex,entity=PillPack; reports=28; years=2015-2022
+amazon,PILLPACK (AN AMAZON COMPANY),84217-202,alias_regex,entity=PillPack; reports=5; years=2022-2023
+amazon,TEAM HALLAHAN LLC (ON BEHALF OF AMAZON WEB SERVICES),401105055-36,alias_regex_subcontract,"entity=Amazon; reports=22; years=2019-2024; subcontract via TEAM HALLAHAN LLC; counted as activity, not spend (prime firm's income already includes it)"
+amazon,"TEAM HALLAHAN LLC ON BEHALF OF AMAZON WEB SERVICES, INC.",400336564-214,alias_regex_subcontract,"entity=Amazon; reports=22; years=2019-2024; subcontract via TEAM HALLAHAN LLC; counted as activity, not spend (prime firm's income already includes it)"
+amazon,"WHOLE FOODS MARKET, INC.",308775-58769,alias_regex,entity=Whole Foods; reports=1; years=2024-2024; ownership_window=2017Q4..
+amazon,"ZOOX, INC.",32098-64695,alias_regex,entity=Zoox; reports=4; years=2025-2025
+amgen,AKIN GUMP ON BEHALF OF AMGEN,401104209-101,alias_regex_subcontract,"entity=Amgen; reports=2; years=2017-2017; subcontract via AKIN GUMP; counted as activity, not spend (prime firm's income already includes it)"
+amgen,AMGEN,1171-1231;24338-1005852;286096-176;293335-1005608;31680-2156;32486-1005383;400762305-393;401105501-12;401105501-44640;401105551-65689;401106477-51435;401109565-66449;401109795-69832;65976-1712;79610-226;91774-125,alias_regex,entity=Amgen; reports=291; years=2015-2025
+amgen,AMGEN INC,304736-292;400740216-113,alias_regex,entity=Amgen; reports=19; years=2015-2019
+amgen,AMGEN INC.,12675-912;298158-298158;298158-58418;304736-292;400646949-101;400703105-113;401103321-152;401104385-12;401104385-59026;401105493-58627;46038-58793;5357-63;62778-850;8511-1004990,alias_regex,entity=Amgen; reports=238; years=2015-2025
+amgen,AMGEN USA INC.,2057-1005395;401016871-12;401103524-87;401105121-24;51478-1585;7257-1008504,alias_regex,entity=Amgen; reports=146; years=2015-2025
+amgen,"AMGEN USA, INC.",400976792-517;48827-4504;682-1007945,alias_regex,entity=Amgen; reports=124; years=2015-2025
+amgen,"AMGEN, INC.",11195-2625;20744-1000492;313715-1004758;3867-12;400712135-24;401027898-36;401104313-354;41454-301248023;41454-3491,alias_regex,entity=Amgen; reports=293; years=2015-2025
+amgen,"AMGEN, INC. FKA HORIZON THERAPEUTICS USA, INC.",400774330-1014,alias_regex,entity=Amgen; reports=9; years=2023-2025
+amgen,"CAPITOL COUNSEL LLC ON BEHALF OF AMGEN, INC.",40029250-0002;40029250-63,alias_regex_subcontract,"entity=Amgen; reports=3; years=2021-2021; subcontract via CAPITOL COUNSEL LLC; counted as activity, not spend (prime firm's income already includes it)"
+amgen,HORIZON THERAPEUTICS,400976792-1608,alias_regex,"entity=Horizon; reports=16; years=2023-2023; ownership_window=2023Q4..; excluded_years=2020,2021,2022,2023"
+amgen,"HORIZON THERAPEUTICS (F/K/A) HORIZON PHARMA USA, INC.",298158-1005267,alias_regex,"entity=Horizon; reports=19; years=2023-2023; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022,2023"
+amgen,HORIZON THERAPEUTICS (FORMALLY KNOWN AS HORIZON PHARMA),295053-1004188,alias_regex,"entity=Horizon; reports=18; years=2023-2023; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022,2023"
+amgen,HORIZON THERAPEUTICS USA (FORMERLY HORIZON PHARMA),79610-1004505,excluded_outside_ownership_window,"entity=Horizon; reports=14; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022"
+amgen,"HORIZON THERAPEUTICS USA, INC.",400534596-1445;400774330-1014;401103321-55432;62778-1004823,alias_regex,"entity=Horizon; reports=41; years=2023-2024; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022,2023"
+amgen,"HORIZON THERAPEUTICS USA, INC. (FKA HORIZON PHARMA USA, INC.)",401103901-12;46038-1003581,alias_regex,"entity=Horizon; reports=37; years=2023-2024; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022,2023"
+amgen,"HORIZON THERAPEUTICS USA, INC. (FORMERLY HORIZON PHARMA USA, INC.)",11195-1005457,alias_regex,"entity=Horizon; reports=18; years=2023-2023; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022,2023"
+amgen,"HORIZON THERAPEUTICS USA, INC. (FORMERLY KNOWN AS HORIZON PHARMA USA, INC)",400534596-1445,excluded_outside_ownership_window,"entity=Horizon; reports=12; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022"
+amgen,"HORIZON THERAPEUTICS USA, INC. (FORMERLY KNOWN AS HORIZON PHARMA USA, INC.)",286096-645,alias_regex,"entity=Horizon; reports=18; years=2023-2023; ownership_window=2023Q4..; excluded_years=2019,2020,2021,2022,2023"
+amgen,"HORIZON THERAPEUTICS USA, INC. (FORMERLY REPORTED AS HORIZON PHARMA, INC.)",62778-1004823,excluded_outside_ownership_window,entity=Horizon; reports=1; ownership_window=2023Q4..; excluded_years=2020
+amgen,"HORIZON THERAPEUTICS USA, INC.( PREVIOUSLY KNOWN AS HORIZON PHARMA USA, INC.)",86196-1006218,alias_regex,entity=Horizon; reports=5; years=2023-2024; ownership_window=2023Q4..; excluded_years=2023
+amgen,"TIBER CREEK HEALTH STRATEGIES, INC. ON BEHALF OF AMGEN, INC.",401109669-67777,alias_regex_subcontract,"entity=Amgen; reports=3; years=2025-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+apple,APPLE,65976-12,alias_regex,entity=Apple; reports=44; years=2015-2025
+apple,APPLE INC,40013096-48,alias_regex,entity=Apple; reports=25; years=2015-2021
+apple,APPLE INC.,11195-54298;314237-1006233;314911-58307;401036920-152;401103500-455;401104228-188;401104313-494;401104703-191;401105514-101;401108944-68099;401109795-68715;4152-12;76855-1006218,alias_regex,entity=Apple; reports=209; years=2015-2025
+apple,"APPLE, INC.",18422-1008163;305338-125;401109033-63242;41534-1004773;86196-1005700,alias_regex,entity=Apple; reports=70; years=2015-2025
+apple,COVINGTON & BURLING ON BEHALF OF APPLE INC.,85014-53109,alias_regex_subcontract,"entity=Apple; reports=3; years=2022-2023; subcontract via COVINGTON AND BURLING; counted as activity, not spend (prime firm's income already includes it)"
+apple,WILMERHALE ON BEHALF OF APPLE INC.,85014-56490,alias_regex_subcontract,"entity=Apple; reports=11; years=2023-2025; subcontract via WILMERHALE; counted as activity, not spend (prime firm's income already includes it)"
+asml,ASML NETHERLANDS B.V.,53664-140,alias_regex,entity=ASML; reports=28; years=2019-2025
+asml,ASML US LLC,287394-354,alias_regex,entity=ASML; reports=14; years=2021-2024
+asml,"ASML US, LLC",1171-1006702;401106161-12;48827-1007021,alias_regex,entity=ASML; reports=55; years=2021-2025
+asml,PUTALA STRATEGIES ON BEHALF OF ASML US LLC,401104210-51,alias_regex_subcontract,"entity=ASML; reports=14; years=2021-2024; subcontract via PUTALA STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+astrazeneca,ALEXION PHARMACEUTICALS,23645-63645;400605842-12;401105372-12;46038-66017;76833-1002386,alias_regex,"entity=Alexion; reports=71; years=2021-2025; ownership_window=2021Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021"
+astrazeneca,ALEXION PHARMACEUTICALS FORMERLY PORTOLA,401105372-12,excluded_outside_ownership_window,entity=Alexion; reports=1; ownership_window=2021Q3..; excluded_years=2020
+astrazeneca,"ALEXION PHARMACEUTICALS, INC.",400504482-12;400976792-1546;401103321-292;401104769-327;65976-2765,alias_regex,"entity=Alexion; reports=107; years=2021-2025; ownership_window=2021Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021"
+astrazeneca,ASTRAZENECA,18422-1007678;20744-1000493;286096-404;304736-176;400646949-12,alias_regex,entity=AstraZeneca; reports=113; years=2015-2025
+astrazeneca,ASTRAZENECA PHARMACEUTICALS LP,400532589-2156;400599826-214;400605842-214;401103289-214;401103321-214;401103938-241;48827-1006245;54073-12;86196-1005891,alias_regex,entity=AstraZeneca; reports=156; years=2015-2025
+astrazeneca,ASTRAZENECA PHARMACEUTICALS LP (FORMERLY ASTRAZENECA PHARMACEUTICALS GROUP),41454-924,alias_regex,entity=AstraZeneca; reports=9; years=2015-2017
+astrazeneca,"ASTRAZENECA PHARMACEUTICALS,  LP",313715-113,alias_regex,entity=AstraZeneca; reports=1; years=2015-2015
+astrazeneca,ASTRAZENECA UK LTD.,30906-52045,alias_regex,entity=AstraZeneca; reports=7; years=2022-2023
+astrazeneca,BURSON COHN & WOLFE ON BEHALF OF ASTRAZENECA PHARMACEUTICALS LP,400532589-2016,alias_regex_subcontract,"entity=AstraZeneca; reports=3; years=2021-2021; subcontract via BURSON COHN AND WOLFE; counted as activity, not spend (prime firm's income already includes it)"
+att,"?AT&T SERVICES, INC.",401107217-60777,alias_regex,entity=AT&T; reports=7; years=2024-2025
+att,AT&T,11297-1004758;24123-1115;304337-12;40020141-101;40024191-30731;40024191-64736;400532589-137;401103204-12;401104066-0004;401104066-12;401104718-12;401106066-12;54197-2411;682-125;8214-27;8214-292,alias_regex,entity=AT&T; reports=154; years=2015-2025
+att,AT&T (FORMERLY SBC),24123-1115,alias_regex,entity=AT&T; reports=7; years=2015-2016
+att,AT&T CORPORATION,314215-51,alias_regex,entity=AT&T; reports=17; years=2015-2019
+att,"AT&T CORPORATION (FORMERLY SBC COMMUNICATIONS, INC.)",41955-835,alias_regex,entity=AT&T; reports=16; years=2015-2018
+att,AT&T SERVICES,40025209-48;401104869-137;41408-1980;48782-1383;52903-1001865,alias_regex,entity=AT&T; reports=58; years=2015-2022
+att,AT&T SERVICES INC.,24123-1115;304337-12;401104143-36;7257-1000937,alias_regex,entity=AT&T; reports=114; years=2016-2025
+att,"AT&T SERVICES, INC (FORMERLY SBC COMMUNICATIONS, INC.)",41955-835,alias_regex,entity=AT&T; reports=16; years=2019-2022
+att,"AT&T SERVICES, INC.",11297-1004758;293335-1005092;293370-1000636;306011-280;313715-1005941;400459252-61655;400531586-36;400703107-48;400762305-140;401103105-48;401103938-303;401104718-12;401105200-24;4301-1004556;45983-1014;48827-1000996;5131-55052;51478-1004431;682-125;82135-1004152;85071-1000453,alias_regex,entity=AT&T; reports=497; years=2015-2025
+att,"AT&T SERVICES, INC. (FKA AT&T CORPORATION)",314215-51,alias_regex,entity=AT&T; reports=7; years=2019-2020
+att,"AT&T SERVICES, INC. (FKA AT&T)",682-125,alias_regex,entity=AT&T; reports=14; years=2020-2025
+att,"AT&T SERVICES, INC. AND ITS AFFILIATES",34455-12;401106545-54165;70131-113,alias_regex,entity=AT&T; reports=100; years=2015-2025
+att,"AT&T SERVICES, INC. ON BEHALF OF ITS AFFILIATE, WARNER MEDIA, LLC",401105200-24,alias_regex,entity=AT&T; reports=19; years=2019-2023; company is principal ('on behalf of' ITS AFFILIATE WARNER MEDIA LLC)
+att,AT&T SERVICES. INC.,307730-152,alias_regex,entity=AT&T; reports=44; years=2015-2025
+att,"AT&T, INC.",401104718-58187,alias_regex,entity=AT&T; reports=9; years=2023-2025
+att,DIRECTV,400531586-191;400713138-12;400774332-48;401103938-50861;401103938-51470,alias_regex,"entity=DIRECTV; reports=25; years=2015-2015; ownership_window=2015Q3..2021Q2; excluded_years=2015,2022,2023,2024,2025"
+att,"DIRECTV, INC.",42865-1002362,alias_regex,entity=DIRECTV; reports=3; years=2015-2015; ownership_window=2015Q3..2021Q2; excluded_years=2015
+att,"DIRECTV, LLC",400493431-51699;400976792-51711;401106515-50861;48827-51704,excluded_outside_ownership_window,"entity=DIRECTV; reports=61; ownership_window=2015Q3..2021Q2; excluded_years=2022,2023,2024,2025"
+att,FIDELIS GOVERNMENT RELATIONS (ON BEHALF OF AT&T),401104284-12,alias_regex_subcontract,"entity=AT&T; reports=12; years=2017-2019; subcontract via FIDELIS GOVERNMENT RELATIONS; counted as activity, not spend (prime firm's income already includes it)"
+att,"HB STRATEGIES (FKA HUSCH BLACKWELL STRATEGIES) (ON BEHALF OF AT&T, INC.",401107792-61027,alias_regex_subcontract,"entity=AT&T; reports=3; years=2025-2025; subcontract via HB STRATEGIES FKA HUSCH BLACKWELL STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+att,"HUSCH BLACKWELL STRATEGIES (ON BEHALF OF AT&T, INC.",401107792-61027,alias_regex_subcontract,"entity=AT&T; reports=3; years=2024-2025; subcontract via HUSCH BLACKWELL STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+att,THE DIRECTV GROUP,16896-5037,excluded_outside_ownership_window,entity=DIRECTV; reports=1; ownership_window=2015Q3..2021Q2; excluded_years=2015
+att,THE DIRECTV GROUP INC.,400493431-164,alias_regex,entity=DIRECTV; reports=3; years=2015-2015; ownership_window=2015Q3..2021Q2; excluded_years=2015
+att,"THE DIRECTV GROUP, INC.",18843-12;400884589-012;42752-1002978;45983-963,alias_regex,entity=DIRECTV; reports=12; years=2015-2015; ownership_window=2015Q3..2021Q2; excluded_years=2015
+att,TIME WARNER,1295-12,excluded_outside_ownership_window,"entity=WarnerMedia; reports=13; ownership_window=2018Q3..2022Q1; excluded_years=2015,2016,2017,2018"
+att,TIME WARNER INC.,65976-0758,excluded_outside_ownership_window,"entity=WarnerMedia; reports=14; ownership_window=2018Q3..2022Q1; excluded_years=2015,2016,2017,2018"
+att,"TIME WARNER, INC.",313271-1004354;39941-4430,alias_regex,"entity=WarnerMedia; reports=31; years=2018-2018; ownership_window=2018Q3..2022Q1; excluded_years=2015,2016,2017,2018"
+att,WARNER MEDIA,2057-2195;65976-0758,alias_regex,entity=WarnerMedia; reports=2; years=2018-2018; ownership_window=2018Q3..2022Q1
+att,WARNER MEDIA (FORMERLY KNOWN AS TIMEWARNER),2057-2195,alias_regex,entity=WarnerMedia; reports=1; years=2018-2018; ownership_window=2018Q3..2022Q1
+att,"WARNER MEDIA, PREVIOUSLY REPORTED AS TIME WARNER INC.",65976-0758,alias_regex,entity=WarnerMedia; reports=1; years=2018-2018; ownership_window=2018Q3..2022Q1
+att,WARNERMEDIA GROUP (FKA TIME WARNER INC),39941-4430,alias_regex,entity=WarnerMedia; reports=3; years=2018-2019; ownership_window=2018Q3..2022Q1
+att,WARNERMEDIA GROUP (FORMERLY KNOWN AS TIME WARNER),1295-12,alias_regex,entity=WarnerMedia; reports=5; years=2018-2019; ownership_window=2018Q3..2022Q1; excluded_years=2018
+axa,AXA,7257-1009444,alias_regex,entity=AXA; reports=13; years=2019-2022
+axa,AXA EQUITABLE LIFE INSURANCE COMPANY,296271-823;36710-1005193,alias_regex,entity=AXA Financial/Equitable; reports=26; years=2016-2018; ownership_window=..2018Q4; excluded_years=2019
+axa,AXA FINANCIAL,303575-63,alias_regex,entity=AXA Financial/Equitable; reports=20; years=2015-2018; ownership_window=..2018Q4; excluded_years=2019
+axa,AXA FINANCIAL/EQUITABLE LIFE ASSURANCE,401054971-393,alias_regex,"entity=AXA Financial/Equitable; reports=33; years=2015-2018; ownership_window=..2018Q4; excluded_years=2019,2020,2021,2022,2023"
+axa,AXA SA,401054971-381,alias_regex,entity=AXA; reports=26; years=2015-2025
+axa,BROWNSTEIN HYATT FARBER SCHRECK LLP OBO AXA XL,401106156-67509,alias_regex_subcontract,"entity=XL Group; reports=2; years=2025-2025; ownership_window=2018Q4..; subcontract via BROWNSTEIN HYATT FARBER SCHRECK LLP; counted as activity, not spend (prime firm's income already includes it)"
+axa,XL GROUP PLC,40112-645,excluded_outside_ownership_window,"entity=XL Group; reports=12; ownership_window=2018Q4..; excluded_years=2015,2016,2017"
+bae,BAE SYSTEMS,31680-1005267;400312456-24,alias_regex,entity=BAE Systems; reports=13; years=2015-2017
+bae,BAE SYSTEMS INC.,77812-253;8453-1007006,alias_regex,entity=BAE Systems; reports=64; years=2015-2025
+bae,BAE SYSTEMS LAND & ARMAMENTS,40020147-137,alias_regex,entity=BAE Systems; reports=4; years=2015-2015
+bae,BAE SYSTEMS LAND & ARMAMENTS LP,400427054-12,alias_regex,entity=BAE Systems; reports=44; years=2015-2025
+bae,BAE SYSTEMS SHIP REPAIR,400391830-12,alias_regex,entity=BAE Systems; reports=3; years=2015-2015
+bae,"BAE SYSTEMS, INC",401051964-87,alias_regex,entity=BAE Systems; reports=12; years=2015-2017
+bae,"BAE SYSTEMS, INC.",11195-2257;15907-12;307832-36;30906-1009747;31895-1003860;400976792-1193;401103838-12;401104742-12;7257-1010926,alias_regex,entity=BAE Systems; reports=221; years=2015-2025
+barclays,BARCLAYS BANK PLC,35560-1004188,alias_regex,entity=Barclays; reports=11; years=2018-2020
+barclays,BARCLAYS CAPITAL INC,18422-1005876,alias_regex,entity=Barclays; reports=35; years=2015-2023
+barclays,BARCLAYS PLC,84775-315,alias_regex,entity=Barclays; reports=4; years=2015-2015
+barclays,BARCLAYS US GFP INC.,313271-1005801,alias_regex,entity=Barclays; reports=17; years=2021-2025
+barclays,BARCLAYS US GPF INC.,296271-1181;400868543-12,alias_regex,entity=Barclays; reports=64; years=2015-2025
+basf,BASF CATALYSTS DIVISION,20631-20631;20631-24,alias_regex,entity=BASF; reports=14; years=2015-2018
+basf,BASF CORPORATION,299035-12;5506-12,alias_regex,entity=BASF; reports=48; years=2015-2025
+bat,BRITISH AMERICAN TOBACCO,401104937-54323,alias_regex,entity=BAT; reports=10; years=2023-2025
+bat,PETER DAMON GROUP ON BEHALF OF RAI SERVICES COMPANY,401106174-64046,alias_regex_subcontract,"entity=Reynolds American; reports=4; years=2025-2025; ownership_window=2017Q3..; subcontract via PETER DAMON GROUP; counted as activity, not spend (prime firm's income already includes it)"
+bat,RAI SERVICES,401104274-24,alias_regex,entity=Reynolds American; reports=3; years=2017-2017; ownership_window=2017Q3..; excluded_years=2017
+bat,RAI SERVICES COMPANY,16896-1006931;17966-330;25306-64650;305098-1003698;31918-140;33204-12;35800-152;36105-1006830;37141-188;400400892-75;400559671-12;400646949-342;400701097-51;401103518-12;401103518-24;401103804-63;401104274-24;401104385-12;401104415-12;401104428-24;401104726-51;401104738-44015;401104937-54323;401105112-12;401105663-24;401105663-33204;401106367-48;401107315-68227;401109065-65260;41454-1007437;48348-36;48348-63;53312-378;5357-1007235;76855-57219;76992-54337,alias_regex,"entity=Reynolds American; reports=577; years=2017-2025; ownership_window=2017Q3..; excluded_years=2015,2016,2017"
+bat,RAI SERVICES COMPANY (FKA BRITISH AMERICAN TOBACCO),401104937-54323,alias_regex,entity=Reynolds American; reports=1; years=2025-2025; ownership_window=2017Q3..
+bat,"RAI SERVICES COMPANY (FKA REYNOLDS AMERICAN, INC.)",78733-280,alias_regex,entity=Reynolds American; reports=4; years=2025-2025; ownership_window=2017Q3..
+bat,RAI SERVICES COMPANY (FKA- RAISC),401104288-63,alias_regex,entity=Reynolds American; reports=31; years=2018-2025; ownership_window=2017Q3..
+bat,"RAI SERVICES COMPANY (FORMERLY KNOWN AS RAI SERVICES COMPANY, INC.)",35800-152,alias_regex,entity=Reynolds American; reports=1; years=2019-2019; ownership_window=2017Q3..
+bat,RAI SERVICES COMPANY (FORMERLY KNOWN AS REYNOLDS AMERICAN INC.),400559671-12;87814-710,alias_regex,entity=Reynolds American; reports=26; years=2018-2024; ownership_window=2017Q3..
+bat,RAI SERVICES COMPANY (FORMERLY KNOWN AS REYNOLDS AMERICAN),401104769-277,alias_regex,entity=Reynolds American; reports=14; years=2022-2025; ownership_window=2017Q3..
+bat,"RAI SERVICES COMPANY (FORMERLY KNOWN AS REYNOLDS AMERICAN, INC.)",401104415-12,alias_regex,entity=Reynolds American; reports=1; years=2018-2018; ownership_window=2017Q3..
+bat,RAI SERVICES COMPANY (FORMERLY KNOWN AS RJ REYNOLDS),21632-1231,alias_regex,"entity=Reynolds American; reports=44; years=2017-2025; ownership_window=2017Q3..; excluded_years=2015,2016,2017"
+bat,"RAI SERVICES COMPANY (FORMERLY REYNOLDS AMERICAN, INC.)",313715-1004835,alias_regex,entity=Reynolds American; reports=31; years=2018-2025; ownership_window=2017Q3..
+bat,"RAI SERVICES COMPANY, INC.",35800-152,alias_regex,"entity=Reynolds American; reports=16; years=2017-2018; ownership_window=2017Q3..; excluded_years=2015,2016,2017"
+bat,"RAI SERVICES, INC.",401105262-12,alias_regex,entity=Reynolds American; reports=2; years=2019-2019; ownership_window=2017Q3..
+bat,REYNOLDS AMERICAN,401104769-277,alias_regex,entity=Reynolds American; reports=3; years=2021-2022; ownership_window=2017Q3..
+bat,REYNOLDS AMERICAN (FORMERLY REYNOLDS),401104769-277,alias_regex,entity=Reynolds American; reports=1; years=2021-2021; ownership_window=2017Q3..
+bat,"REYNOLDS AMERICAN, INC",305098-1003698,alias_regex,"entity=Reynolds American; reports=12; years=2017-2017; ownership_window=2017Q3..; excluded_years=2015,2016,2017"
+bat,"REYNOLDS AMERICAN, INC.",313715-1004835;400559671-12;401104415-12;78733-280;83978-12;87814-710,alias_regex,"entity=Reynolds American; reports=60; years=2017-2019; ownership_window=2017Q3..; excluded_years=2015,2016,2017"
+bat,WASHINGTON ADVOCACY GROUP ON BEHALF OF RAI SERVICES COMPANY,401103804-12;401103804-24,alias_regex_subcontract,"entity=Reynolds American; reports=8; years=2017-2018; ownership_window=2017Q3..; excluded_years=2017; subcontract via WASHINGTON ADVOCACY GROUP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,"AKIN, GUMP, STRAUSS, HAUER & FELD ON BEHALF OF BAYER CORPORATION",401110221-70552,alias_regex_subcontract,"entity=Bayer; reports=1; years=2025-2025; subcontract via AKIN GUMP STRAUSS HAUER AND FELD; counted as activity, not spend (prime firm's income already includes it)"
+bayer,BAYER CORPORATION,16896-1006257;2057-1006625;22688-1002766;313715-1006792;314237-1006144;315717-1005418;400290378-241;400646949-253;400976792-1368;401103077-583;401103321-226;401103475-404;41454-990;5357-1007743;75557-1006245;83717-1000812,alias_regex,entity=Bayer; reports=253; years=2015-2025
+bayer,BAYER CORPORATION (CONSOLIDATED REPORT),5632-12,alias_regex,entity=Bayer; reports=44; years=2015-2025
+bayer,BAYER CORPORATION (FKA MONSANTO COMPANY),682-1005662,alias_regex,entity=Bayer; reports=28; years=2019-2025
+bayer,BAYER CORPORATION (FORMERLY BAYER U.S. LLC),400976792-1368,alias_regex,entity=Bayer; reports=1; years=2019-2019
+bayer,BAYER CORPORATION (FORMERLY BAYER US LLC),5357-1007743,alias_regex,entity=Bayer; reports=1; years=2019-2019
+bayer,BAYER CORPORATION (FORMERLY KNOWN AS BAYER U S LLC),22688-1002766,alias_regex,entity=Bayer; reports=11; years=2019-2021
+bayer,BAYER CORPORATION (FORMERLY KNOWN AS MONSANTO COMPANY),294930-470,alias_regex,entity=Bayer; reports=28; years=2019-2025
+bayer,BAYER CROPSCIENCE,400900630-36,alias_regex,entity=Bayer; reports=1; years=2015-2015
+bayer,BAYER CROPSCIENCE LP,2057-1006625;401103475-404,alias_regex,entity=Bayer; reports=20; years=2020-2023
+bayer,BAYER CROPSCIENCE LP (FKA BAYER CORPORATION),401103475-404,alias_regex,entity=Bayer; reports=1; years=2020-2020
+bayer,BAYER CROPSCIENCE LP (FORMERLY KNOWN AS BAYER CORPORATION),2057-1006625,alias_regex,entity=Bayer; reports=1; years=2020-2020
+bayer,BAYER U.S. LLC,400976792-1368;401104288-63586;401104718-253;401106416-57102;5357-1007743;65976-3336;70175-68919,alias_regex,entity=Bayer; reports=38; years=2018-2025
+bayer,"BAYER U.S., LLC",401109355-64835;401109355-66897,alias_regex,entity=Bayer; reports=5; years=2025-2025
+bayer,BAYER US LLC,313715-1006792;401103475-404,alias_regex,entity=Bayer; reports=13; years=2018-2025
+bayer,BAYER US LLC (FORMERLY REPORTED AS BAYER CROPSCIENCE LP),401103475-404,alias_regex,entity=Bayer; reports=1; years=2023-2023
+bayer,GEPHARDT GOVERNMENT AFFAIRS ON BEHALF OF BAYER AG,313715-1006245;401103204-191;401104718-137,alias_regex_subcontract,"entity=Bayer; reports=16; years=2016-2018; subcontract via GEPHARDT GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+bayer,"GEPHARDT GROUP GOVERNMENT AFFAIRS, LLC ON BEHALF OF BAYER AG",400532589-0145;400532589-1460,alias_regex_subcontract,"entity=Bayer; reports=10; years=2016-2018; subcontract via GEPHARDT GROUP GOVERNMENT AFFAIRS LLC; counted as activity, not spend (prime firm's income already includes it)"
+bayer,GEPHARDT GROUP ON BEHALF OF BAYER AG,316797-1004520,alias_regex_subcontract,"entity=Bayer; reports=8; years=2016-2018; subcontract via GEPHARDT GROUP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,HUSCH BLACKWELL GOVERNMENT STRATEGIES ON BEHALF OF BAYER AG,8453-1007883,alias_regex_subcontract,"entity=Bayer; reports=2; years=2018-2018; subcontract via HUSCH BLACKWELL GOVERNMENT STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+bayer,MONSANTO,401103077-63,alias_regex,"entity=Monsanto; reports=16; years=2018-2018; ownership_window=2018Q3..; excluded_years=2015,2016,2017,2018"
+bayer,MONSANTO CO.,22688-48,alias_regex,"entity=Monsanto; reports=16; years=2018-2018; ownership_window=2018Q3..; excluded_years=2015,2016,2017,2018"
+bayer,MONSANTO COMPANY,2057-1005381;2057-1005383;25705-12;294930-470;400493428-12;400493428-24;400582779-51;401103475-214;41534-1004847;682-1005662,alias_regex,"entity=Monsanto; reports=96; years=2018-2018; ownership_window=2018Q3..; excluded_years=2015,2016,2017,2018"
+bayer,THE BAYER CORPORATION,18444-66013,alias_regex,entity=Bayer; reports=4; years=2025-2025
+bayer,WILMER CUTLER PICKERING HALE & DORR LLP (ON BEHALF OF MONSANTO COMPANY),307730-1001978,alias_regex_subcontract,"entity=Monsanto; reports=10; years=2018-2018; ownership_window=2018Q3..; excluded_years=2016,2017,2018; subcontract via WILMER CUTLER PICKERING HALE AND DORR LLP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,WILMER CUTLER PICKERING HALE & DORR LLP (ON BEHALF OF MONSANTO),31680-1007488,excluded_outside_ownership_window,"entity=Monsanto; reports=2; ownership_window=2018Q3..; excluded_years=2015; subcontract via WILMER CUTLER PICKERING HALE AND DORR LLP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,WILMER CUTLER PICKERING HALE AND DORR LLP (ON BEHALF OF MONSANTO COMPANY),313271-1004811,excluded_outside_ownership_window,"entity=Monsanto; reports=2; ownership_window=2018Q3..; excluded_years=2015; subcontract via WILMER CUTLER PICKERING HALE AND DORR LLP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,WILMER CUTLER PICKERING HALE AND DORR LLP (ON BEHALF OF MONSANTO),401103523-42947,excluded_outside_ownership_window,"entity=Monsanto; reports=2; ownership_window=2018Q3..; excluded_years=2015; subcontract via WILMER CUTLER PICKERING HALE AND DORR LLP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,WILMER CUTLER PICKERING HALE AND DORR LLP OBO MONSANTO,401057986-0032;401057986-330,alias_regex_subcontract,"entity=Monsanto; reports=10; years=2018-2019; ownership_window=2018Q3..; excluded_years=2017,2018; subcontract via WILMER CUTLER PICKERING HALE AND DORR LLP; counted as activity, not spend (prime firm's income already includes it)"
+bayer,​BAYER CORPORATION,2057-1006625,alias_regex,entity=Bayer; reports=2; years=2019-2019
+bayer,​BAYER CORPORATION FORMERLY KNOWN AS BAYER U.S. LLC,2057-1006625,alias_regex,entity=Bayer; reports=1; years=2019-2019
+blackrock,"BLACKROCK CAPITAL MANAGEMENT, INC.",400534597-12;84775-1004505,alias_regex,entity=BlackRock; reports=41; years=2015-2022
+blackrock,"BLACKROCK FUND SERVICES GROUP, LLC",305932-57875;5357-57888,alias_regex,entity=BlackRock; reports=18; years=2023-2025
+blackrock,BLACKROCK FUNDS SERVICES GROUP LLC,400918672-53062;401104374-63874;401104937-61133;401108637-60845;682-1010608;75557-61189,alias_regex,entity=BlackRock; reports=29; years=2023-2025
+blackrock,"BLACKROCK FUNDS SERVICES GROUP LLC (FKA BLACKROCK, INC.)",400923683-292;682-1010608,alias_regex,entity=BlackRock; reports=15; years=2023-2025
+blackrock,"BLACKROCK FUNDS SERVICES GROUP LLC (FORMERLY BLACKROCK CAPITAL MANAGEMENT, INC.)",84775-1004505,alias_regex,entity=BlackRock; reports=11; years=2023-2025
+blackrock,"BLACKROCK FUNDS SERVICES GROUP LLC FKA BLACKROCK, INC.",400918672-53062,alias_regex,entity=BlackRock; reports=1; years=2024-2024
+blackrock,"BLACKROCK FUNDS SERVICES GROUP, LLC",400534597-12;400703105-61073;401105068-53089,alias_regex,entity=BlackRock; reports=50; years=2018-2025
+blackrock,"BLACKROCK FUNDS SERVICES, LLC.",65976-69898,alias_regex,entity=BlackRock; reports=1; years=2025-2025
+blackrock,"BLACKROCK, INC",401105068-53089,alias_regex,entity=BlackRock; reports=2; years=2022-2022
+blackrock,"BLACKROCK, INC.",400918672-53062;400923683-292;57475-1006171;682-1010608,alias_regex,entity=BlackRock; reports=31; years=2019-2024
+blackrock,​BLACKROCK FUNDS SERVICES GROUP LLC (FORMERLY BLACKROCK CAPITAL MANAGEMENT INC.),84775-1004505,alias_regex,entity=BlackRock; reports=4; years=2022-2023
+bms,BRISTOL MYERS SQUIBB,20744-1006512;304736-1005507,alias_regex,entity=Bristol-Myers Squibb; reports=40; years=2020-2025
+bms,BRISTOL MYERS SQUIBB COMPANY,401104703-44609;63451-1004975,alias_regex,entity=Bristol-Myers Squibb; reports=23; years=2016-2025
+bms,BRISTOL-MYERS SQUIBB,286096-68220;32486-164;400531586-238;401104582-125,alias_regex,entity=Bristol-Myers Squibb; reports=98; years=2015-2025
+bms,BRISTOL-MYERS SQUIBB COMPANY,293335-238;30906-393;401103321-60290;401103321-60291;401104313-69032;41454-280;7053-12,alias_regex,entity=Bristol-Myers Squibb; reports=99; years=2015-2025
+bms,CELGENE CORPORATION,11195-1005558;1182-1005228;20744-1006132;294930-0085;294930-295311;400446141-152;400703105-140;401103321-48;401104582-24;46038-1003884;5131-2726;5357-1006738;57475-1005712;62893-12;62893-62893,alias_regex,"entity=Celgene; reports=147; years=2019-2019; ownership_window=2019Q4..; excluded_years=2015,2016,2017,2018,2019"
+bms,KARUNA THERAPEUTICS,400605842-393,alias_regex,"entity=Karuna; reports=10; years=2024-2024; ownership_window=2024Q2..; excluded_years=2022,2023,2024"
+bms,"KARUNA THERAPEUTICS, INC.",72111-56874,alias_regex,"entity=Karuna; reports=4; years=2024-2024; ownership_window=2024Q2..; excluded_years=2023,2024"
+bms,PECK MADIGAN JONES (ON BEHALF OF BRISTOL MYERS SQUIBB),400712135-280,alias_regex_subcontract,"entity=Bristol-Myers Squibb; reports=5; years=2020-2021; subcontract via PECK MADIGAN JONES; counted as activity, not spend (prime firm's income already includes it)"
+bms,PECK MADIGAN JONES (ON BEHALF OF CELGENE CORPORATION),400712135-202,alias_regex_subcontract,"entity=Celgene; reports=8; years=2019-2019; ownership_window=2019Q4..; excluded_years=2018,2019; subcontract via PECK MADIGAN JONES; counted as activity, not spend (prime firm's income already includes it)"
+bms,TIBER CREEK GROUP (FKA PECK MADIGAN JONES) (ON BEHALF OF BRISTOL MYERS SQUIBB),400712135-280,alias_regex_subcontract,"entity=Bristol-Myers Squibb; reports=1; years=2021-2021; subcontract via TIBER CREEK GROUP FKA PECK MADIGAN JONES; counted as activity, not spend (prime firm's income already includes it)"
+bms,TIBER CREEK GROUP (ON BEHALF OF BRISTOL MYERS SQUIBB),400712135-280,alias_regex_subcontract,"entity=Bristol-Myers Squibb; reports=15; years=2021-2025; subcontract via TIBER CREEK GROUP; counted as activity, not spend (prime firm's income already includes it)"
+bmw,BMW NORTH AMERICA,401103397-12,alias_regex,entity=BMW; reports=4; years=2015-2015
+bmw,BMW OF NORTH AMERICA LLC,401104288-64266,alias_regex,entity=BMW; reports=4; years=2025-2025
+bmw,"BMW OF NORTH AMERICA, LLC",400822436-12;401104428-63;48827-1006982;8453-1006447,alias_regex,entity=BMW; reports=73; years=2015-2025
+bmw,BMW OF NORTH AMERICA. LLC,401104475-63531,alias_regex,entity=BMW; reports=4; years=2025-2025
+bnpparibas,"BNP PARIBAS RCC, INC.",401105012-12,alias_regex,entity=BNP Paribas; reports=6; years=2024-2025
+bnpparibas,"BNP PARIBAS RCC, INC.(FKA BNP PARIBAS US WHOLESALE HOLDINGS, CORP.)",401105012-12,alias_regex,entity=BNP Paribas; reports=2; years=2024-2024
+bnpparibas,"BNP PARIBAS US WHOLESALE HOLDINGS, CORP",401105012-12,alias_regex,entity=BNP Paribas; reports=21; years=2018-2023
+bnpparibas,"BNP PARIBAS US WHOLESALE HOLDINGS, CORP.",35800-1004238,alias_regex,entity=BNP Paribas; reports=11; years=2018-2021
+boeing,AURORA FLIGHT SCIENCES,13836-1001826;75557-1926,alias_regex,"entity=Aurora Flight Sciences; reports=30; years=2017-2019; ownership_window=2017Q4..; excluded_years=2015,2016,2017"
+boeing,AURORA FLIGHT SCIENCES CORP.,18980-1127;401057985-0028;401057985-277,alias_regex,"entity=Aurora Flight Sciences; reports=19; years=2017-2019; ownership_window=2017Q4..; excluded_years=2015,2016,2017"
+boeing,BOEING,40020147-277,alias_regex,entity=Boeing; reports=43; years=2015-2025
+boeing,BOEING COMPANY,308775-1002905;400703105-238;400740216-90;401103493-494;5142-1005267;57475-1005166;6597-12;6597-6597;73271-113;76992-1002602,alias_regex,entity=Boeing; reports=247; years=2015-2025
+boeing,"BOEING COMPANY, THE",682-191,alias_regex,entity=Boeing; reports=12; years=2015-2017
+boeing,"BOEING DEFENSE, SPACE & SECURITY (FORMERLY KESTREL ENTERPRISES, INC. (KEI))",1182-1005130,alias_regex,entity=Boeing; reports=18; years=2015-2019
+boeing,THE BOEING COMPANY,11195-1014;24338-1006043;284950-1006450;307832-51;30906-57907;313271-54759;315717-1004571;400336564-59805;400531586-45775;400762305-378;400774330-51;401074020-12;401103235-152;401103272-24;401104211-12;401104288-1065;401104317-12;401105923-24;401109300-69485;63451-1004758;75557-1005496,alias_regex,entity=Boeing; reports=435; years=2015-2025
+boeing,THE BOEING COMPANY (F.N.A. AURORA FLIGHT SCIENCES CORP.),401057985-277,alias_regex,entity=Boeing; reports=22; years=2019-2024
+bofa,BANK OF AMERICA CORPORATION,20744-45826;26400-12;35800-808;400703105-277;400976792-773;70175-68288;9476-378,alias_regex,entity=Bank of America; reports=137; years=2015-2025
+bofa,"BANK OF AMERICA, N.A.",24486-1004785,alias_regex,entity=Bank of America; reports=1; years=2020-2020
+bp,BP AMERICA,33454-113;33454-87;401104145-36,alias_regex,entity=BP; reports=6; years=2017-2021
+bp,BP AMERICA INC,288896-1003174,alias_regex,entity=BP; reports=14; years=2015-2018
+bp,BP AMERICA INC.,294930-295513;400498454-51328;401103834-202;401107303-69419;4301-1003997;48678-12;5357-68448,alias_regex,entity=BP; reports=85; years=2018-2025
+bp,"BP AMERICA, INC",1171-51;12675-556;48678-12,alias_regex,entity=BP; reports=81; years=2015-2025
+bp,"BP AMERICA, INC.",11195-951;313271-1005053;31680-3871;37141-36;400359670-214;401103500-330;401104256-152;401105112-63,alias_regex,entity=BP; reports=177; years=2015-2025
+bp,BP CORPORATION NORTH AMERICA,400337566-0006;400337566-75,alias_regex,entity=BP; reports=6; years=2021-2022
+bp,BP CORPORATION NORTH AMERICA INC.,24123-1005597;294930-295513,alias_regex,entity=BP; reports=8; years=2017-2023
+bp,RSS GROUP ON BEHALF OF BP AMERICAS,292094-1000887,alias_regex_subcontract,"entity=BP; reports=3; years=2017-2017; subcontract via RSS GROUP; counted as activity, not spend (prime firm's income already includes it)"
+caterpillar,CATERPILLAR,12675-1002386;72975-113,alias_regex,entity=Caterpillar; reports=19; years=2015-2018
+caterpillar,CATERPILLAR INC,401110025-70620;8475-12,alias_regex,entity=Caterpillar; reports=24; years=2015-2025
+caterpillar,CATERPILLAR INC.,12675-1002386;294930-595;8475-12;8475-8475,alias_regex,entity=Caterpillar; reports=81; years=2016-2025
+caterpillar,"CATERPILLAR, INC.",294930-595;5357-1006498,alias_regex,entity=Caterpillar; reports=36; years=2015-2020
+chevron,CHEVRON,18433-315;35230-1004063,alias_regex,entity=Chevron; reports=16; years=2015-2017
+chevron,CHEVRON CORP.,24123-2156;313715-1005282,alias_regex,entity=Chevron; reports=33; years=2015-2021
+chevron,"CHEVRON U.S.A, INC",296271-1041,alias_regex,entity=Chevron; reports=1; years=2019-2019
+chevron,CHEVRON U.S.A. INC.,401104288-63458;9000-12,alias_regex,entity=Chevron; reports=46; years=2015-2025
+chevron,"CHEVRON U.S.A., INC.",284950-1006307;5357-1006168;9000-12,alias_regex,entity=Chevron; reports=67; years=2015-2025
+chevron,"CHEVRON USA, INC. (SUBSIDIARIES AND AFFILIATES OF ITS PARENT CHEVRON CORP.)",301994-125,alias_regex,entity=Chevron; reports=4; years=2015-2015
+chevron,"CHEVRON, U.S.A. INC.",682-1005787,alias_regex,entity=Chevron; reports=40; years=2015-2024
+chevron,"CHEVRON, USA, INC.",13610-1003426,alias_regex,entity=Chevron; reports=25; years=2019-2025
+chevron,"HARBINGER STRATEGIES, LLC ON BEHALF OF HESS CORPORATION",401108016-58452,alias_regex_subcontract,"entity=Hess; reports=8; years=2025-2025; ownership_window=2025Q3..; excluded_years=2024,2025; subcontract via HARBINGER STRATEGIES LLC; counted as activity, not spend (prime firm's income already includes it)"
+chevron,HESS CORPORATION,18466-1009456;320918-1005698;400976792-758;401103523-188;401105468-12;66352-12;682-51;72975-1840;76992-1002804;8453-1007565,alias_regex,"entity=Hess; reports=171; years=2025-2025; ownership_window=2025Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025"
+chevron,NOBLE ENERGY,27775-1775;39815-1003352;400359670-137;400637923-101;400767312-63;401054971-606;401103500-214;401103515-12;401103515-42791;401104571-63;76992-1002917,alias_regex,"entity=Noble Energy; reports=135; years=2020-2020; ownership_window=2020Q4..; excluded_years=2015,2016,2017,2018,2019,2020"
+chevron,NOBLE ENERGY INC.,8453-1006726,excluded_outside_ownership_window,entity=Noble Energy; reports=4; ownership_window=2020Q4..; excluded_years=2015
+chevron,"NOBLE ENERGY, INC.",323557-366;39941-1005534;400393847-12;400635921-330;4208-1005585;75557-1007577,alias_regex,"entity=Noble Energy; reports=70; years=2020-2020; ownership_window=2020Q4..; excluded_years=2015,2016,2017,2018,2019,2020"
+cisco,CISCO SYSTEMS,313715-1004963;313715-1005305;401104716-265,alias_regex,entity=Cisco; reports=22; years=2015-2025
+cisco,CISCO SYSTEMS INC,40013096-137,alias_regex,entity=Cisco; reports=42; years=2015-2025
+cisco,"CISCO SYSTEMS, INC",401103500-467;44300-12;65976-595,alias_regex,entity=Cisco; reports=95; years=2015-2025
+cisco,"CISCO SYSTEMS, INC.",400431088-188;400703105-59624;401103834-428;401104288-70430;401104703-226;401109033-64303;57475-1712;76992-65280;86196-1005650,alias_regex,entity=Cisco; reports=96; years=2015-2025
+citi,CITIBANK,65976-0672,alias_regex,entity=Citigroup; reports=18; years=2015-2019
+citi,CITIBANK N.A.,57475-64189,alias_regex,entity=Citigroup; reports=4; years=2025-2025
+citi,"CITIBANK, N.A.",65976-672,alias_regex,entity=Citigroup; reports=15; years=2021-2025
+citi,CITIGROUP,20881-1005002;49635-1004990,alias_regex,entity=Citigroup; reports=8; years=2015-2015
+citi,CITIGROUP GLOBAL MARKETS INC.,9476-191,alias_regex,entity=Citigroup; reports=18; years=2015-2019
+citi,CITIGROUP INC,401105068-48,alias_regex,entity=Citigroup; reports=9; years=2019-2021
+citi,CITIGROUP MANAGEMENT CORP,296271-36;296271-761,alias_regex,entity=Citigroup; reports=7; years=2015-2018
+citi,CITIGROUP MANAGEMENT CORP.,313271-1004277;400275286-12;400458208-87;400493431-241;400762305-152;401016871-253;401103523-24;401104100-48;5448-12;7257-1007425;91774-87,alias_regex,entity=Citigroup; reports=59; years=2015-2020
+citi,CITIGROUP MANAGEMENT CORP. (FORMERLY KNOWN AS CITIGROUP),57475-238,alias_regex,entity=Citigroup; reports=4; years=2015-2015
+citi,CITIGROUP MANAGEMENT CORPORATION,84775-1004416,alias_regex,entity=Citigroup; reports=1; years=2015-2015
+citi,CITIGROUP WASHINGTON INC.,296271-761;400493431-327;400762305-292;401016871-253;401016871-330;401103523-43001;5357-65633;65976-67652;75557-1006916,alias_regex,entity=Citigroup; reports=126; years=2016-2025
+citi,CITIGROUP WASHINGTON INC. (FORMERLY CITIGROUP INC.),75557-1006916,alias_regex,entity=Citigroup; reports=1; years=2017-2017
+citi,"CITIGROUP WASHINGTON, INC",401105068-48,alias_regex,entity=Citigroup; reports=15; years=2021-2024
+citi,"CITIGROUP WASHINGTON, INC.",284950-1006792;284950-284950;313271-1004862;400458208-164;401103932-12;49635-1005243;57475-1005840;73635-214;91774-1004710,alias_regex,entity=Citigroup; reports=191; years=2016-2025
+citi,"CITIGROUP WASHINGTON, INC. (CWI)",20881-1005193;20881-131704;5448-280,alias_regex,entity=Citigroup; reports=26; years=2016-2019
+citi,CORNERSTONE GOVERNMENT AFFAIRS OBO CITIGROUP INC.,400568701-191,alias_regex_subcontract,"entity=Citigroup; reports=1; years=2017-2017; subcontract via CORNERSTONE GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+citi,TWINLOGIC (ON BEHALF OF CITIGROUP MANAGEMENT CORP.),400637923-140,alias_regex_subcontract,"entity=Citigroup; reports=4; years=2015-2015; subcontract via TWINLOGIC; counted as activity, not spend (prime firm's income already includes it)"
+citi,"TWINLOGIC STRATEGIES, LLP ON BEHALF OF CITIGROUP MANAGEMENT CORP.",401006842-12;401006842-51,alias_regex_subcontract,"entity=Citigroup; reports=5; years=2015-2015; subcontract via TWINLOGIC STRATEGIES LLP; counted as activity, not spend (prime firm's income already includes it)"
+citi,"TWINLOGIC STRATEGIES, LLP ON BEHALF OF CITIGROUP WASHINGTON INC.",401006842-51,alias_regex_subcontract,"entity=Citigroup; reports=5; years=2016-2017; subcontract via TWINLOGIC STRATEGIES LLP; counted as activity, not spend (prime firm's income already includes it)"
+cocacola,COCA-COLA,86196-1005014;86196-621,alias_regex,entity=Coca-Cola; reports=40; years=2015-2024
+cocacola,THE COCA COLA COMPANY,294930-51;30906-1009673;401104114-125,alias_regex,entity=Coca-Cola; reports=103; years=2015-2025
+cocacola,THE COCA-COLA COMPANY,13836-1002246;18980-330;320918-66618;35230-1004455;400427058-36;400703105-164;401103291-12;401103500-544;41454-1014;76855-1006004;9751-12,alias_regex,entity=Coca-Cola; reports=209; years=2015-2025
+comcast,COMCAST,401054971-87;41113-191,alias_regex,entity=Comcast; reports=4; years=2015-2015
+comcast,COMCAST (FORMERLY NBC UNIVERSAL),322911-90,alias_regex,entity=Comcast; reports=3; years=2015-2015
+comcast,COMCAST (THROUGH FTI GOVERNMENT AFFAIRS),401055976-24,alias_regex_subcontract,"entity=Comcast; reports=2; years=2015-2015; subcontract via FTI GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+comcast,COMCAST CORP.,401054971-87,alias_regex,entity=Comcast; reports=20; years=2015-2020
+comcast,COMCAST CORP. (THROUGH FTI GOVERNMENT AFFAIRS),401055976-24,alias_regex_subcontract,"entity=Comcast; reports=18; years=2015-2019; subcontract via FTI GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+comcast,COMCAST CORPORATION,10057-12;12675-277;18466-1007553;18570-1154;2057-1005041;21632-1006028;285871-1002804;287394-137;288613-381;293335-443;294495-90;294930-295222;295053-113;299115-12;30187-1077;301994-140;304554-36;306636-1005243;307730-1001752;313715-1005561;314738-583;314911-1004342;322693-51;39837-1009141;400425031-51;400431088-113;400534596-862;400599826-48;400703107-101;400783359-12;400797392-24;400918672-125;400976792-12;401036920-51;401103077-51;401103360-003;401103360-21;401103360-24;401103493-63;401103500-59453;401103523-42885;401103692-51;401103886-24;401103938-226;401103952-10052;401103952-63;401104274-12;401104288-59778;401104313-60219;401104362-36;401104428-59577;401104762-36;401105514-24;401105566-24;401105898-87;401106507-10057;401106507-59029;401106545-50929;401107182-53841;401107198-53825;401107432-56106;401108299-59152;401109357-65296;41113-191;41408-1004823;41454-1005472;48827-1006613;5153-1006361;53174-606;5357-1193;682-1008671;7257-1332;76833-1002882;76855-2637,alias_regex,entity=Comcast; reports=1612; years=2015-2025
+comcast,COMCAST CORPORATION (D.B.A. COMCAST COMMUNICATIONS CORPORATION),7257-1332,alias_regex,entity=Comcast; reports=5; years=2015-2016
+comcast,COMCAST CORPORATION (FORMERLY COMCAST),41113-191,alias_regex,entity=Comcast; reports=12; years=2015-2018
+comcast,COMCAST NBCUNIVERSAL,401105607-12,alias_regex,entity=Comcast; reports=21; years=2020-2025
+comcast,"COMCAST NBCUNIVERSAL, FORMERLY REPORTED AS NBCUNIVERSAL MEDIA, LLC",30906-1011031,alias_regex,entity=Comcast; reports=1; years=2020-2020
+comcast,NBC UNIVERSAL,314911-1003426,alias_regex,entity=Comcast; reports=2; years=2015-2015
+conocophillips,CONOCOPHILLIPS,1182-1006183;16896-1007375;31428-12;31428-31428;400745232-36;400786367-125;401109653-67795;7257-61678;82170-1002285,alias_regex,entity=ConocoPhillips; reports=196; years=2015-2025
+conocophillips,MARATHON OIL,314237-1004990;400774330-045;400774330-12;400774330-470,excluded_outside_ownership_window,"entity=Marathon Oil; reports=16; ownership_window=2025Q1..; excluded_years=2015,2016"
+conocophillips,MARATHON OIL COMPANY,12631-1006450;297294-52118;34158-1005472;401104387-24,excluded_outside_ownership_window,"entity=Marathon Oil; reports=35; ownership_window=2025Q1..; excluded_years=2017,2018,2019,2020,2021,2022,2023,2024"
+conocophillips,MARATHON OIL CORPORATION,15851-113;15851-381;27775-951;39702-12;48827-1006601,excluded_outside_ownership_window,"entity=Marathon Oil; reports=53; ownership_window=2025Q1..; excluded_years=2015,2016,2017,2018,2021,2022,2023,2024"
+corteva,CORTEVA AGRISCIENCE,18466-1009382;400531586-1561;400749244-191;75557-1546,alias_regex,entity=Corteva; reports=50; years=2019-2025
+corteva,"CORTEVA AGRISCIENCE (FORMERLY DOW AGROSCIENCES, LLC)",75557-1546,alias_regex,entity=Corteva; reports=2; years=2019-2019
+corteva,CORTEVA AGRISCIENCE LLC,11377-67867;400531586-1561,alias_regex,entity=Corteva; reports=7; years=2025-2025
+corteva,CORTEVA AGRISCIENCE LLC (FKA CORTEVA AGRISCIENCE),75557-1546,alias_regex,entity=Corteva; reports=13; years=2021-2024
+corteva,CORTEVA AGRISCIENCE LLC (FKA E. I. DU PONT DE NEMOURS AND COMPANY),12813-12,alias_regex,entity=Corteva; reports=17; years=2021-2025
+corteva,"CORTEVA, INC.",12813-12,alias_regex,entity=Corteva; reports=1; years=2019-2019
+corteva,"DOW AGRO SCIENCES, LLC",818-3033,excluded_outside_ownership_window,entity=Dow AgroSciences; reports=1; ownership_window=2019Q3..; excluded_years=2015
+corteva,DOW AGROSCIENCES,400749244-137;400900630-48,excluded_outside_ownership_window,"entity=Dow AgroSciences; reports=19; ownership_window=2019Q3..; excluded_years=2015,2016,2017,2018,2019"
+corteva,"DOW AGROSCIENCES, LLC",682-1007883;75557-1546,excluded_outside_ownership_window,"entity=Dow AgroSciences; reports=10; ownership_window=2019Q3..; excluded_years=2017,2018,2019"
+corteva,"E. I. DU PONT DE NEMOURS AND COMPANY (FKA CORTEVA, INC.)",12813-12,alias_regex,entity=E. I. du Pont; reports=9; years=2019-2021; ownership_window=2019Q3..
+corteva,E. I. DUPONT DENEMOURS & COMPANY,18980-1004226;401103751-12813;401103751-48,alias_regex,"entity=E. I. du Pont; reports=18; years=2019-2021; ownership_window=2019Q3..; excluded_years=2018,2019"
+corteva,E.I. DU PONT DE NEMOURS & CO.,11388-470;12813-12,excluded_outside_ownership_window,"entity=E. I. du Pont; reports=22; ownership_window=2019Q3..; excluded_years=2015,2016,2017,2018,2019"
+corteva,E.I. DU PONT DE NEMOURS AND COMPANY,86196-1006257,excluded_outside_ownership_window,"entity=E. I. du Pont; reports=7; ownership_window=2019Q3..; excluded_years=2017,2018,2019"
+danone,DANONE,401103585-75,alias_regex,entity=Danone; reports=4; years=2016-2017
+danone,DANONE NORTH AMERICA,2057-68091;30906-1010611,alias_regex,entity=Danone; reports=18; years=2019-2025
+danone,DANONE NORTH AMERICA PBC (FORMERLY KNOWN AS DANONEWAVE),297033-137,alias_regex,entity=Danone; reports=5; years=2018-2019
+danone,DANONE NORTH AMERICA PUBLIC BENEFIT CORPORATION,314237-1006183,alias_regex,entity=Danone; reports=27; years=2019-2025
+danone,"DANONE NORTH AMERICA, PBC",401104841-12,alias_regex,entity=Danone; reports=32; years=2018-2025
+danone,DANONEWAVE (FORMERLY KNOWN AS WHITEWAVE FOODS),297033-137,alias_regex,entity=Danone; reports=4; years=2017-2018
+danone,WHITEWAVE FOODS,297033-137,excluded_outside_ownership_window,"entity=WhiteWave; reports=9; ownership_window=2017Q2..; excluded_years=2015,2016,2017"
+deutschebank,DEUTSCHE BANK SECURITIES INC.,20744-1005077,alias_regex,entity=Deutsche Bank; reports=33; years=2015-2023
+deutschebank,DEUTSCHE BANK USA,5357-55417,alias_regex,entity=Deutsche Bank; reports=12; years=2023-2025
+deutschebank,DEUTSCHE BANK USA (FKA DEUTSCHE BANK SECURITIES INC.),20744-1005077,alias_regex,entity=Deutsche Bank; reports=7; years=2023-2024
+dow,AKIN GUMP ON BEHALF OF DOWDUPONT,401104209-113,alias_regex_subcontract,"entity=Dow; reports=2; years=2017-2018; subcontract via AKIN GUMP; counted as activity, not spend (prime firm's income already includes it)"
+dow,"DOW AGRO SCIENCES, LLC",818-3033,alias_regex,entity=Dow AgroSciences; reports=1; years=2015-2015; ownership_window=..2019Q2
+dow,DOW AGROSCIENCES,400749244-137;400900630-48,alias_regex,entity=Dow AgroSciences; reports=19; years=2015-2019; ownership_window=..2019Q2
+dow,"DOW AGROSCIENCES, LLC",682-1007883;75557-1546,alias_regex,entity=Dow AgroSciences; reports=10; years=2017-2019; ownership_window=..2019Q2
+dow,DOW CHEMICAL,45983-936,alias_regex,entity=Dow; reports=8; years=2015-2016
+dow,DOW CHEMICAL COMPANY,308070-1002487;57475-1005216,alias_regex,entity=Dow; reports=39; years=2015-2023
+dow,DOW INC.,57475-1005216,alias_regex,entity=Dow; reports=12; years=2023-2025
+dow,"DOW INC., FORMERLY REPORTED AS DOW CHEMICAL COMPANY",57475-1005216,alias_regex,entity=Dow; reports=1; years=2022-2022
+dow,"DOWDUPONT (FKA DOW AGROSCIENCES, LLC)",682-1007883,alias_regex,entity=Dow; reports=2; years=2017-2017
+dow,THE DOW CHEMICAL COMPANY,12527-12;12675-1002436;18466-1006171;290070-1003150;401054971-660;401103500-568;401104313-87;6143-188;682-3173,alias_regex,entity=Dow; reports=224; years=2015-2025
+dow,"THE DOW CHEMICAL COMPANY, DBA DOW",12527-12,alias_regex,entity=Dow; reports=28; years=2019-2025
+dtelekom,CAUTHEN FORBES & WILLIAMS ON BEHALF OF T-MOBILE,400976792-253,alias_regex_subcontract,"entity=T-Mobile US; reports=4; years=2015-2015; subcontract via CAUTHEN FORBES AND WILLIAMS; counted as activity, not spend (prime firm's income already includes it)"
+dtelekom,"ML STRATEGIES, LLC (ON BEHALF OF T-MOBILE USA, INC.)",401104425-0005;401104425-51,alias_regex_subcontract,"entity=T-Mobile US; reports=22; years=2017-2022; subcontract via ML STRATEGIES LLC; counted as activity, not spend (prime firm's income already includes it)"
+dtelekom,SPRINT,287394-51;40013096-280;401104288-428;401104430-0003;401104430-36;46585-532;61458-3638812;61458-62328,alias_regex,"entity=Sprint; reports=87; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+dtelekom,SPRINT CORPORATION,11195-1006070;36388-12;37141-140;400508502-48;400599826-140;401036920-24;401103500-556;401105341-51,alias_regex,"entity=Sprint; reports=98; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+dtelekom,SPRINT CORPORATION (FORMERLY KNOWN AS SPRINT NEXTEL CORPORATION),309275-1004571,excluded_outside_ownership_window,"entity=Sprint; reports=19; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019"
+dtelekom,SPRINT CORPORATION (FORMERLY KNOWN AS SPRINT NEXTEL),66773-1154,alias_regex,"entity=Sprint; reports=22; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+dtelekom,SPRINT CORPORATION (FORMERLY SPRINT),400493431-188,alias_regex,"entity=Sprint; reports=23; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+dtelekom,T-MOBILE,284551-1005038;400976792-253;401103523-42908;401103565-785;401104726-87;61458-62836;63451-1004835;7257-1006803;82135-1004164,alias_regex,entity=T-Mobile US; reports=238; years=2015-2025
+dtelekom,T-MOBILE CORPORATION,30187-936,alias_regex,entity=T-Mobile US; reports=4; years=2015-2015
+dtelekom,T-MOBILE INC.,287394-90,alias_regex,entity=T-Mobile US; reports=21; years=2015-2020
+dtelekom,T-MOBILE US,18466-1010344,alias_regex,entity=T-Mobile US; reports=20; years=2021-2025
+dtelekom,T-MOBILE US INC.,401103565-785,alias_regex,entity=T-Mobile US; reports=3; years=2025-2025
+dtelekom,T-MOBILE US INC. (FORMERLY T-MOBILE),401103565-785,alias_regex,entity=T-Mobile US; reports=4; years=2024-2025
+dtelekom,"T-MOBILE US, INC.",16896-1006943;18422-1007972;287394-90;401103105-24;42865-113,alias_regex,entity=T-Mobile US; reports=67; years=2015-2025
+dtelekom,"T-MOBILE US, INC. (FORMERLY T-MOBILE, INC.)",287394-90,alias_regex,entity=T-Mobile US; reports=15; years=2020-2023
+dtelekom,T-MOBILE USA,25306-1005014;296497-36;86210-238,alias_regex,entity=T-Mobile US; reports=94; years=2015-2025
+dtelekom,"T-MOBILE USA, INC",66773-2486,alias_regex,entity=T-Mobile US; reports=9; years=2020-2022
+dtelekom,"T-MOBILE USA, INC.",11628-1026;20562-0025;20562-0381;20562-381;2057-1005965;25603-1005558;288613-1004963;31680-1006994;320918-1005395;400493431-443;400534596-898;400671007-315;400713141-393;400774330-277;401103475-188;401103493-152;401103693-51;401103952-36;401104210-24;401104288-64265;401104425-51785;401104581-87;401104735-24;401104785-265;401105159-113;401105341-75;401105569-52862;401105637-51091;401105805-36;401105975-12;401107279-0005;401107279-54689;401108410-61308;401108969-63382;41534-1004583;59158-12;70131-280,alias_regex,entity=T-Mobile US; reports=786; years=2015-2025
+dtelekom,"TAUZIN CONSULTANTS (ON BEHALF OF T-MOBILE USA, INC.)",400786367-90,alias_regex_subcontract,"entity=T-Mobile US; reports=24; years=2015-2021; subcontract via TAUZIN CONSULTANTS; counted as activity, not spend (prime firm's income already includes it)"
+dtelekom,TWIN LOGIC STRATEGIES ON BEHALF OF SPRINT,401006842-101,alias_regex_subcontract,"entity=Sprint; reports=24; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020; subcontract via TWIN LOGIC STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+dtelekom,"TWINLOGIC STRATEGIES (ON BEHALF OF SPRINT CORPORATION, FORMERLY SPRINT)",400637923-90,excluded_outside_ownership_window,"entity=Sprint; reports=4; ownership_window=2020Q2..; excluded_years=2015; subcontract via TWINLOGIC STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+dtelekom,"TWINLOGIC STRATEGIES ON BEHALF OF T-MOBILE USA, INC",401006842-265,alias_regex_subcontract,"entity=T-Mobile US; reports=21; years=2020-2025; subcontract via TWINLOGIC STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+dupont,DUPONT,297033-1001737;60550-4632;86196-1005154,alias_regex,entity=DuPont; reports=21; years=2015-2018
+dupont,"DUPONT DE NEMOURS, INC.",18466-66551;401105301-12,alias_regex,entity=DuPont; reports=30; years=2019-2025
+dupont,"DUPONT DE NEMOURS, LLC",60550-1006028,alias_regex,entity=DuPont; reports=9; years=2020-2022
+dupont,"DUPONT SPECIALTY PRODUCTS USA, LLC",401105896-51180,alias_regex,entity=DuPont; reports=16; years=2022-2025
+dupont,DUPONT SPECIALTY PRODUCTS(PREVIOUSLY REPORTED AS E.I. DU PONT DE NEMOURS AND CO),86196-1006257,alias_regex,entity=DuPont; reports=23; years=2019-2025
+dupont,DUPONT USA,53755-0006;53755-90,alias_regex,entity=DuPont; reports=4; years=2017-2017
+dupont,"E. I. DU PONT DE NEMOURS AND COMPANY (FKA CORTEVA, INC.)",12813-12,excluded_outside_ownership_window,"entity=E. I. du Pont; reports=9; ownership_window=..2019Q2; excluded_years=2019,2020,2021"
+dupont,E. I. DUPONT DENEMOURS & COMPANY,18980-1004226;401103751-12813;401103751-48,alias_regex,"entity=E. I. du Pont; reports=18; years=2018-2019; ownership_window=..2019Q2; excluded_years=2019,2020,2021"
+dupont,E.I. DU PONT DE NEMOURS & CO.,11388-470;12813-12,alias_regex,entity=E. I. du Pont; reports=22; years=2015-2019; ownership_window=..2019Q2
+dupont,E.I. DU PONT DE NEMOURS AND COMPANY,86196-1006257,alias_regex,entity=E. I. du Pont; reports=7; years=2017-2019; ownership_window=..2019Q2
+dupont,"SKADDEN, ARPS, SLATE, MEAGHER & FLOM, LLP (ON BEHALF OF DUPONT)",86196-1006082,alias_regex_subcontract,"entity=DuPont; reports=6; years=2016-2017; subcontract via SKADDEN ARPS SLATE MEAGHER AND FLOM LLP; counted as activity, not spend (prime firm's income already includes it)"
+enel,"ENEL GREEN POWER NORTH AMERICA, INC. & AFFILIATES (F/K/A ENEL NORTH AMERICA, INC",294930-295398,alias_regex,entity=Enel; reports=5; years=2017-2018
+enel,"ENEL GREEN POWER NORTH AMERICA, INC. AND ITS AFFILIATES",400398877--12;400398877-12,alias_regex,entity=Enel; reports=19; years=2015-2019
+enel,"ENEL NORTH AMERICA, INC. AND ITS AFFILIATES",400398877-12,alias_regex,entity=Enel; reports=18; years=2019-2024
+eni,ENI,401104053-12,alias_regex,entity=Eni; reports=20; years=2016-2021
+eni,ENI US OPERATING CO. INC.,401104053-12,alias_regex,entity=Eni; reports=19; years=2021-2025
+equinor,EQUINOR,401109653-68530,alias_regex,entity=Equinor; reports=1; years=2025-2025
+equinor,EQUINOR ASA (FORMERLY STATOIL ASA),11195-1005852,alias_regex,entity=Equinor; reports=23; years=2019-2024
+equinor,"EQUINOR GULF SERVICES, LLC (FRA STATOIL GULF SERVICES, LLC)",7257-1006943,alias_regex,entity=Equinor; reports=3; years=2018-2018
+equinor,EQUINOR US OPERATIONS LLC,1171-1006257;289990-12;401104556-45671;401107367-54685;6837-1006120;7257-1006943,alias_regex,entity=Equinor; reports=102; years=2018-2025
+equinor,EQUINOR US OPERATIONS LLC (FKA: EQUINOR US HOLDINGS INC.),1171-1006257,alias_regex,entity=Equinor; reports=2; years=2019-2019
+equinor,"EQUINOR US OPERATIONS LLC (FRA EQUINOR GULF SERVICES, LLC)",7257-1006943,alias_regex,entity=Equinor; reports=18; years=2019-2023
+equinor,EQUINOR US OPERATIONS LLC FKA EQUINOR,401109653-68530,alias_regex,entity=Equinor; reports=1; years=2025-2025
+equinor,EQUINOR WIND US LLC,7257-1008124,alias_regex,entity=Equinor; reports=9; years=2023-2025
+equinor,EQUINOR WIND US LLC (FRA STATOIL WIND US LLC),7257-1008124,alias_regex,entity=Equinor; reports=20; years=2018-2023
+equinor,STATOIL ASA,11195-1005852;289990-12;289990-289990,alias_regex,entity=Equinor; reports=15; years=2015-2018
+equinor,"STATOIL GULF SERVICES, LLC",7257-1006943,alias_regex,entity=Equinor; reports=13; years=2015-2018
+equinor,STATOIL WIND US LLC,7257-1008124,alias_regex,entity=Equinor; reports=4; years=2017-2018
+ericsson,ERICSSON INC.,1171-1005294;13791-12;314237-1006893;5357-65634;70131-470;7257-1009328,alias_regex,entity=Ericsson; reports=107; years=2015-2025
+ericsson,"ERICSSON, INC.",307114-1004532,alias_regex,entity=Ericsson; reports=16; years=2015-2019
+exxon,"DCI GROUP, LLC, ON BEHALF OF EXXONMOBIL",311850-1004672,alias_regex_subcontract,"entity=ExxonMobil; reports=5; years=2015-2016; subcontract via DCI GROUP LLC; counted as activity, not spend (prime firm's income already includes it)"
+exxon,EXXON MOBIL,24486-1003818;308913-51;319836-12;61174-1941,alias_regex,entity=ExxonMobil; reports=53; years=2015-2022
+exxon,EXXON MOBIL COPORATION,401103801-101,alias_regex,entity=ExxonMobil; reports=1; years=2018-2018
+exxon,EXXON MOBIL CORP,14017-12;14017-14017;25306-532;25603-1127;401104425-0003;401104425-36;401109872-69247;682-660;7257-1010751,alias_regex,entity=ExxonMobil; reports=108; years=2015-2025
+exxon,EXXON MOBIL CORP.,400703105-60481,alias_regex,entity=ExxonMobil; reports=7; years=2024-2025
+exxon,EXXON MOBIL CORPORATION,18978-1004354;293335-583;307114-1001347;309058-36;40024191-152;40043341-51;400531586-53633;400918672-660;401103475-696;401103523-54068;41454-1006842;72111-1004087,alias_regex,entity=ExxonMobil; reports=221; years=2015-2025
+exxon,EXXONMOBIL,36710-64377;72053-1005608;75557-1007678,alias_regex,entity=ExxonMobil; reports=32; years=2015-2025
+exxon,EXXONMOBIL CORPORATION,313715-1005813;401103235-113;401103565-1038;401106132-64774;57475-1002624,alias_regex,entity=ExxonMobil; reports=124; years=2015-2025
+exxon,HUNTON & WILLIAMS LLP (ON BEHALF OF EXXON MOBIL CORPORATION),23202-113,alias_regex_subcontract,"entity=ExxonMobil; reports=7; years=2016-2017; subcontract via HUNTON AND WILLIAMS LLP; counted as activity, not spend (prime firm's income already includes it)"
+exxon,"HUNTON ANDREWS KURTH LLP (FORMERLY HUNTON & WILLIAMS LLP, BEHALF OF EXXON MOBIL)",23202-113,alias_regex_subcontract,"entity=ExxonMobil; reports=20; years=2018-2022; subcontract via HUNTON ANDREWS KURTH LLP FORMERLY HUNTON AND WILLIAMS LLP; counted as activity, not spend (prime firm's income already includes it)"
+exxon,MCGUIREWOODS LLP (ON BEHALF OF EXXON MOBIL),24486-1003818,alias_regex_subcontract,"entity=ExxonMobil; reports=2; years=2015-2015; subcontract via MCGUIREWOODS LLP; counted as activity, not spend (prime firm's income already includes it)"
+exxon,PIONEER NATURAL RESOURCES,27775-1000798;401103826-36,excluded_outside_ownership_window,"entity=Pioneer Natural Resources; reports=17; ownership_window=2024Q2..; excluded_years=2015,2016,2017,2018,2019"
+exxon,PIONEER NATURAL RESOURCES COMPANY,82170-1002350,alias_regex,"entity=Pioneer Natural Resources; reports=38; years=2024-2024; ownership_window=2024Q2..; excluded_years=2015,2016,2017,2018,2019,2020,2021,2022,2023,2024"
+ford,FORD MOTOR COMPANY,1171-1356;15133-12;15133-15133;294495-1002843;297294-1001066;313271-137;32098-1008885;401078027-12;401103120-12;401103327-51;401103500-366;401103565-67163;401104428-125;401104454-63;401104869-12;401104869-90;401105121-202;41454-57655;65976-0378;7304-1004342,alias_regex,entity=Ford; reports=374; years=2015-2025
+ford,"FORD MOTOR COMPANY, INC.",401105569-65167,alias_regex,entity=Ford; reports=4; years=2025-2025
+ge,GE  AVIATION,400427058-48,alias_regex,entity=General Electric; reports=23; years=2015-2020
+ge,GE AEROSPACE,284950-44560;400531586-55144;401103523-90;401107502-56130;60550-60764,alias_regex,entity=General Electric; reports=40; years=2023-2025
+ge,GE AEROSPACE (FORMERLY GENERAL ELECTRIC),401103523-90,alias_regex,entity=General Electric; reports=2; years=2024-2024
+ge,GE AEROSPACE (FORMERLY KNOWN AS GE AVIATION),284950-44560,alias_regex,entity=General Electric; reports=1; years=2024-2024
+ge,GE AVIATION,18422-1008276;316057-1004746;40020147-330;400586788-24,alias_regex,entity=General Electric; reports=81; years=2015-2024
+ge,GE AVIATION (FORMERLY KNOWN AS GENERAL ELECTRIC COMPANY),284950-44560,alias_regex,entity=General Electric; reports=1; years=2024-2024
+ge,GE HEALTHCARE,400693064-48,alias_regex,"entity=GE HealthCare; reports=26; years=2019-2022; ownership_window=..2022Q4; excluded_years=2023,2024,2025"
+ge,GE HEALTHCARE PHARMACEUTICAL DIAGNOSTICS,21632-1006031,alias_regex,entity=GE HealthCare; reports=13; years=2020-2022; ownership_window=..2022Q4; excluded_years=2023
+ge,GE HEALTHCARE TECHNOLOGIES INC.,401107408-54962,excluded_outside_ownership_window,"entity=GE HealthCare; reports=12; ownership_window=..2022Q4; excluded_years=2023,2024,2025"
+ge,GE VERNOVA INTERNATIONAL LLC,24486-66590;401108684-60742,excluded_outside_ownership_window,"entity=GE Vernova; reports=10; ownership_window=..2024Q1; excluded_years=2024,2025"
+ge,GE VERNOVA INTERNATIONAL LLC-PREVIOUSLY REPORTED AS GE RENEWABLES NORTH AMERICA,65976-53488,excluded_outside_ownership_window,entity=GE Vernova; reports=1; ownership_window=..2024Q1; excluded_years=2025
+ge,"GE VERNOVA INTERNATIONAL, LLC",401103585-69035,excluded_outside_ownership_window,entity=GE Vernova; reports=2; ownership_window=..2024Q1; excluded_years=2025
+ge,GENERAL ELECTRIC,313271-1004606;401103523-90;51478-1004253,alias_regex,entity=General Electric; reports=77; years=2015-2024
+ge,GENERAL ELECTRIC CO,11195-292,alias_regex,entity=General Electric; reports=9; years=2020-2022
+ge,GENERAL ELECTRIC COMPANY,10764-636;11377-1004850;15997-12;308992-0057;308992-1005077;313271-1004606;313715-1004847;31680-1006601;35560-1004152;35800-1003771;39941-1006893;400359670-12;400359670-90;401031910-12;401103608-12;401103608-42874;401104313-327;401104854-24;401105417-164;401107682-56214;5153-1006260;57475-532;60550-1005840;65976-0137;65976-137;72975-12;73271-1006397,alias_regex,entity=General Electric; reports=340; years=2015-2025
+ge,GENERAL ELECTRIC COMPANY (FKA GE AVIATION),400586788-24,alias_regex,entity=General Electric; reports=5; years=2024-2025
+ge,GENERAL ELECTRIC COMPANY (FORMERLY KNOWN AS GENERAL ELECTRIC CAPITAL CORPORATION,35800-1003771,alias_regex,entity=General Electric; reports=1; years=2015-2015
+ge,GENERAL ELECTRIC COMPANY (INCLUDING SUBSIDIARIES),15997-12;37232-1003198,alias_regex,entity=General Electric; reports=41; years=2015-2025
+ge,GENERAL ELECTRIC COMPANY (PREVIOUSLY REPORTED AS GE AVIATION),315717-1005204;41454-1006016,alias_regex,entity=General Electric; reports=60; years=2015-2023
+ge,GENERAL ELECTRIC COMPANY DBA GE AEROSPACE,682-67359,alias_regex,entity=General Electric; reports=3; years=2025-2025
+ge,GENERAL ELECTRIC CORPORATION,401103600-90,alias_regex,entity=General Electric; reports=1; years=2017-2017
+ge,"MORAN GLOBAL STRATEGIES, INC. (O/B/O GE AEROSPACE)",401105820-56278,alias_regex_subcontract,"entity=General Electric; reports=11; years=2023-2025; subcontract via MORAN GLOBAL STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+generaldynamics,CSRA INC.,401104731-12;401104731-43898,alias_regex,"entity=CSRA; reports=4; years=2018-2018; ownership_window=2018Q2..; excluded_years=2017,2018"
+generaldynamics,"CSRA, INC",18466-1008377,alias_regex,"entity=CSRA; reports=7; years=2018-2018; ownership_window=2018Q2..; excluded_years=2016,2017,2018"
+generaldynamics,"CSRA, INC.",75557-1006830,alias_regex,"entity=CSRA; reports=7; years=2018-2018; ownership_window=2018Q2..; excluded_years=2016,2017,2018"
+generaldynamics,"CSRA, LLC (FORMALLY KNOWN AS CSC GOVERNMENT SOLUTIONS, LLC)",307832-1004975,excluded_outside_ownership_window,"entity=CSRA; reports=7; ownership_window=2018Q2..; excluded_years=2016,2017,2018"
+generaldynamics,FIDELIS GOVERNMENT RELATIONS (ON BEHALF OF GENERAL DYNAMICS),401104284-48,alias_regex_subcontract,"entity=General Dynamics; reports=3; years=2017-2017; subcontract via FIDELIS GOVERNMENT RELATIONS; counted as activity, not spend (prime firm's income already includes it)"
+generaldynamics,GENERAL DYNAMICS,10800-1977;13836-265;2194-1004785;24338-1006031;285871-1002894;293335-54921;306011-277;311850-1001216;313271-1005178;31680-3158;31895-12;39837-6232;400586788-12;400774330-24;401103272-12;401103280-12;401103295-113;401103523-87;401103598-113;401107502-55723;401107574-56081;401108299-68095;50796-1005674;5153-1006257;75557-2260,alias_regex,entity=General Dynamics; reports=624; years=2015-2025
+generaldynamics,GENERAL DYNAMICS CORP,15986-12,alias_regex,entity=General Dynamics; reports=44; years=2015-2025
+generaldynamics,GENERAL DYNAMICS CORP.,87814-113,alias_regex,entity=General Dynamics; reports=44; years=2015-2025
+generaldynamics,GENERAL DYNAMICS CORPORATION,2057-1005980;400918672-265;401079030-12;401104428-59575;41454-1005992;53163-48;58432-1005267;73271-238,alias_regex,entity=General Dynamics; reports=191; years=2015-2025
+generaldynamics,GENERAL DYNAMICS INFORMATION TECHNOLOGY,75557-1007716;75557-2260,alias_regex,entity=General Dynamics; reports=12; years=2019-2021
+generaldynamics,GENERAL DYNAMICS LAND SYSTEMS INC.,401109039-66529,alias_regex,entity=General Dynamics; reports=3; years=2025-2025
+gilead,GILEAD,400701097-63,alias_regex,entity=Gilead; reports=15; years=2015-2018
+gilead,GILEAD SCIENCES,30212-1005460;31680-1005914;401104726-0004;401104726-48,alias_regex,entity=Gilead; reports=20; years=2015-2020
+gilead,GILEAD SCIENCES INC.,400703105-152;401103938-280,alias_regex,entity=Gilead; reports=74; years=2016-2025
+gilead,"GILEAD SCIENCES, INC",79610-811,alias_regex,entity=Gilead; reports=18; years=2015-2019
+gilead,"GILEAD SCIENCES, INC.",12675-1002537;20744-54362;286096-381;287177-12;293335-1005421;301697-226;304736-1005317;400605842-327;400976792-1522;401103321-51299;401103834-60766;401104313-66842;401105234-12;46038-1003934;46038-811;5131-2664;5357-10006423;5357-1006423;65976-3122;682-7335,alias_regex,entity=Gilead; reports=371; years=2015-2025
+gilead,"GILEAD SCIENCES, INC. FORMERLY REPORTED AS KITE PHARMA, INC.",5131-2664,alias_regex,entity=Gilead; reports=1; years=2019-2019
+gilead,"KITE PHARMA, INC.",401104745-12;5131-2664,alias_regex,"entity=Kite; reports=18; years=2017-2019; ownership_window=2017Q4..; excluded_years=2016,2017"
+gilead,"TIBER CREEK GROUP ON BEHALF OF GILEAD SCIENCES, INC.",401109669-67738,alias_regex_subcontract,"entity=Gilead; reports=3; years=2025-2025; subcontract via TIBER CREEK GROUP; counted as activity, not spend (prime firm's income already includes it)"
+gm,CRUISE LLC,1171-55318;401104428-59579;401104716-164;401105707-12;48827-59403,alias_regex,entity=Cruise; reports=47; years=2020-2025
+gm,GENERAL MOTORS,13712-1005228;13712-32310;400774330-404;401104049-12;401105068-191,alias_regex,entity=General Motors; reports=116; years=2015-2025
+gm,GENERAL MOTORS COMPANY,13836-1001966;294930-975;306636-1005041;307730-1002044;309275-1004621;400424029-75;400472332-12;400547641-253;400694066-140;401103500-924;401105158-48;401105330-36;401105341-12;401108914-64210;62778-238;7257-1010383;76992-1002436;85071-1003364,alias_regex,entity=General Motors; reports=336; years=2015-2025
+gm,GENERAL MOTORS CORP.,12675-137,alias_regex,entity=General Motors; reports=8; years=2015-2016
+gm,GENERAL MOTORS CORPORATION,51877-36,alias_regex,entity=General Motors; reports=4; years=2015-2015
+gm,GENERAL MOTORS LLC,17443-1004330;18466-1007767;289773-1005418;400713141-494;401103475-66612;401104288-1115;401104313-67423;401105417-494;401109795-68232,alias_regex,entity=General Motors; reports=57; years=2015-2025
+gm,"GENERAL MOTORS, LLC",293335-75;400762305-253,alias_regex,entity=General Motors; reports=46; years=2015-2025
+gm,GM DEFENSE LLC,2194-51801,alias_regex,entity=General Motors; reports=6; years=2022-2023
+gm,"GM DEFENSE, LLC",29777-1005127;75557-1007906,alias_regex,entity=General Motors; reports=36; years=2020-2025
+gm,TOWER 19 ON BEHALF OF GENERAL MOTORS COMPANY,401104374-87,alias_regex_subcontract,"entity=General Motors; reports=26; years=2019-2025; subcontract via TOWER 19; counted as activity, not spend (prime firm's income already includes it)"
+goldman,GOLDMAN SACHS,401103600-0004;401103600-0048,alias_regex,entity=Goldman Sachs; reports=21; years=2015-2020
+goldman,GOLDMAN SACHS & CO,37232-36,alias_regex,entity=Goldman Sachs; reports=9; years=2015-2017
+goldman,GOLDMAN SACHS & CO. LLC,37232-36,alias_regex,entity=Goldman Sachs; reports=24; years=2017-2023
+goldman,"GOLDMAN SACHS GROUP, INC.",1182-1006358;30952-936;76992-1003022,alias_regex,entity=Goldman Sachs; reports=30; years=2015-2020
+goldman,"GOLDMAN, SACHS & CO.",9476-381,alias_regex,entity=Goldman Sachs; reports=1; years=2017-2017
+goldman,"GOLDMAN, SACHS & COMPANY",16178-1004428,alias_regex,entity=Goldman Sachs; reports=7; years=2015-2016
+goldman,"THE GOLDMAN SACHS GROUP, INC",401103523-42897,alias_regex,entity=Goldman Sachs; reports=44; years=2015-2025
+goldman,"THE GOLDMAN SACHS GROUP, INC.",12675-140;2057-1006245;296271-710;313271-1004315;313976-12;315717-1004583;40020141-660;400923683-75;65976-2221,alias_regex,entity=Goldman Sachs; reports=236; years=2015-2025
+gsk,GLAXOSMITHKLINE,286096-428;320793-0027;320793-1005154;400532589-191;400532589-378;400605842-90;400646949-048;72018-12,alias_regex,entity=GSK; reports=152; years=2015-2025
+gsk,GLAXOSMITHKLINE CONSUMER HEALTHCARE,12631-1006590,alias_regex,entity=GSK Consumer Healthcare; reports=5; years=2021-2022; ownership_window=..2022Q2
+gsk,GLAXOSMITHKLINE CONSUMER HEALTHCARE HOLDINGS (US) LLC DBA HALEON,39941-51094;401107178-53816,excluded_outside_ownership_window,"entity=GSK Consumer Healthcare; reports=10; ownership_window=..2022Q2; excluded_years=2022,2023"
+gsk,GLAXOSMITHKLINE INC.,16293-12,alias_regex,entity=GSK; reports=29; years=2015-2022
+gsk,GLAXOSMITHKLINE LLC,1171-1005914;313715-1007921;314237-1006055;400534596-1026;401103321-66963;401108183-59581,alias_regex,entity=GSK; reports=112; years=2017-2025
+gsk,"GLAXOSMITHKLINE, INC",5357-164,alias_regex,entity=GSK; reports=36; years=2017-2025
+gsk,"GLAXOSMITHKLINE, INC.",400645947-137;401104546-12;62778-1004847,alias_regex,entity=GSK; reports=50; years=2015-2025
+gsk,GSK,401109039-64838,alias_regex,entity=GSK; reports=4; years=2025-2025
+gsk,GSK (FKA GLAXOSMITHKLINE INC.),16293-12,alias_regex,entity=GSK; reports=15; years=2022-2025
+heineken,"BROWNSTEIN HYATT FARBER SCHRECK, LLP OBO HEINEKEN USA",401106156-12,alias_regex_subcontract,"entity=Heineken; reports=6; years=2021-2022; subcontract via BROWNSTEIN HYATT FARBER SCHRECK LLP; counted as activity, not spend (prime firm's income already includes it)"
+heineken,HEINEKEN USA,24486-1004404;30906-64352;401103244-12;7257-1010608,alias_regex,entity=Heineken; reports=57; years=2015-2025
+heineken,"HEINEKEN USA, INC",31680-2575,alias_regex,entity=Heineken; reports=12; years=2015-2017
+honeywell,AKIN GUMP ON BEHALF OF HONEYWELL INTERNATIONAL,400886595-152,alias_regex_subcontract,"entity=Honeywell; reports=21; years=2015-2020; subcontract via AKIN GUMP; counted as activity, not spend (prime firm's income already includes it)"
+honeywell,HONEYWELL,1171-1006105;307832-55469,alias_regex,entity=Honeywell; reports=20; years=2018-2025
+honeywell,HONEYWELL INTERNATIONAL,12675-1014;294495-113;294495-75;29802-517;322875-12;401103938-63626;401104428-75;57453-12;682-4175,alias_regex,entity=Honeywell; reports=214; years=2015-2025
+honeywell,HONEYWELL INTERNATIONAL INC,73271-1608,alias_regex,entity=Honeywell; reports=19; years=2015-2019
+honeywell,HONEYWELL INTERNATIONAL INC.,10800-55388;2057-1006640;20744-1006726;2194-69385;292892-1002588;4301-65352;65976-3250;7257-45654,alias_regex,entity=Honeywell; reports=92; years=2015-2025
+honeywell,HONEYWELL INTERNATIONAL ON BEHALF OF ADVANCED TURBINE ENGINE COMPANY (ATEC),75557-1006524,alias_regex,entity=Honeywell; reports=21; years=2015-2020; company is principal ('on behalf of' ADVANCED TURBINE ENGINE COMPANY ATEC)
+honeywell,"HONEYWELL INTERNATIONAL, INC.",18466-64858;401105417-140;401107393-57242;5357-67629;76992-64561,alias_regex,entity=Honeywell; reports=33; years=2019-2025
+honeywell,"INTELLIGRATED SYSTEMS, INC. DBA HONEYWELL INTELLIGRATED",32098-1008810,alias_regex,entity=Honeywell; reports=30; years=2018-2025
+hsbc,HSBC,294930-898;35800-1003635,alias_regex,entity=HSBC; reports=11; years=2015-2017
+hsbc,HSBC - NORTH AMERICA,41454-1006361,alias_regex,entity=HSBC; reports=16; years=2015-2018
+hsbc,HSBC GR-CORP,294930-898;57475-1005204,alias_regex,entity=HSBC; reports=9; years=2015-2018
+hsbc,HSBC LATIN AMERICA HOLDINGS (UK) LIMITED,400406918-75,alias_regex,entity=HSBC; reports=21; years=2020-2025
+hsbc,HSBC TECHNOLOGY & SERVICES (USA) INC.,296271-56129;35800-1003635,alias_regex,entity=HSBC; reports=33; years=2016-2025
+hsbc,HSBC TECHNOLOGY & SERVICES (USA) INC. (FORMERLY KNOWN AS HSBC),35800-1003635,alias_regex,entity=HSBC; reports=2; years=2015-2015
+hsbc,HSBC TECHNOLOGY & SERVICES USA INC.,75557-1008721,alias_regex,entity=HSBC; reports=8; years=2021-2023
+hsbc,"HSBC TECHNOLOGY & SERVICES USA, INC.",401103523-53602,alias_regex,entity=HSBC; reports=10; years=2023-2025
+hsbc,"HSBC TECHNOLOGY & SERVICES USA, INC.(FORMERLY HSBC TECHNOLOGY SERVICES(USA)INC.)",401103523-53602,alias_regex,entity=HSBC; reports=3; years=2022-2023
+hsbc,HSBC TECHNOLOGY AND SERVICES USA INC.,18694-12,alias_regex,entity=HSBC; reports=6; years=2024-2025
+hsbc,HSBC-NORTH AMERICA,18694-12;400923683-238,alias_regex,entity=HSBC; reports=50; years=2015-2024
+iberdrola,AVANGRID,401106285-66807;65976-1977,alias_regex,entity=Iberdrola/Avangrid; reports=40; years=2016-2025
+iberdrola,"AVANGRID MANAGEMENT COMPANY, LLC",75557-53035,alias_regex,entity=Iberdrola/Avangrid; reports=14; years=2022-2025
+iberdrola,"AVANGRID, INC",400421010-65812,alias_regex,entity=Iberdrola/Avangrid; reports=4; years=2025-2025
+iberdrola,"AVANGRID, INC.",25603-1005510;307353-12;401104425-176;401108969-63738;48827-1006994,alias_regex,entity=Iberdrola/Avangrid; reports=79; years=2016-2025
+iberdrola,"AVANGRID, INC. (FORMERLY KNOWN AS: IBERDROLA CORPORATE SERVICES)",307353-12,alias_regex,entity=Iberdrola/Avangrid; reports=5; years=2016-2017
+iberdrola,"AVANGRID, INC. (FORMERLY KNOWN AS: IBERDROLA RENEWABLES)",25603-1005510,alias_regex,entity=Iberdrola/Avangrid; reports=3; years=2016-2016
+iberdrola,IBERDROLA CORPORATE SERVICES,307353-12,alias_regex,entity=Iberdrola/Avangrid; reports=4; years=2015-2015
+iberdrola,IBERDROLA RENEWABLES,25603-1005510,alias_regex,entity=Iberdrola/Avangrid; reports=4; years=2015-2015
+iberdrola,"IBERDROLA RENEWABLES, INC.",65976-1977,alias_regex,entity=Iberdrola/Avangrid; reports=6; years=2015-2016
+iberdrola,"IBERDROLA, S.A.",323411-36;401104189-75,alias_regex,entity=Iberdrola/Avangrid; reports=21; years=2020-2023
+iberdrola,"ML STRATEGIES, LLC (ON BEHALF OF AVANGRID, INC.)",401104425-0016;401104425-164,alias_regex_subcontract,"entity=Iberdrola/Avangrid; reports=3; years=2017-2017; subcontract via ML STRATEGIES LLC; counted as activity, not spend (prime firm's income already includes it)"
+iberdrola,THE ABRAHAM GROUP (ON BEHALF OF AVANGRID),6325-65932,alias_regex_subcontract,"entity=Iberdrola/Avangrid; reports=4; years=2025-2025; subcontract via ABRAHAM GROUP; counted as activity, not spend (prime firm's income already includes it)"
+iberdrola,"THE ABRAHAM GROUP LLC (ON BEHALF OF IBERDROLA, S.A.)",6325-1005736,alias_regex_subcontract,"entity=Iberdrola/Avangrid; reports=9; years=2020-2022; subcontract via ABRAHAM GROUP LLC; counted as activity, not spend (prime firm's income already includes it)"
+ibm,IBM,401051964-12;8511-1004684,alias_regex,entity=IBM; reports=80; years=2015-2025
+ibm,IBM CORPORATION,284950-152;294930-61633;400532589-1002;400886595-59278,alias_regex,entity=IBM; reports=20; years=2015-2025
+ibm,INTERNATIONAL BUSINESS MACHINES CORPORATION,682-1009952,alias_regex,entity=IBM; reports=5; years=2021-2022
+ibm,INTERNATIONAL BUSINESS MACHINES CORPORATION (IBM),19877-12;400531586-1231;57475-1006067,alias_regex,entity=IBM; reports=75; years=2015-2025
+ibm,RED HAT,297410-1004024,excluded_outside_ownership_window,"entity=Red Hat; reports=5; ownership_window=2019Q3..; excluded_years=2018,2019"
+ibm,RED HAT INC,401104710-12,alias_regex,"entity=Red Hat; reports=30; years=2019-2025; ownership_window=2019Q3..; excluded_years=2018,2019"
+ibm,"RED HAT, INC.",284950-51;401103542-137,alias_regex,"entity=Red Hat; reports=71; years=2019-2025; ownership_window=2019Q3..; excluded_years=2015,2016,2017,2018,2019"
+ing,ING FINANCIAL HOLDINGS CORP.,9476-416,alias_regex,entity=ING; reports=8; years=2017-2019
+intel,INTEL,305338-101;401103494-87;61458-61458;61458-62405;65191-1003628;818-1004951,alias_regex,entity=Intel; reports=75; years=2015-2025
+intel,INTEL CORP,401105148-51261;401105638-113,alias_regex,entity=Intel; reports=34; years=2021-2025
+intel,INTEL CORPORATION,1171-1005585;18466-58527;19536-12;20744-1005507;24123-707;24486-00;24486-1004238;261-1686;284050-1005813;294930-295172;297294-1001838;300971-1270;313271-1005154;320918-1004951;40013096-202;400309447-381;400493431-303;400704112-24;400774330-63521;401103493-226;401104346-48;401104374-75;401104716-226;401105166-12;401106227-12;401106227-24;401106383-63;41534-1005002;47110-1005103;65976-52256;682-1007488;8453-1005181,alias_regex,entity=Intel; reports=491; years=2015-2025
+intel,"INTEL CORPORATION (FKA MCAFEE, INC.)",13836-1001752;73271-1005573,alias_regex,entity=Intel; reports=11; years=2015-2017
+intel,THE WASHINGTON TAX & PUBLIC POLICY GROUP ON BEHALF OF INTEL CORPORATION,401104346-12,alias_regex_subcontract,"entity=Intel; reports=5; years=2017-2018; subcontract via WASHINGTON TAX AND PUBLIC POLICY GROUP; counted as activity, not spend (prime firm's income already includes it)"
+intel,TWIN LOGIC STRATEGIES ON BEHALF OF INTEL CORPORATION,401006842-12;401006842-152,alias_regex_subcontract,"entity=Intel; reports=15; years=2015-2019; subcontract via TWIN LOGIC STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+jnj,ABIOMED,73134-1005522,excluded_outside_ownership_window,"entity=Abiomed; reports=17; ownership_window=2023Q1..; excluded_years=2015,2016,2017,2018,2019"
+jnj,ABIOMED INC,5357-3250,excluded_outside_ownership_window,entity=Abiomed; reports=2; ownership_window=2023Q1..; excluded_years=2016
+jnj,ABIOMED INC.,5357-3250,alias_regex,"entity=Abiomed; reports=36; years=2023-2025; ownership_window=2023Q1..; excluded_years=2017,2018,2019,2020,2021,2022"
+jnj,"ABIOMED, INC",401104198-12,alias_regex,"entity=Abiomed; reports=32; years=2023-2024; ownership_window=2023Q1..; excluded_years=2016,2017,2018,2019,2020,2021,2022"
+jnj,"ABIOMED, INC.",24338-1006361;25603-1006028;682-1010546,alias_regex,"entity=Abiomed; reports=34; years=2023-2024; ownership_window=2023Q1..; excluded_years=2019,2020,2021,2022"
+jnj,"ACTELION PHARMACEUTICALS US, INC",400605842-238,alias_regex,"entity=Actelion; reports=11; years=2017-2018; ownership_window=2017Q3..; excluded_years=2015,2016,2017"
+jnj,"BROWNSTEIN HYATT FARBER SCHRECK, LLP OBO JOHNSON & JOHNSON",401106156-52412,alias_regex_subcontract,"entity=Johnson & Johnson; reports=15; years=2022-2025; subcontract via BROWNSTEIN HYATT FARBER SCHRECK LLP; counted as activity, not spend (prime firm's income already includes it)"
+jnj,FARRAGUT PARTNERS LLP ON BEHALF OF JOHNSON & JOHNSON SERVICES INC.,401105973-48,alias_regex_subcontract,"entity=Johnson & Johnson; reports=2; years=2021-2021; subcontract via FARRAGUT PARTNERS LLP; counted as activity, not spend (prime firm's income already includes it)"
+jnj,JOHNSON & JOHNSON,286096-517;294930-315;401103938-113;401106351-24;45835-1002677;45835-1002742;45835-342980011;5357-1006881;84673-075,alias_regex,entity=Johnson & Johnson; reports=98; years=2015-2025
+jnj,JOHNSON & JOHNSON SERVICES INC,75557-823,alias_regex,entity=Johnson & Johnson; reports=44; years=2015-2025
+jnj,JOHNSON & JOHNSON SERVICES INC.,401105159-226,alias_regex,entity=Johnson & Johnson; reports=25; years=2019-2025
+jnj,JOHNSON & JOHNSON SERVICES INC.(FORMERLY JOHNSON & JOHNSON),57475-1775,alias_regex,entity=Johnson & Johnson; reports=12; years=2015-2017
+jnj,"JOHNSON & JOHNSON SERVICES, INC",85071-1003744,alias_regex,entity=Johnson & Johnson; reports=36; years=2017-2025
+jnj,"JOHNSON & JOHNSON SERVICES, INC.",11195-3883;20686-12;25603-1006028;283696-65151;285871-57241;293335-1005433;294930-315;308775-1003643;400701097-113;401103289-12;401103321-58685;401103938-113;401104582-140;401104726-63;401105023-12;401106035-55732;45835-1002677;45835-342980018;7257-1001239;84673-075,alias_regex,entity=Johnson & Johnson; reports=324; years=2015-2025
+jnj,"JOHNSON & JOHNSON SERVICES, INC. (FORMERLY ABIOMED, INC.)",25603-1006028,alias_regex,entity=Johnson & Johnson; reports=4; years=2024-2025
+jnj,"JOHNSON & JOHNSON SERVICES, INC. FORMERLY JOHNSON & JOHNSON",11195-3883,alias_regex,entity=Johnson & Johnson; reports=9; years=2015-2017
+jnj,"JOHNSON & JOHNSON SERVICES, INC.(F.R.A. JOHNSON & JOHNSON SHARED SERVICES, INC.)",7257-1001239,alias_regex,entity=Johnson & Johnson; reports=32; years=2015-2022
+jnj,JOHNSON & JOHNSON VISION,46038-1003732,alias_regex,entity=Johnson & Johnson; reports=13; years=2017-2020
+jnj,"JOHNSON AND JOHNSON SERVICES, INC.",50796-57263,alias_regex,entity=Johnson & Johnson; reports=10; years=2023-2025
+jpmorgan,J.P. MORGAN CHASE & CO.,308775-1002995;65976-2664,alias_regex,entity=JPMorgan Chase; reports=9; years=2015-2016
+jpmorgan,"J.P. MORGAN CHASE BANK, N.A.",308775-1002995,alias_regex,entity=JPMorgan Chase; reports=7; years=2015-2016
+jpmorgan,JP MORGAN CHASE,86196-1005507,alias_regex,entity=JPMorgan Chase; reports=8; years=2015-2016
+jpmorgan,JP MORGAN CHASE HOLDINGS,401103834-191;401105068-67052,alias_regex,entity=JPMorgan Chase; reports=27; years=2020-2025
+jpmorgan,"JP MORGAN CHASE HOLDINGS, LLC",401105121-57025,alias_regex,entity=JPMorgan Chase; reports=10; years=2023-2025
+jpmorgan,JPMORGAN CHASE & CO.,20881-1004482;25807-12;313715-1005522;400774330-568;401103400-0006;401103400-63;401108637-61155;7257-1007072;76992-1002653,alias_regex,entity=JPMorgan Chase; reports=54; years=2015-2025
+jpmorgan,JPMORGAN CHASE AND CO.,307730-1001915,alias_regex,entity=JPMorgan Chase; reports=9; years=2016-2018
+jpmorgan,JPMORGAN CHASE BANK N.A.,9476-393,alias_regex,entity=JPMorgan Chase; reports=3; years=2017-2020
+jpmorgan,"JPMORGAN CHASE BANK, N.A.",400390813-152;401103400-006;401103400-62;401103400-63,alias_regex,entity=JPMorgan Chase; reports=6; years=2015-2015
+jpmorgan,JPMORGAN CHASE HOLDINGS LLC,307730-1001915;308775-1003391;313715-1006272;36105-59444;400774330-645;401103475-59356;401104236-12;401104288-65384;401105159-241;65976-2664;65976-3084;72111-1004532;73635-226;76992-1003034;84775-1004758;86196-1006171,alias_regex,entity=JPMorgan Chase; reports=322; years=2017-2025
+jpmorgan,JPMORGAN CHASE HOLDINGS LLC (FKA JPMORGAN CHASE AND CO.),307730-1001915,alias_regex,entity=JPMorgan Chase; reports=12; years=2019-2021
+jpmorgan,"JPMORGAN CHASE HOLDINGS, LLC",20881-1005243;41454-60623,alias_regex,entity=JPMorgan Chase; reports=11; years=2017-2025
+lilly,"ELI LILLY & CO, INC",5357-2753,alias_regex,entity=Eli Lilly; reports=8; years=2015-2016
+lilly,"ELI LILLY & CO, INC.",5357-2753,alias_regex,entity=Eli Lilly; reports=13; years=2017-2020
+lilly,ELI LILLY & CO.,401104428-51,alias_regex,entity=Eli Lilly; reports=9; years=2017-2019
+lilly,ELI LILLY & COMPANY,401108916-61500;41454-1006435;76855-60655,alias_regex,entity=Eli Lilly; reports=57; years=2015-2025
+lilly,ELI LILLY AND  COMPANY,13392-12,alias_regex,entity=Eli Lilly; reports=44; years=2015-2025
+lilly,ELI LILLY AND COMPANY,11195-1005002;17966-1002778;286096-214;304736-1005243;308775-1001871;400534596-2094;400577737-393;400712135-253;401103235-176;401103321-55430;401103512-12;401104769-202;401105121-65133;401106573-63502;401109039-65269;65191-355790101;65191-366,alias_regex,entity=Eli Lilly; reports=286; years=2015-2025
+lilly,LILLY USA LLC,400865535-24,alias_regex,entity=Eli Lilly; reports=20; years=2015-2019
+lilly,"LILLY USA, LLC",400531586-2284;400695072-12;400976792-1573;401016871-327;7257-1009420,alias_regex,entity=Eli Lilly; reports=78; years=2015-2025
+lilly,"TIBER CREEK HEALTH STRATEGIES, INC. (ON BEHALF OF ELI LILLY AND COMPANY)",20744-1006435,alias_regex_subcontract,"entity=Eli Lilly; reports=24; years=2020-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+lilly,"TIBER CREEK HEALTH STRATEGIES, INC. ON BEHALF OF ELI LILLY AND COMPANY",401109669-67767,alias_regex_subcontract,"entity=Eli Lilly; reports=3; years=2025-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+lockheed,LOCKHEED MARTIN,294894-75;295133-12;32486-532;33-87;400381749-48;8065-12,alias_regex,entity=Lockheed Martin; reports=97; years=2015-2025
+lockheed,LOCKHEED MARTIN AERONAUTIC SECTOR,6848-87,alias_regex,entity=Lockheed Martin; reports=44; years=2015-2025
+lockheed,LOCKHEED MARTIN CORP,33738-48,alias_regex,entity=Lockheed Martin; reports=13; years=2015-2018
+lockheed,LOCKHEED MARTIN CORP.,2057-0018;2057-191;287111-152;8316-1005938,alias_regex,entity=Lockheed Martin; reports=36; years=2015-2022
+lockheed,LOCKHEED MARTIN CORPORATION,13118-63;23031-12;25603-1005026;305635-1004077;307832-1005014;313715-1005510;31680-660;39837-1001974;39837-5230;39941-773;40022174-226;400407927-443;400459252-60210;400552654-241;400918672-595;401000834-24;401103467-12;401103565-67402;401103598-140;401103834-63;401104425-0010;401104425-101;401104742-87;401105818-75;401106585-66133;5153-280;5357-57071;58432-1005371;60550-63552;70175-1007006;81338-51;86196-1005534;87858-1002905,alias_regex,entity=Lockheed Martin; reports=612; years=2015-2025
+lockheed,LOCKHEED MARTIN CORPORATION/QTC HOLDINGS,48782-1457,alias_regex,entity=Lockheed Martin; reports=7; years=2015-2016
+lockheed,LOCKHEED MARTIN CORPORORATION,400454181-24,alias_regex,entity=Lockheed Martin; reports=44; years=2015-2025
+lockheed,"SENECA GROUP, LLC ON BEHALF OF LOCKHEED MARTIN",8830-710,alias_regex_subcontract,"entity=Lockheed Martin; reports=17; years=2015-2019; subcontract via SENECA GROUP LLC; counted as activity, not spend (prime firm's income already includes it)"
+lockheed,SIKORSKY AIRCRAFT CORPORATION,31031-1003771,alias_regex,entity=Sikorsky; reports=6; years=2015-2016; ownership_window=2015Q4..; excluded_years=2015
+loreal,L'OREAL USA,40011081-797;401107355-58281;682-1009281,alias_regex,entity=L'Oreal; reports=26; years=2015-2025
+loreal,"L'OREAL USA S/D, INC.",313715-68088,alias_regex,entity=L'Oreal; reports=3; years=2025-2025
+loreal,"L'OREAL USA, INC.",70175-1007856,alias_regex,entity=L'Oreal; reports=4; years=2021-2022
+loreal,LOREAL USA,682-1009281,alias_regex,entity=L'Oreal; reports=5; years=2020-2021
+lvmh,LVMH MOET HENNESSY LOUIS VUITTON INC.,400774330-850,alias_regex,entity=LVMH; reports=30; years=2018-2025
+lvmh,LVMH MOET HENNESSY LOUIS VUITTON SA,5357-072;5357-773,alias_regex,entity=LVMH; reports=4; years=2015-2015
+lvmh,MOET HENNESSY USA,30906-1005356;401107814-56000;401107814-56900,alias_regex,entity=LVMH; reports=14; years=2023-2025
+lvmh,TIFFANY & CO,8453-2601,alias_regex,"entity=Tiffany; reports=34; years=2021-2023; ownership_window=2021Q1..; excluded_years=2015,2016,2017,2018,2019,2020"
+lvmh,TIFFANY & CO.,682-67424,alias_regex,entity=Tiffany; reports=3; years=2025-2025; ownership_window=2021Q1..
+mastercard,FTI GOVERNMENT AFFAIRS ON BEHALF OF MASTERCARD,401104921-12,alias_regex_subcontract,"entity=Mastercard; reports=2; years=2018-2018; subcontract via FTI GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+mastercard,MASTERCARD,12675-1002626;20744-2117;401104049-55521;401104717-75,alias_regex,entity=Mastercard; reports=87; years=2015-2025
+mastercard,MASTERCARD (FORMERLY FINICITY),305054-1004455,alias_regex,entity=Mastercard; reports=4; years=2023-2023
+mastercard,MASTERCARD INTERNATIONAL INCORPORATED,35230-292;401054971-556;401108914-67780;5357-67301;61458-1457,alias_regex,entity=Mastercard; reports=104; years=2015-2025
+mastercard,MASTERCARD WORLDWIDE,23997-12;29846-1000586;35800-90;401105068-61615;401107899-60664;76992-1002311,alias_regex,entity=Mastercard; reports=149; years=2015-2025
+mastercard,MASTERCARD WORLDWIDE (FKA MASTERCARD INTERNATIONAL),288954-87,alias_regex,entity=Mastercard; reports=7; years=2015-2016
+mastercard,"MASTERCARD, INC",401105158-56891,alias_regex,entity=Mastercard; reports=10; years=2023-2025
+mastercard,"MASTERCARD, INC.",18466-1011043,alias_regex,entity=Mastercard; reports=14; years=2021-2025
+mastercard,TOWER 19 ON BEHALF OF MASTERCARD INC.,401104374-56894,alias_regex_subcontract,"entity=Mastercard; reports=10; years=2023-2025; subcontract via TOWER 19; counted as activity, not spend (prime firm's income already includes it)"
+mcdonalds,MCDONALD'S CORPORATION,23645-1003973;24373-12;25306-1005053;295053-1004048;314237-1006260;401103834-36;7257-1006777;86196-1006334,alias_regex,entity=McDonald's; reports=201; years=2015-2025
+mercedes,DAIMLER TRUCK NORTH AMERICA LLC,401104288-64813;401106343-12,excluded_outside_ownership_window,"entity=Daimler Truck; reports=20; ownership_window=..2021Q4; excluded_years=2022,2023,2024,2025"
+mercedes,DAIMLER TRUCKS NORTH AMERICA,313715-1007514;39941-1007615;400930694-48,alias_regex,"entity=Daimler Truck; reports=48; years=2015-2021; ownership_window=..2021Q4; excluded_years=2022,2023,2024,2025"
+mercedes,DAIMLER/MERCEDES-BENZ USA,40022176-48,alias_regex,entity=Mercedes-Benz; reports=30; years=2015-2022
+mercedes,MERCEDES-BENZ NORTH AMERICA CORPORATION,70175-68273,alias_regex,entity=Mercedes-Benz; reports=3; years=2025-2025
+mercedes,MERCEDES-BENZ USA (FKA DAIMLER/MERCEDES-BENZ USA,40022176-48,alias_regex,entity=Mercedes-Benz; reports=14; years=2022-2025
+mercedes,"MERCEDES-BENZ USA, LLC",18422-44647,alias_regex,entity=Mercedes-Benz; reports=5; years=2022-2023
+merck,MERCK,304736-1005181;400976792-583,alias_regex,entity=Merck & Co; reports=56; years=2015-2025
+merck,"MERCK & CO, INC",11195-393;41454-3654;682-2296,alias_regex,entity=Merck & Co; reports=63; years=2015-2025
+merck,"MERCK & CO, INC.",24908-12,alias_regex,entity=Merck & Co; reports=44; years=2015-2025
+merck,MERCK & CO.,401105143-12;401105143-24,alias_regex,entity=Merck & Co; reports=5; years=2019-2019
+merck,MERCK & CO. INC.,293335-1005231;72111-1004327,alias_regex,entity=Merck & Co; reports=64; years=2015-2025
+merck,"MERCK & CO., INC",20744-1005700;32486-1005418;76833-1002591;76833-90;91774-241,alias_regex,entity=Merck & Co; reports=66; years=2015-2025
+merck,"MERCK & CO., INC.",286096-191;400531586-431;400605842-280;401103321-315;401103523-63930;401103524-137;401104458-43653;401104458-75;5357-1006714;7257-1005597;7257-1010647;7997-00101,alias_regex,entity=Merck & Co; reports=170; years=2015-2025
+merck,MERCK & COMPANY,75557-2524,alias_regex,entity=Merck & Co; reports=4; years=2023-2024
+merck,"MERCK & COMPANY, INC.",313715-1005395,alias_regex,entity=Merck & Co; reports=41; years=2015-2025
+merck,MERCK ANIMAL HEALTH,400976792-54607,alias_regex,entity=Merck & Co; reports=12; years=2023-2025
+merck,MERCK SHARP & DOHME,401103351-63,alias_regex,entity=Merck & Co; reports=2; years=2015-2015
+merck,MERCK SHARP & DOHME LLC,401104288-68537,alias_regex,entity=Merck & Co; reports=2; years=2025-2025
+merck,"PECK MADIGAN JONES (ON BEHALF OF MERCK & CO., INC)",400712135-164,alias_regex_subcontract,"entity=Merck & Co; reports=25; years=2015-2021; subcontract via PECK MADIGAN JONES; counted as activity, not spend (prime firm's income already includes it)"
+merck,"TIBER CREEK GROUP (FKA PECK MADIGAN JONES) (ON BEHALF OF MERCK & CO., INC)",400712135-164,alias_regex_subcontract,"entity=Merck & Co; reports=1; years=2021-2021; subcontract via TIBER CREEK GROUP FKA PECK MADIGAN JONES; counted as activity, not spend (prime firm's income already includes it)"
+merck,"TIBER CREEK GROUP (ON BEHALF OF MERCK & CO., INC)",400712135-164,alias_regex_subcontract,"entity=Merck & Co; reports=18; years=2021-2025; subcontract via TIBER CREEK GROUP; counted as activity, not spend (prime firm's income already includes it)"
+merck,"TIBER CREEK GROUP ON BEHALF OF MERCK & CO., INC.",401109669-67758,alias_regex_subcontract,"entity=Merck & Co; reports=3; years=2025-2025; subcontract via TIBER CREEK GROUP; counted as activity, not spend (prime firm's income already includes it)"
+merck,"WILLIAMS AND JENSEN, PLLC ON BEHALF OF MERCK & CO., INC",401105955-48,alias_regex_subcontract,"entity=Merck & Co; reports=4; years=2021-2021; subcontract via WILLIAMS AND JENSEN PLLC; counted as activity, not spend (prime firm's income already includes it)"
+meta,FACEBOOK,29802-1005038;29802-400458207;316057-1004684;400348604-87;400774330-1166;401103327-164;401104048-75;401104049-125;401104249-24;401104652-12;401105796-12;401105796-63;5131-2815;65976-3312;7304-1005193;86210-1003198;86210-1003918,alias_regex,entity=Meta; reports=124; years=2017-2021
+meta,FACEBOOK INC.,313533-1002680;36710-1004684;73271- 1006500,alias_regex,entity=Meta; reports=51; years=2015-2021
+meta,"FACEBOOK, INC",400797392-48,alias_regex,entity=Meta; reports=27; years=2015-2021
+meta,"FACEBOOK, INC.",1171-1006373;1171-317490277;20744-1005433;30906-1008237;313271-1004517;400458207-12;400458208-241;400740216-265;401103523-36;401103834-90;401105148-24;401105150-63;401105417-137;401105514-0001;401105514-12;401105906-63;48827-1006575;5142-1005332;83717-1000890;83717-1000901,alias_regex,entity=Meta; reports=197; years=2015-2022
+meta,"FACEBOOK, INC. AND VARIOUS SUBSIDIARIES",400458207-12,alias_regex,entity=Meta; reports=7; years=2020-2021
+meta,"FACEBOOK, INC. AND VARIOUS SUBSIDIARIES (FORMERLY REPORTING AS FACEBOOK, INC.)",400458207-12,alias_regex,entity=Meta; reports=1; years=2019-2019
+meta,"META PLATCORMS INC (FKA FACEBOOK, INC.)",401105906-63,alias_regex,entity=Meta; reports=1; years=2021-2021
+meta,META PLATFORMS,65976-3312,alias_regex,entity=Meta; reports=1; years=2022-2022
+meta,"META PLATFORMS INC (FKA FACEBOOK, INC.)",401105906-63,alias_regex,entity=Meta; reports=16; years=2022-2025
+meta,META PLATFORMS INC.,401105514-12;83717-1000901,alias_regex,entity=Meta; reports=16; years=2023-2025
+meta,"META PLATFORMS INC. (FORMERLY FACEBOOK, INC. & VARIOUS SUBSIDIARIES)",400797392-48,alias_regex,entity=Meta; reports=17; years=2021-2025
+meta,"META PLATFORMS INC. (FORMERLY FACEBOOK, INC. AND VARIOUS SUBSIDIARIES)",83717-1000901,alias_regex,entity=Meta; reports=5; years=2021-2022
+meta,"META PLATFORMS INC. (FORMERLY FACEBOOK, INC.)",401105514-12,alias_regex,entity=Meta; reports=13; years=2021-2024
+meta,"META PLATFORMS, INC (FORMERLY FACEBOOK, INC AND VARIOUS SUBSIDIARIES)",400348604-87,alias_regex,entity=Meta; reports=6; years=2021-2023
+meta,"META PLATFORMS, INC.",284950-65908;296271-50383;313271-1004517;400458208-241;401103523-36;401103834-90;401105150-63;401105417-137;401106227-69942;401106905-53484;401109753-67744;48827-1006575;5131-2815;61174-68758;65976-3312;86210-1003198,alias_regex,entity=Meta; reports=169; years=2022-2025
+meta,"META PLATFORMS, INC. (FKA FACEBOOK)",401104048-75;401104249-24;5131-2815,alias_regex,entity=Meta; reports=22; years=2021-2025
+meta,"META PLATFORMS, INC. (FKA FACEBOOK, INC.)",401103834-90,alias_regex,entity=Meta; reports=1; years=2021-2021
+meta,"META PLATFORMS, INC. (FORMERLY FACEBOOK, INC. AND VARIOUS SUBSIDIARIES",313533-1002680,alias_regex,entity=Meta; reports=17; years=2021-2025
+meta,"META PLATFORMS, INC. (FORMERLY FACEBOOK, INC. AND VARIOUS SUBSIDIARIES)",36710-1004684;400774330-1166;401103327-164;401105796-12,alias_regex,entity=Meta; reports=45; years=2021-2025
+meta,"META PLATFORMS, INC. (FORMERLY FACEBOOK, INC. AND VARIOUS SUBSIDIARIES)""",36710-1004684,alias_regex,entity=Meta; reports=4; years=2021-2022
+meta,"META PLATFORMS, INC. (FORMERLY FACEBOOK, INC.)",48827-1006575,alias_regex,entity=Meta; reports=1; years=2021-2021
+meta,"META PLATFORMS, INC. (FORMERLY KNOWN AS FACEBOOK, INC.)",401103523-36;401105150-63;401105417-137,alias_regex,entity=Meta; reports=3; years=2021-2021
+meta,"META PLATFORMS, INC. AND VARIOUS SUBSIDIARIES",39941-56220;400458207-12,alias_regex,entity=Meta; reports=27; years=2022-2025
+meta,"META PLATFORMS, INC. AND VARIOUS SUBSIDIARIES (FKA FACEBOOK, INC. AND VAR. SUBS)",400458207-12,alias_regex,entity=Meta; reports=1; years=2021-2021
+meta,"META PLATFORMS, INC. FORMERLY KNOWN AS FACEBOOK",86210-1003198,alias_regex,entity=Meta; reports=2; years=2021-2022
+meta,"META PLATFORMS, INC. PREVIOUSLY REPORTED AS FACEBOOK",65976-3312,alias_regex,entity=Meta; reports=2; years=2021-2022
+meta,"META PLATFORMS, INC., FORMERLY KNOWN AS FACEBOOK, INC.",400458208-241,alias_regex,entity=Meta; reports=1; years=2021-2021
+meta,"META PLATFORMS, INC., FORMERLY REPORTED AS FACEBOOK",7304-1005193,alias_regex,entity=Meta; reports=10; years=2021-2024
+meta,"META PLATFORMS, INC., FORMERLY REPORTED AS FACEBOOK, INC.",313271-1004517,alias_regex,entity=Meta; reports=5; years=2021-2022
+microsoft,"ACTIVISION BLIZZARD, INC.",401103500-55428;5153-50917;7257-53806,alias_regex,"entity=Activision Blizzard; reports=15; years=2023-2024; ownership_window=2023Q4..; excluded_years=2022,2023"
+microsoft,CORNERSTONE GOVERNMENT AFFAIRS OBO MICROSOFT CORPORATION,400568701-75,alias_regex_subcontract,"entity=Microsoft; reports=25; years=2016-2022; subcontract via CORNERSTONE GOVERNMENT AFFAIRS; counted as activity, not spend (prime firm's income already includes it)"
+microsoft,FIDELIS GOVERNMENT RELATIONS (ON BEHALF OF MICROSOFT),401104284-36,alias_regex_subcontract,"entity=Microsoft; reports=10; years=2017-2019; subcontract via FIDELIS GOVERNMENT RELATIONS; counted as activity, not spend (prime firm's income already includes it)"
+microsoft,LINKEDIN,400459241-428;400493431-381,alias_regex,entity=LinkedIn; reports=41; years=2017-2025; ownership_window=2017Q1..
+microsoft,LINKEDIN CORPORATION,308775-1003073;401103523-66358;401106620-51799,alias_regex,"entity=LinkedIn; reports=29; years=2017-2025; ownership_window=2017Q1..; excluded_years=2015,2016"
+microsoft,MICROSOFT,313533-137;400424029-48;400493431-393;401036920-36;401103524-75;401104048-63;401105774-1;401105774-12;401108017-25204;401108017-64660,alias_regex,entity=Microsoft; reports=165; years=2015-2025
+microsoft,MICROSOFT CORP,308775-1001195,alias_regex,entity=Microsoft; reports=40; years=2015-2024
+microsoft,MICROSOFT CORP.,11195-672;305098-113;306011-51;401105259-67240,alias_regex,entity=Microsoft; reports=67; years=2015-2025
+microsoft,MICROSOFT CORPORATION,17000-253;20744-1611;21632-1006257;25204-12;304554-87;307730-65564;313271-214;400563684-48;400586788-140;400635921-342;400685041-330;400703107-36;400704112-36;400797392-113;400797392-41789;401054971-785;401103475-416;401103493-12;401103523-57782;401103565-66050;401104240-12;401104284-214;401104427-12;401104641-188;401104726-36;401104769-191;401105417-87;401105435-48;401105870-12;41534-1004963;5142-1005320;57475-2031;682-64261;70175-1007363;70175-107363;72975-1270;73271-1006346;75557-1837;76992-1002588;8453-1006691;85071-1003720,alias_regex,entity=Microsoft; reports=744; years=2015-2025
+morganstanley,MORGAN STANLEY,400531586-315;401104313-69840,alias_regex,entity=Morgan Stanley; reports=14; years=2015-2025
+morganstanley,MORGAN STANLEY & CO. INCORPORATED,9476-404,alias_regex,entity=Morgan Stanley; reports=1; years=2017-2017
+morganstanley,MORGAN STANLEY & CO. LLC,11674-68663;25842-12;400531586-315;401105139-12,alias_regex,entity=Morgan Stanley; reports=103; years=2015-2025
+morganstanley,MORGAN STANLEY & CO. LLC (FKA MORGAN STANLEY),400531586-315,alias_regex,entity=Morgan Stanley; reports=1; years=2018-2018
+morganstanley,MORGAN STANLEY DEAN WITTER & COMPANY,65976-36,alias_regex,entity=Morgan Stanley; reports=44; years=2015-2025
+nestle,GERBER PRODUCTS COMPANY DBA NESTLE INFANT NUTRITION,31747-1004455,alias_regex,entity=Nestle; reports=4; years=2015-2015
+nestle,NESTLE HEALTHCARE NUTRITION,31680-1007387,alias_regex,entity=Nestle; reports=5; years=2015-2016
+nestle,"NESTLE HEALTHCARE NUTRITION, INC.",401104878-48,alias_regex,entity=Nestle; reports=17; years=2018-2022
+nestle,NESTLE PURINA PET CARE,30212-1005418,alias_regex,entity=Nestle; reports=36; years=2015-2024
+nestle,NESTLE PURINA PETCARE CO,31747-773,alias_regex,entity=Nestle; reports=1; years=2015-2015
+nestle,NESTLE USA,29037-12;307114-1004327;308775-70495;31680-1005421;318356-75;33795-393;401104057-12;70175-56730,alias_regex,entity=Nestle; reports=99; years=2015-2025
+nestle,"NESTLE USA, INC.",401103289-52598,alias_regex,entity=Nestle; reports=3; years=2022-2023
+nestle,NESTLE WATERS NORTH AMERICA,305054-1004277,alias_regex,entity=Nestle Waters NA; reports=25; years=2015-2021; ownership_window=..2021Q1
+nokia,ALCATEL-LUCENT USA INC.,24123-1005255,excluded_outside_ownership_window,entity=Alcatel-Lucent; reports=4; ownership_window=2016Q1..; excluded_years=2015
+nokia,"ALCATEL-LUCENT USA INC. (FORMERLY ALCATEL USA RESOURCES, INC.)",46734-12,excluded_outside_ownership_window,entity=Alcatel-Lucent; reports=4; ownership_window=2016Q1..; excluded_years=2015
+nokia,"ALCATEL-LUCENT USA, INC.",287394-140;287394-149,excluded_outside_ownership_window,entity=Alcatel-Lucent; reports=3; ownership_window=2016Q1..; excluded_years=2015
+nokia,NOKIA OF AMERICA CORPORATION,1182-1006625;29380-12;400493431-50051;400493431-50780;85071-1003907,alias_regex,entity=Nokia; reports=104; years=2018-2025
+nokia,NOKIA OF AMERICA CORPORATION (FKA NOKIA SOLUTIONS AND NETWORKS US LLC),1182-1006625,alias_regex,entity=Nokia; reports=2; years=2018-2018
+nokia,NOKIA OF AMERICA CORPORATION (FORMERLY KNOWN AS ALCATEL-LUCENT USA INC.),25306-1005255,alias_regex,entity=Nokia; reports=33; years=2017-2025
+nokia,NOKIA SOLUTIONS AND NETWORKS US LLC,1182-1006625,alias_regex,entity=Nokia; reports=8; years=2016-2018
+nokia,NOKIA SOLUTIONS AND NETWORKS US LLC (FORMERLY ALCATEL-LUCENT USA INC.),24123-1005255,alias_regex,entity=Nokia; reports=11; years=2016-2018
+nokia,NOKIA USA INC. (FORMERLY NOKIA INC.),1182-1006233,alias_regex,entity=Nokia; reports=6; years=2015-2016
+nokia,TWINLOGIC STRATEGIES ON BEHALF OF NOKIA OF AMERICA CORPORATION,401006842-51352,alias_regex_subcontract,"entity=Nokia; reports=16; years=2022-2025; subcontract via TWINLOGIC STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+northrop,"535 GROUP, LLC ON BEHALF OF NORTHROP GRUMMAN SYSTEMS CORPORATION",401106074-87,alias_regex_subcontract,"entity=Northrop Grumman; reports=18; years=2021-2025; subcontract via 535 GROUP LLC; counted as activity, not spend (prime firm's income already includes it)"
+northrop,"MCKEON GROUP, INC ON BEHALF OF ORBITAL ATK",401104899-12,excluded_outside_ownership_window,"entity=Orbital ATK; reports=1; ownership_window=2018Q3..; excluded_years=2018; subcontract via MCKEON GROUP INC; counted as activity, not spend (prime firm's income already includes it)"
+northrop,NORTHROP GRUMMAN,11195-1005294;24338-1006067;294930-378;400774330-63,alias_regex,entity=Northrop Grumman; reports=54; years=2015-2023
+northrop,NORTHROP GRUMMAN CORPORATION,10800-1002350;13836-140;2194-1004990;29551-0012;307832-1005077;30906-1007274;40011081-482;400531586-898;400586788-51;401054971-455;401103217-75;401103598-354,alias_regex,entity=Northrop Grumman; reports=281; years=2015-2025
+northrop,NORTHROP GRUMMAN SYSTEMS CORPORATION,12675-100252;12675-1002525;313271-50224;39837-1009382;401105906-191,alias_regex,entity=Northrop Grumman; reports=60; years=2018-2025
+northrop,ORBITAL ATK,12675-1002463;401103598-292,alias_regex,"entity=Orbital ATK; reports=13; years=2018-2018; ownership_window=2018Q3..; excluded_years=2016,2017,2018"
+northrop,"ORBITAL ATK, INC.",1067-12;5118-1005282,excluded_outside_ownership_window,"entity=Orbital ATK; reports=16; ownership_window=2018Q3..; excluded_years=2015,2016,2017,2018"
+northrop,"ORBITAL ATK, INC. (FORMERLY KNOWN AS ALLIANT TECHSYSTEMS, INC.)",1067-12,excluded_outside_ownership_window,entity=Orbital ATK; reports=3; ownership_window=2018Q3..; excluded_years=2015
+northrop,"ORBITAL ATK, INC. FKA: ALLIANT TECHSYSTEMS OPERATIONS, LLC",72053-1005510,excluded_outside_ownership_window,"entity=Orbital ATK; reports=9; ownership_window=2018Q3..; excluded_years=2015,2016,2017"
+novartis,"ALCON LABORATORIES, INC.",5131-3107,alias_regex,entity=Alcon; reports=1; years=2019-2019; ownership_window=..2019Q1
+novartis,ALCON VISION LLC,401109387-65400,excluded_outside_ownership_window,entity=Alcon; reports=4; ownership_window=..2019Q1; excluded_years=2025
+novartis,"ALCON VISION, LLC",5131-3107,excluded_outside_ownership_window,"entity=Alcon; reports=26; ownership_window=..2019Q1; excluded_years=2019,2020,2021,2022,2023,2024,2025"
+novartis,"ALCON VISION, LLC FORMERLY REPORTED AS ALCON LABORATORIES, INC.",5131-3107,excluded_outside_ownership_window,entity=Alcon; reports=1; ownership_window=..2019Q1; excluded_years=2019
+novartis,BROWNSTEIN HYATT FARBER SCHRECK OBO NOVARTIS,401105863-12,alias_regex_subcontract,"entity=Novartis; reports=11; years=2020-2023; subcontract via BROWNSTEIN HYATT FARBER SCHRECK; counted as activity, not spend (prime firm's income already includes it)"
+novartis,NOVARTIS,286096-583;304736-54515;308775-1003251;400646949-238;400712135-87;401105068-57419;401105118-0002;401105118-12;401105118-24;401109009-64784;5357-54615;7257-1008151;75557-1005041;76855-67264;9204-12;9204-9204,alias_regex,entity=Novartis; reports=260; years=2015-2025
+novartis,NOVARTIS CORPORATION,1182-1006435;313715-1006435;316057-1004431;400534596-330;401104492-12;5404-1005891;72053-90,alias_regex,entity=Novartis; reports=103; years=2015-2025
+novartis,NOVARTIS PHARMACEUTICALS CORPORATION,289773-1004990,alias_regex,entity=Novartis; reports=8; years=2015-2016
+novartis,"NOVARTIS SERVICES, INC.",31680-797;401103289-113;48827-1006346,alias_regex,entity=Novartis; reports=20; years=2015-2017
+novartis,"NOVARTIS, INC",41454-583,alias_regex,entity=Novartis; reports=13; years=2015-2018
+novartis,"NOVARTIS, INC.",400976792-1356;401103321-303,alias_regex,entity=Novartis; reports=52; years=2019-2025
+novartis,SANDOZ INC,401108151-58549,excluded_outside_ownership_window,"entity=Sandoz; reports=9; ownership_window=..2023Q3; excluded_years=2023,2024,2025"
+novartis,SANDOZ INC.,400774330-57792,excluded_outside_ownership_window,"entity=Sandoz; reports=9; ownership_window=..2023Q3; excluded_years=2023,2024,2025"
+novartis,"TIBER CREEK HEALTH STRATEGIES, INC. (ON BEHALF OF NOVARTIS)",20744-1005457,alias_regex_subcontract,"entity=Novartis; reports=44; years=2015-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+novartis,"TIBER CREEK HEALTH STRATEGIES, INC. ON BEHALF OF NOVARTIS",401109669-67776,alias_regex_subcontract,"entity=Novartis; reports=3; years=2025-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+novonordisk,NOVO NORDISK,30187-1004416;400383768-137;400762305-315,alias_regex,entity=Novo Nordisk; reports=31; years=2015-2019
+novonordisk,NOVO NORDISK A/S,4301-60337,alias_regex,entity=Novo Nordisk; reports=7; years=2024-2025
+novonordisk,NOVO NORDISK INC.,1182-1005522;284050-56791;284790-12;304736-1005368;313271-56580;32486-53343;400534596-850;401103321-57851;401104104-61081;401104288-67420;41454-1007208;76833-1002894;86196-1006878,alias_regex,entity=Novo Nordisk; reports=196; years=2015-2025
+novonordisk,"NOVO NORDISK PHARMACEUTICALS, INC.",401018877-48,alias_regex,entity=Novo Nordisk; reports=4; years=2015-2015
+novonordisk,"NOVO NORDISK, INC.",18466-1011094;284790-12;293335-64742;40004028-48;401105121-90;401105145-12;401105567-87;401109039-64386;4301-56053;5153-1005992,alias_regex,entity=Novo Nordisk; reports=64; years=2015-2025
+nvidia,NVIDIA,400459261-101;401104734-68434,alias_regex,entity=Nvidia; reports=11; years=2015-2025
+nvidia,NVIDIA CORPORATION,20744-53580;293335-56422;401109419-65325;401109419-76933;5357-68447;7257-68385,alias_regex,entity=Nvidia; reports=33; years=2022-2025
+oracle,CASSIDY & ASSOCIATES ON BEHALF OF CERNER CORPORATION,401103204-48;401104718-36,excluded_outside_ownership_window,"entity=Cerner; reports=30; ownership_window=2022Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021,2022; subcontract via CASSIDY AND ASSOCIATES; counted as activity, not spend (prime firm's income already includes it)"
+oracle,CERNER CORPORATION,24338-1006245;296830-12;30906-1009836;63451-1005014;8453-1006830,alias_regex,"entity=Cerner; reports=72; years=2022-2023; ownership_window=2022Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021,2022"
+oracle,"CERNER CORPORATION (FKA CERNER GOVERNMENT SERVICES, INC.)",24338-1006245,excluded_outside_ownership_window,entity=Cerner; reports=1; ownership_window=2022Q3..; excluded_years=2018
+oracle,"CERNER GOVERNMENT SERVICES, INC.",24338-1006245,excluded_outside_ownership_window,entity=Cerner; reports=2; ownership_window=2022Q3..; excluded_years=2018
+oracle,COVE STRATEGIES ON BEHALF OF ORACLE AMERICAN INC.,401104937-75,alias_regex_subcontract,"entity=Oracle; reports=10; years=2021-2023; subcontract via COVE STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+oracle,ORACLE,400976792-618;401105068-45420;72053-176,alias_regex,entity=Oracle; reports=73; years=2015-2025
+oracle,ORACLE AMERICA,401107279-54530;401107279-55914,alias_regex,entity=Oracle; reports=3; years=2022-2023
+oracle,ORACLE AMERICA INC.,401105389-36;65191-1003643;65191-1003795;66773-2524,alias_regex,entity=Oracle; reports=44; years=2020-2025
+oracle,ORACLE AMERICA INC. FKA ORACLE CORPORATION,70175-1561,alias_regex,entity=Oracle; reports=8; years=2024-2025
+oracle,"ORACLE AMERICA, INC",401103598-2023;401103598-54644,alias_regex,entity=Oracle; reports=9; years=2023-2025
+oracle,"ORACLE AMERICA, INC.",26114-0012;26114-0164;26114-164;287394-152;400762305-176;401104313-53686;401104716-36;401105181-48;401105818-140;401105913-54291;401109795-68236;7257-1010038;73271-1005534;81511-67650;85071-330,alias_regex,entity=Oracle; reports=245; years=2015-2025
+oracle,ORACLE AMERICAN INC.,400431088-137;401104937-59124,alias_regex,entity=Oracle; reports=45; years=2017-2025
+oracle,ORACLE CERNER (FORMERLY CERNER CORPORATION),296830-12,alias_regex,entity=Oracle; reports=3; years=2022-2022
+oracle,ORACLE CORPORATION,2057-1006753;22746-36;293335-1005255;30267-12;307730-1001814;313715-1005965;315592-253;31680-1005698;39941-1006601;401103500-404;401103600-101;401103834-63797;401104281-253;401104428-61638;401106302-68361;401109611-67561;49635-125;72111-45700;76855-455;8453-1006830,alias_regex,entity=Oracle; reports=399; years=2015-2025
+oracle,ORACLE CORPORATION (FORMERLY KNOWN AS CERNER CORPORATION),8453-1006830,alias_regex,entity=Oracle; reports=1; years=2022-2022
+oracle,THE LIVINGSTON GROUP (ON BEHALF OF ORACLE),286872-90,alias_regex_subcontract,"entity=Oracle; reports=41; years=2015-2025; subcontract via LIVINGSTON GROUP; counted as activity, not spend (prime firm's income already includes it)"
+pepsico,"GIBSON, DUNN & CRUTCHER LLP (O/B/O PEPSICO, INC.)",307730-65562,alias_regex_subcontract,"entity=PepsiCo; reports=2; years=2025-2025; subcontract via GIBSON DUNN AND CRUTCHER LLP; counted as activity, not spend (prime firm's income already includes it)"
+pepsico,PEPSICO,22688-280;401054971-241;401103834-125,alias_regex,entity=PepsiCo; reports=74; years=2015-2024
+pepsico,PEPSICO INC.,8453-52776,alias_regex,entity=PepsiCo; reports=9; years=2022-2024
+pepsico,"PEPSICO, INC",11195-1005092;12675-1002261;19888-101;31202-12;400740216-188,alias_regex,entity=PepsiCo; reports=98; years=2015-2025
+pepsico,"PEPSICO, INC.",308775-1003566;314237-1005748;401103500-53154;5357-64326,alias_regex,entity=PepsiCo; reports=87; years=2016-2025
+pfizer,HOSPIRA,400693064-152,excluded_outside_ownership_window,entity=Hospira; reports=3; ownership_window=2015Q4..; excluded_years=2015
+pfizer,"HOSPIRA, INC.",287895-1005002;318711-12,excluded_outside_ownership_window,entity=Hospira; reports=6; ownership_window=2015Q4..; excluded_years=2015
+pfizer,PFIZER,23645-1004125;304736-1005127;401103077-556;401105068-69278;401106196-125;41454-2676;45106-393;61458-62646;75557-2792,alias_regex,entity=Pfizer; reports=202; years=2015-2025
+pfizer,PFIZER INC.,11388-556;12675-633;31326-12;31326-31326;400703105-214;400762305-202;401036920-113;401054971-990;401103321-57633;401103523-55337;401103546-48;401104313-416;48827-378;76833-1002374,alias_regex,entity=Pfizer; reports=252; years=2015-2025
+pfizer,"PFIZER, INC",5357-2117;7257-113,alias_regex,entity=Pfizer; reports=36; years=2015-2025
+pfizer,"PFIZER, INC.",294930-295095;313271-1005255;318994-520;40022172-75;401103834-443;401105121-214;401105775-52095;57475-1332;682-862;72975-1003376;76992-55035,alias_regex,entity=Pfizer; reports=252; years=2015-2025
+pg,PROCTER & GAMBLE,284950-494;401103523-63553,alias_regex,entity=Procter & Gamble; reports=47; years=2015-2025
+pg,PROCTER & GAMBLE COMPANY,294930-152,alias_regex,entity=Procter & Gamble; reports=44; years=2015-2025
+pg,THE PROCTER & GAMBLE COMPANY,10764-2512;401054971-60696;401109307-64946;5357-68446;86196-1006120,alias_regex,entity=Procter & Gamble; reports=64; years=2015-2025
+pg,THE PROCTER AND GAMBLE COMPANY,30906-1010270;32225-24;400287370-24;401016871-214;401103825-36,alias_regex,entity=Procter & Gamble; reports=151; years=2015-2025
+philips,PHILIPS ELECTRONICS NORTH AMERICA (FORMERLY PHILIPS NORTH AMERICA),57817-241,alias_regex,entity=Philips; reports=9; years=2016-2018
+philips,PHILIPS ELECTRONICS NORTH AMERICA CORPORATION,30928-0034;30928-00517,alias_regex,entity=Philips; reports=2; years=2020-2020
+philips,PHILIPS HEALTHCARE,41534-1004710,alias_regex,entity=Philips; reports=3; years=2015-2015
+philips,"PHILIPS HOLDING USA, INC.",31417-12;401104734-60576;7304-1005270,alias_regex,entity=Philips; reports=60; years=2015-2025
+philips,PHILIPS NORTH AMERICA,57817-241,alias_regex,entity=Philips; reports=4; years=2015-2015
+philips,PHILIPS NORTH AMERICA LLC,50796-1006462,alias_regex,entity=Philips; reports=5; years=2020-2021
+philips,"PHILIPS NORTH AMERICA, LLC (FORMERLY REPORTING AS PHILIPS HEALTHCARE/HOLDING)",320918-1005080,alias_regex,entity=Philips; reports=25; years=2019-2025
+pmi,PMI GLOBAL SERVICES INC.,12868-1006753;18422-1007933;22622-1001598;30906-1010787;31680-1007794;322911-322978;36105-52338;400265213-12;400577737-568;401013862-12;401054971-797;401103321-55053;401104049-137;401104049-45803;401104684-140;401105560-12;401105906-12;48827-1006688;65976-2411;682-1006765,alias_regex,entity=Philip Morris International; reports=288; years=2015-2025
+pmi,"PMI GLOBAL SERVICES, INC.",400797392-125;400797392-40147,alias_regex,entity=Philip Morris International; reports=21; years=2020-2024
+pmi,PMI US CORPORATE SERVICES INC.,400577737-568;401103321-55053;401109009-64519;401109009-65419;401109039-65930;48827-1006688,alias_regex,entity=Philip Morris International; reports=17; years=2025-2025
+pmi,PMI US CORPORATE SERVICES INC. (FKA PMI GLOBAL SERVICES INC.),400265213-12;682-1006765,alias_regex,entity=Philip Morris International; reports=8; years=2025-2025
+pmi,PMI US CORPORATE SERVICES INC. (FORMERLY PMI GLOBAL SERVICES INC.),400577737-568;400797392-125;48827-1006688,alias_regex,entity=Philip Morris International; reports=6; years=2025-2025
+pmi,SWEDISH MATCH NORTH AMERICA,1171-517,alias_regex,"entity=Swedish Match; reports=36; years=2023-2023; ownership_window=2023Q1..; excluded_years=2015,2016,2017,2018,2019,2020,2021,2022"
+pmi,"SWEDISH MATCH NORTH AMERICA, LLC",401103524-140,excluded_outside_ownership_window,"entity=Swedish Match; reports=5; ownership_window=2023Q1..; excluded_years=2017,2018"
+prosus,PROSUS GROUP N.V.,40013096-44513,alias_regex,entity=Prosus; reports=10; years=2021-2024
+qualcomm,"ARENT FOX LLP ON BEHALF OF QUALCOMM, INC.",301994-137;401103886-36,alias_regex_subcontract,"entity=Qualcomm; reports=27; years=2015-2021; subcontract via ARENT FOX LLP; counted as activity, not spend (prime firm's income already includes it)"
+qualcomm,"PAUL, WEISS, RIFKIND, WHARTON & GARRISON LLP ON BEHALF OF QUALCOMM INCORPORATED",2057-1006664,alias_regex_subcontract,"entity=Qualcomm; reports=28; years=2019-2025; subcontract via PAUL WEISS RIFKIND WHARTON AND GARRISON LLP; counted as activity, not spend (prime firm's income already includes it)"
+qualcomm,QUALCOMM,8316-1005674,alias_regex,entity=Qualcomm; reports=6; years=2017-2018
+qualcomm,QUALCOMM INC.,70175-65316,alias_regex,entity=Qualcomm; reports=4; years=2025-2025
+qualcomm,QUALCOMM INCORPORATED,401104869-57640;4208-1005748;5357-1008760;65976-3413;682-1008175;7257-3211;76855-4810,alias_regex,entity=Qualcomm; reports=179; years=2015-2025
+qualcomm,"QUALCOMM, INC",54197-1837,alias_regex,entity=Qualcomm; reports=4; years=2015-2015
+qualcomm,"QUALCOMM, INC.",20744-1006943,alias_regex,entity=Qualcomm; reports=19; years=2021-2025
+qualcomm,"QUALCOMM, INCORPORATED",11195-1938;400740216-51;60674-12,alias_regex,entity=Qualcomm; reports=106; years=2015-2025
+riotinto,RESOLUTION COPPER,313271-1004758;401107863-57040;76992-1002703,alias_regex,entity=Rio Tinto; reports=70; years=2015-2024
+riotinto,RESOLUTION COPPER COMPANY,31736-191,alias_regex,entity=Rio Tinto; reports=44; years=2015-2025
+riotinto,RESOLUTION COPPER MINING LLC,30906-56162;35800-66876;401109866-72759,alias_regex,entity=Rio Tinto; reports=18; years=2023-2025
+riotinto,RIO TINTO,79610-1004850,alias_regex,entity=Rio Tinto; reports=10; years=2022-2024
+riotinto,RIO TINTO AMERICA HOLDINGS INC.,57475-1006105,alias_regex,entity=Rio Tinto; reports=5; years=2022-2023
+riotinto,"RIO TINTO AMERICA HOLDINGS, INC.",57475-1006105,alias_regex,entity=Rio Tinto; reports=6; years=2018-2019
+riotinto,RIO TINTO SERVICES INC.,14438-1395;18444-1003771;313271-1004758;35800-1115;35800-12;401104641-64247;76992-54342,alias_regex,entity=Rio Tinto; reports=80; years=2015-2025
+riotinto,RIO TINTO SERVICES INC. (FRA RESOLUTION COPPER),313271-1004758,alias_regex,entity=Rio Tinto; reports=1; years=2023-2023
+riotinto,"RIO TINTO SERVICES, INC.",11195-1005941;310335-12;401105940-24,alias_regex,entity=Rio Tinto; reports=67; years=2015-2025
+roche,"F. HOFFMANN-LA ROCHE LTD, AND ITS AFFILIATES",18411-12,alias_regex,entity=Roche; reports=39; years=2016-2025
+roche,FARRAGUT PARTNERS ON BEHALF OF GENENTECH,301697-265,alias_regex_subcontract,"entity=Roche; reports=2; years=2016-2016; subcontract via FARRAGUT PARTNERS; counted as activity, not spend (prime firm's income already includes it)"
+roche,FOUNDATION MEDICINE,304736-1005421,alias_regex,entity=Foundation Medicine; reports=23; years=2020-2025; ownership_window=2018Q3..
+roche,"FOUNDATION MEDICINE, INC.",2057-1006260;401105594-12;4208-1006067;682-1007348,alias_regex,"entity=Foundation Medicine; reports=61; years=2018-2025; ownership_window=2018Q3..; excluded_years=2015,2016,2017,2018"
+roche,GENENTECH,21905-1004621;286096-90;299332-51;30187-1457;307730-1001572;313715-330;320793-51;400547641-36;400774330-176;400976792-556;401103938-101;401103952-15920;401103952-24,alias_regex,entity=Roche; reports=280; years=2015-2025
+roche,GENENTECH INC,48827-44411;682-1009025,alias_regex,entity=Roche; reports=41; years=2019-2025
+roche,GENENTECH INC.,4301-1496,alias_regex,entity=Roche; reports=20; years=2015-2019
+roche,"GENENTECH, INC",15920-12;41454-393,alias_regex,entity=Roche; reports=54; years=2015-2025
+roche,"GENENTECH, INC.",11195-1006206;1182-1006004;15920-12;2057-2738;21632-1006221;304736-1005294;30906-1007693;40032282-75;400446141-87;400531586-330;400712135-48;401103321-164;401103523-125;401105121-51;401107188-69632;5131-2702;5357-1006524;75557-1007375,alias_regex,entity=Roche; reports=360; years=2015-2025
+roche,"HOOPER, LUNDY & BOOKMAN, P.C. (OBO ROCHE DIAGNOSTICS)",287895-0088;287895-1005317,alias_regex_subcontract,"entity=Roche; reports=7; years=2018-2019; subcontract via HOOPER LUNDY AND BOOKMAN P C; counted as activity, not spend (prime firm's income already includes it)"
+roche,"HOOPER,LUNDY& BOOKMAN, PC (OBO ROCHE DIAGNOSTICS)",401105070-63,alias_regex_subcontract,"entity=Roche; reports=24; years=2019-2024; subcontract via HOOPER LUNDY AND BOOKMAN PC; counted as activity, not spend (prime firm's income already includes it)"
+roche,ROCHE DIAGNOSTICS,23645-63651;286096-61343;40026223-710;400694066-48,alias_regex,entity=Roche; reports=99; years=2015-2025
+roche,ROCHE DIAGNOSTICS CORPORATION,287895-1005267;401020884-277;401106795- 54347;401106795-54347;45835-1002754;45835-342980020,alias_regex,entity=Roche; reports=58; years=2015-2024
+roche,"ROCHE DIAGNOSTICS CORPORATION, INC.",24338-1005255;401103287-191,alias_regex,entity=Roche; reports=33; years=2015-2023
+roche,SPARK THERAPEUTICS,401103523-43203,alias_regex,"entity=Spark Therapeutics; reports=19; years=2020-2022; ownership_window=2020Q1..; excluded_years=2017,2018,2019"
+roche,"SPARK THERAPEUTICS, INC.",308775-1003337;401104534-12;46038-1003542;7257-1008302,alias_regex,"entity=Spark Therapeutics; reports=109; years=2020-2025; ownership_window=2020Q1..; excluded_years=2015,2016,2017,2018,2019"
+roche,"TIBER CREEK HEALTH STRATEGIES, INC. (ON BEHALF OF GENENTECH, INC.)",20744-1005317,alias_regex_subcontract,"entity=Roche; reports=44; years=2015-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+roche,"TIBER CREEK HEALTH STRATEGIES, INC. ON BEHALF OF GENENTECH, INC.",401109669-67773;401109669-67774,alias_regex_subcontract,"entity=Roche; reports=4; years=2025-2025; subcontract via TIBER CREEK HEALTH STRATEGIES INC; counted as activity, not spend (prime firm's income already includes it)"
+roche,"YC CONSULTING, LLC ON BEHALF OF GENENTECH, INC.",401110172-70163,alias_regex_subcontract,"entity=Roche; reports=1; years=2025-2025; subcontract via YC CONSULTING LLC; counted as activity, not spend (prime firm's income already includes it)"
+rtx,RAYTHEON,10800-1002362;294930-416;30906-1010623;401104536-12,alias_regex,"entity=Raytheon Co; reports=35; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+rtx,RAYTHEON COMPANY,11195-1005305;18466-1006854;2057-1005953;297410-1004000;307114-1004936;307114-307114;307832-1004990;313511-10002514;31895-48;32828-12;36710-1005371;39928-1000367;40020141-404;400586788-125;401103217-90;401104100-113;5357-2714;65976-3110;76855-393,alias_regex,"entity=Raytheon Co; reports=245; years=2020-2022; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+rtx,RAYTHEON COMPANY ON BEHALF OF RAYTHEON SYSTEMS LIMITED,29777-1004850,alias_regex,"entity=Raytheon Co; reports=23; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020; company is principal ('on behalf of' RAYTHEON SYSTEMS LIMITED)"
+rtx,RAYTHEON CORP.,87814-696,excluded_outside_ownership_window,"entity=Raytheon Co; reports=7; ownership_window=2020Q2..; excluded_years=2015,2016"
+rtx,RAYTHEON CORPORATION,2194-975;53163-51,alias_regex,"entity=Raytheon Co; reports=45; years=2020-2020; ownership_window=2020Q2..; excluded_years=2015,2016,2017,2018,2019,2020"
+rtx,RAYTHEON TECHNOLOGIES (FORMERLY KNOWN AS RAYTHEON COMPANY),10800-1002362,alias_regex,entity=RTX; reports=12; years=2020-2023
+rtx,RAYTHEON TECHNOLOGIES (FORMERLY RAYTHEON COMPANY),313511-10002514,alias_regex,entity=RTX; reports=13; years=2020-2023
+rtx,RAYTHEON TECHNOLOGIES CORPORATION,2194-975;400531586-2016;400534596-1712;7257-50781;75557-53503,alias_regex,entity=RTX; reports=38; years=2021-2025
+rtx,RAYTHEON TECHNOLOGIES CORPORATION & AFFILIATES (FKA UNITED TECHNOLOGIES CORP),53163-12;53163-51,alias_regex,entity=RTX; reports=13; years=2020-2023
+rtx,RAYTHEON TECHNOLOGIES CORPORATION (FKA RAYTHEON COMPANY),39928-1000367,alias_regex,entity=RTX; reports=14; years=2020-2023
+rtx,RAYTHEON TECHNOLOGIES CORPORATION (FORMALLY RAYTHEON COMPANY),307832-1004990,alias_regex,entity=RTX; reports=4; years=2023-2023
+rtx,RAYTHEON TECHNOLOGIES CORPORATION (FORMERLY KNOWN AS RAYTHEON CORPORATION),2194-975,alias_regex,entity=RTX; reports=2; years=2020-2021
+rtx,RAYTHEON TECHNOLOGIES CORPORATION (FORMERLY UNITED TECHNOLOGIES CORPORATION),400534596-1712,alias_regex,entity=RTX; reports=9; years=2020-2022
+rtx,RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES,314237-1005941;39267-12;400774330-1231;400886595-54278;682-1005317;76855-393,alias_regex,entity=RTX; reports=41; years=2020-2023
+rtx,RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES  (FKA RAYTHEON COMPANY),18466-1006854,alias_regex,entity=RTX; reports=7; years=2020-2021
+rtx,RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES (F.K.A. UNITED TECHNOLOGIES COR,2194-1004963,alias_regex,entity=RTX; reports=4; years=2020-2021
+rtx,RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES (FKA RAYTHEON COMPANY),400586788-125,alias_regex,entity=RTX; reports=2; years=2020-2020
+rtx,RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES (FKA UNITED TECHNOLOGIES CORP),314237-1005941;39267-12;5357-1007158;682-1005317,alias_regex,entity=RTX; reports=19; years=2020-2023
+rtx,RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES (FORMERLY RAYTHEON COMPANY),76855-393,alias_regex,entity=RTX; reports=1; years=2023-2023
+rtx,"ROCKWELL COLLINS, INC",68296-12;68296-68296,alias_regex,"entity=Rockwell Collins; reports=17; years=2018-2018; ownership_window=2018Q4..; excluded_years=2015,2016,2017,2018"
+rtx,RTX,401109352-64845,alias_regex,entity=RTX; reports=1; years=2025-2025
+rtx,RTX CORPORATION,314237-1005941;400976792-58937;401104869-69229;75557-53503,alias_regex,entity=RTX; reports=20; years=2023-2025
+rtx,RTX CORPORATION (FKA RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES),314237-1005941;682-1005317,alias_regex,entity=RTX; reports=11; years=2023-2025
+rtx,RTX CORPORATION (FKA RAYTHEON TECHNOLOGIES CORPORATION),75557-53503,alias_regex,entity=RTX; reports=8; years=2024-2025
+rtx,RTX CORPORATION AND AFFILIATES,10800-1002362;39267-12;400534596-1712;400774330-1231;401057985-393;401103493-57143;401109300-64595;7257-50781;76855-393,alias_regex,entity=RTX; reports=51; years=2023-2025
+rtx,RTX CORPORATION AND AFFILIATES (FKA RAYTHEON TECHNOLOGIES CORP. AND AFFILIATES),5357-1007158,alias_regex,entity=RTX; reports=10; years=2023-2025
+rtx,RTX CORPORATION AND AFFILIATES (FKA RAYTHEON TECHNOLOGIES CORPORATION),7257-50781,alias_regex,entity=RTX; reports=1; years=2023-2023
+rtx,RTX CORPORATION AND AFFILIATES (FKA: RAYTHEON TECHNOLOGIES CORP. AND AFFILIATES),400774330-1231;53163-51,alias_regex,entity=RTX; reports=12; years=2023-2025
+rtx,RTX CORPORATION AND AFFILIATES (FKA: RAYTHEON TECHNOLOGIES CORPORATION AND AFFIL,10800-1002362;313511-10002514,alias_regex,entity=RTX; reports=11; years=2023-2025
+rtx,RTX CORPORATION AND AFFILIATES (FKA:RAYTHEON TECHNOLOGIES CORPORATION),307832-1004990,alias_regex,entity=RTX; reports=8; years=2024-2025
+rtx,RTX CORPORATION AND AFFILIATES (FORMERLY RAYTHEON TECHNOLOGIES CORP),76855-393,alias_regex,entity=RTX; reports=1; years=2023-2023
+rtx,RTX CORPORATION AND AFFILIATES FKA RAYTHEON TECHNOLOGIES CORPORATION,400534596-1712,alias_regex,entity=RTX; reports=1; years=2024-2024
+rtx,RTX CORPORATION AND AFFILIATES(RAYTHEON TECHNOLOGIES CORPORATION AND AFFILIATES),400886595-54278,alias_regex,entity=RTX; reports=10; years=2023-2025
+rtx,UNITED TECHNOLOGIES,294894-1002764;400774330-164,alias_regex,entity=RTX; reports=31; years=2015-2020
+rtx,UNITED TECHNOLOGIES CORP.,294930-295017,alias_regex,entity=RTX; reports=5; years=2015-2016
+rtx,UNITED TECHNOLOGIES CORPORATION,11195-1317;2194-1004963;284950-1005270;30187-1004621;307832-1005053;30906-1010038;310370-1003236;314237-1005941;39267-12;39267-39267;400534596-1712;400812421-12;401016871-140;401057985-393;401103938-191;41113-1004381;5357-1007158;58432-1005418;682-1005317;70175-1005445;8987-1065,alias_regex,entity=RTX; reports=244; years=2015-2020
+safran,OROLIA DEFENSE SYSTEMS- SAFRAN FEDERAL SYSTEMS,401025893-226,alias_regex,entity=Safran; reports=5; years=2024-2025
+safran,SAFRAN,299478-12,alias_regex,entity=Safran; reports=1; years=2015-2015
+safran,"SAFRAN DEFENSE & SPACE, INC.",5153-70435,alias_regex,entity=Safran; reports=1; years=2025-2025
+safran,SAFRAN USA,5153-1005166,alias_regex,entity=Safran; reports=44; years=2015-2025
+safran,"SAFRAN USA, INC. (FORMERLY SNECMA USA, INC.)",72097-12,alias_regex,entity=Safran; reports=44; years=2015-2025
+sanofi,BIOVERATIV INC.,72111-1004431,alias_regex,"entity=Bioverativ; reports=7; years=2018-2019; ownership_window=2018Q2..; excluded_years=2017,2018"
+sanofi,GENZYME,5357-1006726;79610-75,alias_regex,entity=Sanofi; reports=13; years=2015-2017
+sanofi,GENZYME CORPORATION,16054-12;304736-1005026;40036301-12,alias_regex,entity=Sanofi; reports=20; years=2015-2017
+sanofi,SANOFI PASTEUR,305852-341;38687-354;5073-51,alias_regex,entity=Sanofi; reports=23; years=2015-2017
+sanofi,SANOFI U.S.,400976792-1317,alias_regex,entity=Sanofi; reports=28; years=2019-2025
+sanofi,SANOFI U.S. SERVICES INC.,86196-1006361,alias_regex,entity=Sanofi; reports=5; years=2017-2018
+sanofi,"SANOFI U.S. SERVICES, INC.",400605842-265;401105121-36;401105121-75,alias_regex,entity=Sanofi; reports=62; years=2017-2025
+sanofi,SANOFI US,38687-354;62778-1004785;62778-353950058;76833-1002816,alias_regex,entity=Sanofi; reports=15; years=2016-2019
+sanofi,SANOFI US SERVICES INC.,313715-137;400531586-1193;400534596-1457;401109039-64842;56838-12;91774-1004746;91774-56838,alias_regex,entity=Sanofi; reports=126; years=2015-2025
+sanofi,SANOFI US SERVICES INC. (FORMERLY KNOWN AS SANOFI-AVENTIS U.S. INC.),30792-707;51478-75,alias_regex,entity=Sanofi; reports=12; years=2015-2017
+sanofi,"SANOFI US SERVICES, INC (FORMERLY GENZYME)",5357-1006726,alias_regex,entity=Sanofi; reports=3; years=2017-2017
+sanofi,"SANOFI US SERVICES, INC.",305852-341;5357-1006726;79610-75,alias_regex,entity=Sanofi; reports=19; years=2017-2020
+sanofi,"SANOFI US SERVICES, INC. (FORMERLY KNOWN AS ""SANOFI-AVENTIS U.S. INC.)",40036301-36,alias_regex,entity=Sanofi; reports=11; years=2015-2017
+sanofi,"SANOFI US SERVICES, INC. (FORMERLY KNOWN AS GENZYME CORPORATION)",304736-1005026,alias_regex,entity=Sanofi; reports=35; years=2017-2025
+sanofi,"SANOFI US SERVICES, INC. (FORMERLY KNOWN AS SANOFI GENZYME)",79610-75,alias_regex,entity=Sanofi; reports=2; years=2017-2017
+sanofi,"SANOFI, U.S.",41454-1006970,alias_regex,entity=Sanofi; reports=34; years=2017-2025
+santander,SANTANDER CONSUMER USA,20744-1005647,alias_regex,entity=Santander; reports=2; years=2015-2015
+santander,"SANTANDER HOLDINGS USA, INC.",305054-1004520;313715-1007728;401103632-12,alias_regex,entity=Santander; reports=70; years=2017-2025
+sap,QUALTRICS INTERNATIONAL INC.,401109039-67002,excluded_outside_ownership_window,entity=Qualtrics; reports=3; ownership_window=2019Q1..2023Q2; excluded_years=2025
+sap,QUALTRICS INTERNATIONAL INC. (FORMERLY KNOWN AS QUALTRICS LLC),401105159-342,alias_regex,"entity=Qualtrics; reports=8; years=2022-2023; ownership_window=2019Q1..2023Q2; excluded_years=2023,2024"
+sap,QUALTRICS LLC,401103542-188;401105159-342;5357-56516,alias_regex,"entity=Qualtrics; reports=34; years=2021-2023; ownership_window=2019Q1..2023Q2; excluded_years=2023,2024,2025"
+sap,"QUALTRICS, LLC",315592-342,alias_regex,entity=Qualtrics; reports=8; years=2019-2020; ownership_window=2019Q1..2023Q2
+sap,SAP AMERICA,21632-1005270;291572-1004951;57475-1006260,alias_regex,entity=SAP; reports=29; years=2015-2025
+sap,SAP AMERICA INC,400740216-152,alias_regex,entity=SAP; reports=12; years=2015-2018
+sap,SAP AMERICA INC.,20744-1007021,alias_regex,entity=SAP; reports=15; years=2021-2024
+sap,"SAP AMERICA, INC",1171-1004990;86196-69028,alias_regex,entity=SAP; reports=12; years=2015-2025
+sap,"SAP AMERICA, INC.",11195-1005573;2057-1006183;2194-1004606;284950-1006373;307832-1000398;308775-1003108;400552654-253;400586788-61828;400774330-226;400774330-633;401103077-152;401104284-188;401104288-65225;401107217-70593;401109056-63813;60151-12;682-1010320;73635-125;75557-1006866;76992-1003010,alias_regex,entity=SAP; reports=358; years=2015-2025
+sap,SAP NATIONAL SECURITY SERVICES (NS2),401103702-51,alias_regex,entity=SAP; reports=6; years=2015-2016
+sap,"SAP NATIONAL SECURITY SERVICES, INC.",314237-1005736;401103542-152;401104734-63456,alias_regex,entity=SAP; reports=27; years=2016-2025
+sap,"SEXTONS CREEK (ON BEHALF OF SAP AMERICA, INC.)",401105608-12,alias_regex_subcontract,"entity=SAP; reports=4; years=2020-2020; subcontract via SEXTONS CREEK; counted as activity, not spend (prime firm's income already includes it)"
+shell,ACORN CONSULTING OBO SHELL USA INC.,1171-1006067,alias_regex_subcontract,"entity=Shell; reports=8; years=2024-2025; subcontract via ACORN CONSULTING; counted as activity, not spend (prime firm's income already includes it)"
+shell,ACORN CONSULTING OBO SHELL USA INC. FKA SHELL OIL COMPANY,1171-1006067,alias_regex_subcontract,"entity=Shell; reports=1; years=2023-2023; subcontract via ACORN CONSULTING; counted as activity, not spend (prime firm's income already includes it)"
+shell,"SCRIVNER LEON GROUP, LLC ON BEHALF OF SHELL OIL COMPANY",401104362-24,alias_regex_subcontract,"entity=Shell; reports=9; years=2017-2019; subcontract via SCRIVNER LEON GROUP LLC; counted as activity, not spend (prime firm's income already includes it)"
+shell,SHELL EXPLORATION & PRODUCTION COMPANY,400502473-24,alias_regex,entity=Shell; reports=7; years=2015-2016
+shell,SHELL INTERNATIONAL B.V,401103585-137,alias_regex,entity=Shell; reports=19; years=2017-2022
+shell,SHELL NA LNG LLC,1171-1006067,alias_regex,entity=Shell; reports=8; years=2018-2019
+shell,SHELL OIL COMPANY,11195-1005243;1171-1006067;27775-1000646;296271-1014;308775-1003162;322911-322915;35092-12;39815-1003287;40020141-327;401103523-42950;401103886-75;401108916-61542;6143-176,alias_regex,entity=Shell; reports=237; years=2015-2025
+shell,SHELL OIL COMPANY FKA SHELL NA LNG LLC,1171-1006067,alias_regex,entity=Shell; reports=2; years=2020-2020
+shell,SHELL OIL PRODUCTS US,1171-1005421,alias_regex,entity=Shell; reports=8; years=2015-2016
+shell,"SHELL USA, INC.",296271-1014;401107972-35092;401107972-57736,alias_regex,entity=Shell; reports=22; years=2023-2025
+shell,"SHELL USA, INC. (FKA SHELL OIL COMPANY)",296271-1014;35092-12,alias_regex,entity=Shell; reports=20; years=2022-2025
+siemens,SIEMENS CORPORATION,1171-1005852;35263-12;35263-316920000;35263-35263;35263-3526312;400976792-924;401103500-773;401103834-45577;401104256-137;401104682-327;682-1005852,alias_regex,entity=Siemens; reports=214; years=2015-2025
+siemens,SIEMENS CORPORATIONS,2057-758,alias_regex,entity=Siemens; reports=7; years=2015-2016
+siemens,SIEMENS ENERGY,1171-1006738,excluded_outside_ownership_window,"entity=Siemens Energy; reports=18; ownership_window=..2020Q3; excluded_years=2021,2022,2023,2024,2025"
+siemens,"SIEMENS ENERGY, INC",401105784-12,alias_regex,"entity=Siemens Energy; reports=22; years=2020-2020; ownership_window=..2020Q3; excluded_years=2020,2021,2022,2023,2024,2025"
+siemens,"SIEMENS ENERGY, INC.",401103500-948,excluded_outside_ownership_window,"entity=Siemens Energy; reports=17; ownership_window=..2020Q3; excluded_years=2021,2022,2023,2024,2025"
+siemens,"SIEMENS GAMESA RENEWABLE ENERGY, INC.",401106587-001;401106587-51417,excluded_outside_ownership_window,"entity=Siemens Energy; reports=6; ownership_window=..2020Q3; excluded_years=2022,2023"
+siemens,"SIEMENS GOVERNMENT TECHNOLOGIES, INC.",307114-1004404;36710-1005787;401107393-56128,alias_regex,entity=Siemens; reports=40; years=2015-2025
+siemens,SIEMENS HEALTHINEERS,20744-1007084;401103321-378;5357-1008023,alias_regex,entity=Siemens; reports=50; years=2019-2025
+siemens,SIEMENS HEALTHINEERS (FKA SIEMENS CORPORATION),401103321-378,alias_regex,entity=Siemens; reports=1; years=2021-2021
+siemens,"SIEMENS HEALTHINEERS (FKA VARIAN MEDICAL SYSTEMS, INC.)",682-1007654,alias_regex,entity=Siemens; reports=13; years=2022-2025
+siemens,"SIEMENS MEDICAL SOLUTIONS USA, INC",401105966-12,alias_regex,entity=Siemens; reports=20; years=2021-2025
+siemens,"SIEMENS MEDICAL SOLUTIONS USA, INC.",22688-1002754;401106351-56031;72111-54845,alias_regex,entity=Siemens; reports=33; years=2018-2025
+siemens,SIEMENS RAIL AUTOMATION CORPORATION,7851-48,alias_regex,entity=Siemens; reports=7; years=2015-2016
+siemens,TIBER CREEK GROUP OBO SIEMENS HEALTHINEERS,401109669-68007,alias_regex_subcontract,"entity=Siemens; reports=3; years=2025-2025; subcontract via TIBER CREEK GROUP; counted as activity, not spend (prime firm's income already includes it)"
+spotify,SPOTIFY,401105068-57108;401105638-54527,alias_regex,entity=Spotify; reports=22; years=2023-2025
+spotify,SPOTIFY AB,5142-1005371,alias_regex,entity=Spotify; reports=2; years=2019-2019
+spotify,SPOTIFY USA INC,400976792-785;5131-0190;5131-2613,alias_regex,entity=Spotify; reports=16; years=2015-2017
+spotify,SPOTIFY USA INC.,20744-1005748;400493431-60827;400531586-758;400703107-113;401103981- 12;401108772-61115,alias_regex,entity=Spotify; reports=127; years=2015-2025
+stellantis,FCA US LLC,18466-1008772;284950-1005635;34295-1005077;39941-1005558;400460283-12;400532589-36;401103834-253,alias_regex,entity=Stellantis; reports=172; years=2015-2025
+stellantis,FCA US LLC (FORMERLY FILED AS CHRYSLER GROUP LLC),284950-1005635,alias_regex,entity=Stellantis; reports=15; years=2015-2018
+stellantis,"FCA US LLC, FORMERLY KNOWN AS CHRYSLER GROUP LLC",39941-1005558,alias_regex,entity=Stellantis; reports=1; years=2015-2015
+stellantis,"FCA US, LLC",400460283-12,alias_regex,entity=Stellantis; reports=1; years=2016-2016
+stellantis,STELLANTIS N.V.,284950-1005635,alias_regex,entity=Stellantis; reports=17; years=2021-2025
+stellantis,STELLANTIS N.V. (FORMERLY FCA US LLC),284950-1005635,alias_regex,entity=Stellantis; reports=2; years=2021-2021
+tesla,TESLA,8453-1008454,alias_regex,entity=Tesla; reports=21; years=2020-2025
+tesla,TESLA INC.,316057-52693;400412950-12;401105159-164;57475-53511;682-61446,alias_regex,entity=Tesla; reports=49; years=2017-2025
+tesla,"TESLA INC. (FORMERLY TESLA MOTORS, INC)",400412950-12,alias_regex,entity=Tesla; reports=3; years=2017-2017
+tesla,"TESLA MOTORS, INC.",400412950-12;400944730-176;8830-1005038,alias_regex,entity=Tesla; reports=25; years=2015-2017
+tesla,"TESLA, INC",401103774-87,alias_regex,entity=Tesla; reports=5; years=2017-2018
+tesla,"TESLA, INC.",18466-1008807;284950-1006726;36710-1005510;400942719-63;401103493-253;401104682-12;401104937-69190;401105159-164;401105888-55325;401106285-69075;7257-58111;84775-66703,alias_regex,entity=Tesla; reports=77; years=2017-2025
+tesla,"TESLA, INC. (FKA SOLARCITY)",401103493-253,alias_regex,entity=Tesla; reports=1; years=2017-2017
+thales,THALES,400713139-101;400713139-87,alias_regex,entity=Thales; reports=8; years=2018-2020
+thales,THALES AVS FRANCE SAS,68970-1003527;68970-70152,alias_regex,entity=Thales; reports=9; years=2019-2020
+thales,"THALES DEFENSE & SECURITY, INC.",10800-1002475;18466-61368;401108698-66196;45414-1003884;5153-1005941;8453-1006982,alias_regex,entity=Thales; reports=90; years=2015-2025
+thales,THALES USA,401104888-70866;5153-1005135;68970-0022,alias_regex,entity=Thales; reports=37; years=2017-2025
+thales,"THALES USA, INC.",285632-12;401104242-63894;5153-1005135,alias_regex,entity=Thales; reports=21; years=2015-2025
+thales,"THALES VISIONIX, INC.",400414963-327,alias_regex,entity=Thales; reports=4; years=2015-2015
+totalenergies,TOTAL S.A.,30906-2358,alias_regex,entity=TotalEnergies; reports=25; years=2015-2021
+totalenergies,"TOTAL WASHINGTON, DC REPRESENTATIVE OFFICE LLC",401104719-12,alias_regex,entity=TotalEnergies; reports=13; years=2018-2021
+totalenergies,TOTALENERGIES EP MOZAMBIQUE AREA 1,401104288-64458,alias_regex,entity=TotalEnergies; reports=4; years=2025-2025
+totalenergies,TOTALENERGIES SE (FORMERLY KNOWN AS TOTAL S.A.),30906-2358,alias_regex,entity=TotalEnergies; reports=10; years=2021-2023
+totalenergies,TOTALENERGIES SE (FORMERLY KNOWN AS TOTAL S.A.) (FORMERLY: TOTAL S.A.),30906-2358,alias_regex,entity=TotalEnergies; reports=1; years=2021-2021
+totalenergies,"TOTALENERGIES WASHINGTON OFFICE, F/K/A TOTAL WASHINGTON, DC REPRESENTATIVE OFFIC",401104719-12,alias_regex,entity=TotalEnergies; reports=8; years=2024-2025
+uber,POSTMATES INC,5357-1008288,alias_regex,entity=Postmates; reports=4; years=2021-2021; ownership_window=2021Q1..; excluded_years=2020
+uber,"POSTMATES, INC.",40013096-595,alias_regex,"entity=Postmates; reports=15; years=2021-2021; ownership_window=2021Q1..; excluded_years=2017,2018,2019,2020"
+uber,"THE DOERRER GROUP ON BEHALF OF UBER TECHNOLOGIES, INC.",308970-1001802;401103550-517,alias_regex_subcontract,"entity=Uber; reports=64; years=2015-2025; subcontract via DOERRER GROUP; counted as activity, not spend (prime firm's income already includes it)"
+uber,TREMONT STRATEGIES GROUP ON BEHALF OF UBER TECHNOLOGIES,401105978-12,alias_regex_subcontract,"entity=Uber; reports=16; years=2021-2024; subcontract via TREMONT STRATEGIES GROUP; counted as activity, not spend (prime firm's income already includes it)"
+uber,UBER TECHNOLOGIES,40013096-393,alias_regex,entity=Uber; reports=10; years=2015-2017
+uber,UBER TECHNOLOGIES INC.,310095-214;314237-1005700;401103834-63030;7257-1010026,alias_regex,entity=Uber; reports=63; years=2016-2025
+uber,"UBER TECHNOLOGIES, INC.",20744-1006070;24123-1005507;400336564-188;400976792-1650;401103362-12;401103721-00;401103721-12;401103721-24;401104288-342;401104313-63286;401104682-36;401106905-63915;65976-3057;8830-1005142,alias_regex,entity=Uber; reports=243; years=2015-2025
+uber,UBER TECHNOLOGIES. INC.,90250-1003973,alias_regex,entity=Uber; reports=16; years=2021-2024
+ubs,CREDIT SUISSE SECURITIES (USA),18422-1005888;62596-12,alias_regex,"entity=Credit Suisse; reports=67; years=2023-2023; ownership_window=2023Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021,2022,2023"
+ubs,CREDIT SUISSE SECURITIES (USA) LLC,11195-1004874;18466-1008908;401105820-75;401106395-12;5357-1007693,alias_regex,"entity=Credit Suisse; reports=48; years=2023-2025; ownership_window=2023Q3..; excluded_years=2018,2019,2020,2021,2022,2023"
+ubs,"CREDIT SUISSE SECURITIES (USA), LLC",2057-1005356;31680-1005891,excluded_outside_ownership_window,"entity=Credit Suisse; reports=28; ownership_window=2023Q3..; excluded_years=2015,2016,2017,2018"
+ubs,CREDIT SUISSE SECURITIES(USA) F/K/A  CREDIT SUISSE FIRST BOSTON,18422-1005888,excluded_outside_ownership_window,entity=Credit Suisse; reports=2; ownership_window=2023Q3..; excluded_years=2015
+ubs,"CREDIT SUISSE SECURITIES, LLC",401014864-24,excluded_outside_ownership_window,"entity=Credit Suisse; reports=8; ownership_window=2023Q3..; excluded_years=2015,2016"
+ubs,UBS,310370-1003287,alias_regex,entity=UBS; reports=5; years=2015-2016
+ubs,UBS AMERICAS INC.,78436-12,alias_regex,entity=UBS; reports=28; years=2019-2025
+ubs,"UBS AMERICAS, INC.",78436-12,alias_regex,entity=UBS; reports=16; years=2015-2018
+ubs,UBS GROUP AG,75557-70280,alias_regex,entity=UBS; reports=1; years=2025-2025
+unilever,UNILEVER,5357-65657,alias_regex,entity=Unilever; reports=4; years=2025-2025
+unilever,UNILEVER ASCC AG,46585-1005534,alias_regex,entity=Unilever; reports=3; years=2015-2015
+unilever,UNILEVER UNITED STATES,46585-1005522;7257-60856,alias_regex,entity=Unilever; reports=7; years=2023-2024
+unilever,"UNILEVER UNITED STATES, INC.",38938-12;401103500-51862;46585-1005522,alias_regex,entity=Unilever; reports=58; years=2015-2025
+unilever,"UNILEVER UNITED STATES, INC. ON BEHALF OF HELLMANN'S",401107154-53717;73271-1007250,alias_regex,entity=Unilever; reports=19; years=2021-2025; company is principal ('on behalf of' HELLMANNS)
+verizon,OATH INC (FORMERLY KNOW AS YAHOO! INC),400740216-191,alias_regex,entity=Oath/Yahoo; reports=12; years=2017-2020; ownership_window=2017Q3..2021Q3
+verizon,OATH INC. (FORMERLY KNOWN AS YAHOO),320918-75,alias_regex,entity=Oath/Yahoo; reports=8; years=2017-2019; ownership_window=2017Q3..2021Q3; excluded_years=2017
+verizon,OATH INC. AND VARIOUS SUBSIDIARIES,320918-75;401105638-12;49178-12,alias_regex,entity=Oath/Yahoo; reports=27; years=2017-2021; ownership_window=2017Q3..2021Q3
+verizon,OATH INC. AND VARIOUS SUBSIDIARIES (FORMERLY KNOWN AS YAHOO! INC),49178-12,excluded_outside_ownership_window,entity=Oath/Yahoo; reports=1; ownership_window=2017Q3..2021Q3; excluded_years=2017
+verizon,"OATH INC. AND VARIOUS SUBSIDIARIES, FORMERLY KNOWN AS YAHOO! INC.",400493431-137,alias_regex,entity=Oath/Yahoo; reports=8; years=2017-2019; ownership_window=2017Q3..2021Q3; excluded_years=2017
+verizon,"THE LIVINGSTON GROUP, LLC (VERIZON COMMUNICATIONS, INC.)",284471-137,alias_regex_subcontract,"entity=Verizon; reports=44; years=2015-2025; listed subcontract; counted as activity, not spend (prime firm's income already includes it)"
+verizon,TRACFONE WIRELESS,318994-214,alias_regex,"entity=TracFone; reports=29; years=2021-2022; ownership_window=2021Q4..; excluded_years=2015,2016,2017,2018,2019,2020,2021"
+verizon,"TRACFONE WIRELESS, INC.",300936-1004024;321910-48;321910-63;36710-1005002;400762305-191;401047950-12;401103693-63;41408-1004532;81156-176;85071-1053;88278-455,alias_regex,"entity=TracFone; reports=214; years=2021-2025; ownership_window=2021Q4..; excluded_years=2015,2016,2017,2018,2019,2020,2021"
+verizon,"TWIN LOGIC STRATEGIES ON BEHALF OF OATH INC &VARIOUS SUBSIDIARIES,FKA YAHOO! INC",401006842-137,alias_regex_subcontract,"entity=Oath/Yahoo; reports=8; years=2017-2019; ownership_window=2017Q3..2021Q3; excluded_years=2017; subcontract via TWIN LOGIC STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+verizon,VERIZON,17385-152;24486-202;313271-191;38687-12;400976792-645;401103269-12;401104284-51;401104475-61079;401105493-12;401105493-44624;47850-24;48827-1790;61174-2435;61458-62848;65976-1457;76992-657;8453-1007630,alias_regex,entity=Verizon; reports=204; years=2015-2025
+verizon,VERIZON COMMUNICATIONS,1182-758;306636-393;307114-1004912;400431088-101;401103200-24;401105068-63;401108637-60474;41408-1496;58432-1005534;682-51032;69696-12;7257-1006664;74658-12;84478-1004912,alias_regex,entity=Verizon; reports=163; years=2015-2025
+verizon,VERIZON COMMUNICATIONS INC,296271-1002;5357-4531,alias_regex,entity=Verizon; reports=28; years=2017-2025
+verizon,VERIZON COMMUNICATIONS INC.,307730-1001636;317776-113;401103105-36;401103500-808;401104937-24;7257-1006664,alias_regex,entity=Verizon; reports=77; years=2015-2025
+verizon,VERIZON COMMUNICATIONS INC. AND ITS SUBSIDIARIES,401104837-12;70131-75,alias_regex,entity=Verizon; reports=72; years=2015-2025
+verizon,VERIZON COMMUNICATIONS INC. AND VARIOUS SUBSIDIARIES,401108410-69093;5836-12,alias_regex,entity=Verizon; reports=37; years=2017-2025
+verizon,"VERIZON COMMUNICATIONS, INC.",1171-65254;313715-1007883;400703105-24;401105121-45040;401106595-65739;49635-2094;5357-4531;91774-1004722,alias_regex,entity=Verizon; reports=123; years=2015-2025
+verizon,"VERIZON COMMUNICATIONS, INC. AND ITS SUBSIDIARIES",5836-12,alias_regex,entity=Verizon; reports=9; years=2015-2017
+verizon,"VERIZON COMMUNICATIONS, INC. AND VARIOUS SUBSIDIARIES",24123-1698;307730-1001636;313271-191;38687-12;400531586-90;400703105-24;400976792-645;401104284-51;41408-1496;48827-1790;65976-1457;72053-152;76992-657;91774-1004722,alias_regex,entity=Verizon; reports=334; years=2017-2025
+verizon,"VERIZON COMMUNICATIONS, INC. AND VARIOUS SUBSIDIARIES (FORMERLY VERIZON)",48827-1790,alias_regex,entity=Verizon; reports=1; years=2017-2017
+verizon,"VERIZON COMMUNICATIONS, INC. AND VARIOUS SUBSIDIARIES (FORMERLY VERIZON, INC.)",400531586-90,alias_regex,entity=Verizon; reports=1; years=2017-2017
+verizon,"VERIZON COMMUNICATIONS, INC. AND VARIOUS SUBSIDIARIES: PREV. REPORTED AS VERIZON",65976-1457,alias_regex,entity=Verizon; reports=1; years=2017-2017
+verizon,VERIZON INC.,401104143-12,alias_regex,entity=Verizon; reports=3; years=2016-2017
+verizon,VERIZON SERVICES CORPORATION,24123-1698;86196-621,alias_regex,entity=Verizon; reports=51; years=2015-2025
+verizon,"VERIZON, INC",72053-152,alias_regex,entity=Verizon; reports=9; years=2015-2017
+verizon,"VERIZON, INC.",400531586-90;41534-1004734,alias_regex,entity=Verizon; reports=18; years=2015-2017
+visa,VISA,313271-1005080;41454-4086,alias_regex,entity=Visa; reports=74; years=2015-2025
+visa,VISA INC,400740216-125,alias_regex,entity=Visa; reports=25; years=2015-2021
+visa,VISA INC.,24123-2803;297215-63;401108637-60475;40156-12,alias_regex,entity=Visa; reports=124; years=2015-2025
+visa,VISA U.S.A. INC.,40041336-75;400976792-56957,alias_regex,entity=Visa; reports=37; years=2019-2025
+visa,"VISA USA, INC.",296271-571,alias_regex,entity=Visa; reports=44; years=2015-2025
+visa,"VISA, INC",86196-1005623,alias_regex,entity=Visa; reports=13; years=2015-2018
+visa,"VISA, INC.",400531586-366;400689052-277;401105906-101,alias_regex,entity=Visa; reports=81; years=2015-2025
+visa,"VISA, INC. (FKA VISA U.S.A., INC.)",25897-101,alias_regex,entity=Visa; reports=6; years=2015-2016
+visa,"VISA, U.S.A., INC.",682-1005751,alias_regex,entity=Visa; reports=24; years=2020-2025
+vodafone,VODAFONE,401105597-12,alias_regex,entity=Vodafone; reports=16; years=2020-2023
+vodafone,VODAFONE GROUP SERVICES LIMITED,18422-1006830;73271-1006881,alias_regex,entity=Vodafone; reports=4; years=2015-2020
+volkswagen,ELECTRIFY AMERICA,86777-556,alias_regex,entity=Electrify America; reports=3; years=2021-2022
+volkswagen,"ELECTRIFY AMERICA, LLC",401103693-253;401104811-12,alias_regex,entity=Electrify America; reports=46; years=2018-2025
+volkswagen,INTERNATIONAL MOTORS FKA NAVISTAR,401103295-152,alias_regex,entity=Navistar; reports=3; years=2025-2025; ownership_window=2021Q3..
+volkswagen,"INTERNATIONAL MOTORS, LLC",401109039-70080;5131-65837;76992-66474,alias_regex,entity=Navistar; reports=9; years=2025-2025; ownership_window=2021Q3..
+volkswagen,"INTERNATIONAL MOTORS, LLC (FORMERLY NAVISTAR, INC)",28891-12,alias_regex,entity=Navistar; reports=1; years=2024-2024; ownership_window=2021Q3..
+volkswagen,"INTERNATIONAL MOTORS, LLC (FORMERLY NAVISTAR, INC.)",28891-00012;28891-12,alias_regex,entity=Navistar; reports=5; years=2024-2025; ownership_window=2021Q3..
+volkswagen,NAVISTAR,401103295-152,alias_regex,"entity=Navistar; reports=41; years=2021-2025; ownership_window=2021Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021"
+volkswagen,NAVISTAR DEFENSE,401103295-378,alias_regex,"entity=Navistar; reports=11; years=2021-2021; ownership_window=2021Q3..; excluded_years=2019,2020,2021"
+volkswagen,NAVISTAR DEFENSE LLC,401057985-59681;401057985-95681,alias_regex,entity=Navistar; reports=4; years=2024-2024; ownership_window=2021Q3..
+volkswagen,"NAVISTAR DEFENSE, LLC",18466-1009483;401103475-467,excluded_outside_ownership_window,"entity=Navistar; reports=14; ownership_window=2021Q3..; excluded_years=2019,2020,2021"
+volkswagen,"NAVISTAR, INC",28891-00012;28891-12,excluded_outside_ownership_window,"entity=Navistar; reports=26; ownership_window=2021Q3..; excluded_years=2015,2016,2017,2018,2019,2020,2021"
+volkswagen,"NAVISTAR, INC.",1182-1005953;28891-00012;28891-12;28891-28891;401103757-24,alias_regex,"entity=Navistar; reports=34; years=2021-2024; ownership_window=2021Q3..; excluded_years=2015,2016,2017,2018"
+volkswagen,"PORSCHE CARS NORTH AMERICA, INC.",401105297-24,alias_regex,entity=Porsche; reports=27; years=2019-2025
+volkswagen,PORSCHE CARS OF NORTH AMERICA,401054971-342,alias_regex,entity=Porsche; reports=18; years=2015-2019
+volkswagen,"VOLKSWAGEN GROUP OF AMERICA, INC.",401105130-48;40214-12;682-1445,alias_regex,entity=Volkswagen; reports=116; years=2015-2025
+walmart,MVP STRATEGIES (OBO WALMART),401105689-63449,alias_regex_subcontract,"entity=Walmart; reports=2; years=2024-2025; subcontract via MVP STRATEGIES; counted as activity, not spend (prime firm's income already includes it)"
+walmart,WAL-MART,31680-3856,alias_regex,entity=Walmart; reports=12; years=2015-2017
+walmart,WAL-MART INC.,284950-1938,alias_regex,entity=Walmart; reports=3; years=2018-2019
+walmart,WAL-MART INC. (FORMERLY WAL-MART STORES),284950-1938,alias_regex,entity=Walmart; reports=3; years=2018-2018
+walmart,WAL-MART STORES,284950-1938,alias_regex,entity=Walmart; reports=12; years=2015-2017
+walmart,"WAL-MART STORES, INC",11195-1005472;40305-12;87858-1002932,alias_regex,entity=Walmart; reports=21; years=2015-2017
+walmart,"WAL-MART STORES, INC.",1171-1005228;293335-1005002;30906-5114;310095-137;313715-1005053;34295-330;400532589-874;400918672-253;401054971-761;401103077-12;401103235-137;401103834-51;7304-1004696,alias_regex,entity=Walmart; reports=96; years=2015-2023
+walmart,WALMART,400431088-75;401108921-63446,alias_regex,entity=Walmart; reports=17; years=2015-2025
+walmart,WALMART INC.,11195-1005472;1171-1005228;18422-1002664;284950-1938;293335-1005002;310095-137;313715-1005053;400431088-75;400703105-191;400774330-64836;400918672-253;401103235-137;401104428-59538;401104769-87;401104937-51;40305-12;86196-56643,alias_regex,entity=Walmart; reports=355; years=2018-2025
+walmart,"WALMART INC. (FKA, WAL-MART STORES, INC.)",1171-1005228,alias_regex,entity=Walmart; reports=1; years=2018-2018
+walmart,WALMART INC. (FORMERLY KNOWN AS WAL-MART STORES INC.),18422-1002664,alias_regex,entity=Walmart; reports=9; years=2018-2020
+walmart,"WALMART INC. (FORMERLY KNOWN AS WAL-MART STORES, INC.)",400918672-253;401103235-137,alias_regex,entity=Walmart; reports=2; years=2018-2018
+walmart,"WALMART INC. F/K/A WAL-MART STORES, INC.",293335-1005002,alias_regex,entity=Walmart; reports=1; years=2018-2018
