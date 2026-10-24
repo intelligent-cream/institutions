@@ -433,7 +433,7 @@ def _scan_zip(path):
     """Worker: parse one zip, keep reports whose client matches a company; collect covered positions."""
     recs = parse_zip(path)
     y0 = int(path.name[:4])
-    q0 = int(path.name[4])
+    q0 = int(path.name[5])
     kept, covered = [], {}
     for r in recs:
         ry = int(r["year"]) if r["year"].isdigit() else y0
