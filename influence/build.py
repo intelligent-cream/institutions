@@ -62,8 +62,19 @@ def main():
             panel[(cid, y)]["ec_meetings"] = num(r["ec_meetings"])
         if num(r["eu_lobbyists_fte"]) is not None:
             panel[(cid, y)]["eu_lobbyists_fte"] = num(r["eu_lobbyists_fte"])
+    # Snapshots are taken each January and report costs two years back; a June 2019
+    # snapshot leaves cost year 2017 mostly missing. Fill interior gaps linearly and flag them.
+    by_company = defaultdict(dict)
     for (cid, y), v in eu_cost.items():
-        panel[(cid, y)]["eu_lobby_usd"] = usd(v, "EUR", y)
+        by_company[cid][y] = v
+    for cid, series in by_company.items():
+        ys = sorted(series)
+        for a, b in zip(ys, ys[1:]):
+            for y in range(a + 1, b):
+                series[y] = series[a] + (series[b] - series[a]) * (y - a) / (b - a)
+                panel[(cid, y)]["eu_lobby_interpolated"] = 1
+        for y, v in series.items():
+            panel[(cid, y)]["eu_lobby_usd"] = usd(v, "EUR", y)
 
     for r in load("us_lobby"):
         p = panel[(r["company_id"], int(r["year"]))]
@@ -96,7 +107,7 @@ def main():
         p = panel[(r["company_id"], int(r["fiscal_year"]))]
         p["us_contracts_usd"] = num(r.get("contract_obligations_usd"))
 
-    year_fields = ["us_lobby_usd", "eu_lobby_usd", "de_lobby_usd", "fr_lobby_usd", "ec_meetings", "eu_lobbyists_fte",
+    year_fields = ["us_lobby_usd", "eu_lobby_usd", "eu_lobby_interpolated", "de_lobby_usd", "fr_lobby_usd", "ec_meetings", "eu_lobbyists_fte",
                    "us_lobbyists", "us_lobbyists_former_gov", "us_bills", "pac_usd", "pac_rep_usd", "pac_dem_usd",
                    "revenue_usd", "pretax_income_usd", "income_tax_expense_usd", "cash_taxes_paid_usd", "book_etr",
                    "statutory_rate", "us_contracts_usd"]

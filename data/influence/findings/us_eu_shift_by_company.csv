@@ -1,1 +1,96 @@
-
+company_id,sector,hq_region,eu_share_2016_17,eu_share_2023_24,change
+axa,Finance,Europe,0.535,1.0,0.465
+nestle,Consumer,Europe,0.12,0.52,0.4
+riotinto,Mining,Europe,0.018,0.404,0.387
+dupont,Chemicals & agri,US,0.09,0.409,0.32
+apple,Technology,US,0.207,0.466,0.259
+bayer,Pharma & health,Europe,0.251,0.485,0.234
+unilever,Consumer,Europe,0.239,0.473,0.234
+mcdonalds,Consumer,US,0.184,0.402,0.219
+airbnb,Technology,US,0.399,0.602,0.202
+abbvie,Pharma & health,US,0.064,0.229,0.164
+meta,Technology,US,0.163,0.325,0.163
+thales,Aerospace & defence,Europe,0.603,0.759,0.156
+qualcomm,Technology,US,0.133,0.266,0.133
+amazon,Technology,US,0.148,0.276,0.128
+3m,Industrials,US,0.153,0.28,0.127
+pmi,Tobacco,US,0.2,0.321,0.121
+allianz,Finance,Europe,0.441,0.551,0.11
+novonordisk,Pharma & health,Europe,0.088,0.19,0.103
+pg,Consumer,US,0.183,0.284,0.1
+mercedes,Autos,Europe,0.637,0.732,0.095
+ford,Autos,US,0.121,0.215,0.094
+ahold,Consumer,Europe,0.907,1.0,0.093
+honeywell,Industrials,US,0.106,0.199,0.093
+microsoft,Technology,US,0.373,0.465,0.092
+uber,Technology,US,0.352,0.442,0.089
+hsbc,Finance,Europe,0.338,0.421,0.082
+tesla,Autos,US,0.288,0.365,0.077
+airbus,Aerospace & defence,Europe,0.369,0.429,0.059
+novartis,Pharma & health,Europe,0.227,0.283,0.056
+bp,Energy,Europe,0.353,0.402,0.048
+att,Telecom & media,US,0.03,0.073,0.043
+eni,Energy,Europe,0.936,0.978,0.042
+gilead,Pharma & health,US,0.086,0.125,0.038
+exxon,Energy,US,0.293,0.331,0.038
+basf,Chemicals & agri,Europe,0.723,0.76,0.038
+safran,Aerospace & defence,Europe,0.513,0.549,0.036
+alphabet,Technology,US,0.279,0.313,0.034
+pfizer,Pharma & health,US,0.085,0.115,0.029
+sanofi,Pharma & health,Europe,0.217,0.244,0.027
+shell,Energy,Europe,0.381,0.408,0.027
+bms,Pharma & health,US,0.148,0.173,0.025
+enel,Energy,Europe,0.918,0.936,0.019
+ing,Finance,Europe,0.981,1.0,0.019
+citi,Finance,US,0.145,0.162,0.017
+cocacola,Consumer,US,0.104,0.118,0.014
+merck,Pharma & health,US,0.136,0.145,0.008
+comcast,Telecom & media,US,0.035,0.04,0.005
+spotify,Technology,Europe,0.415,0.416,0.002
+orange,Telecom & media,Europe,1.0,1.0,0.0
+renault,Autos,Europe,1.0,1.0,0.0
+conocophillips,Energy,US,0.057,0.057,-0.001
+lilly,Pharma & health,US,0.108,0.104,-0.003
+verizon,Telecom & media,US,0.069,0.064,-0.005
+cisco,Technology,US,0.389,0.385,-0.005
+nokia,Technology,Europe,0.526,0.519,-0.007
+dtelekom,Telecom & media,Europe,0.178,0.163,-0.015
+deutschebank,Finance,Europe,0.874,0.855,-0.019
+vodafone,Telecom & media,Europe,1.0,0.98,-0.02
+rtx,Aerospace & defence,US,0.041,0.021,-0.02
+siemens,Industrials,Europe,0.442,0.42,-0.022
+chevron,Energy,US,0.137,0.111,-0.026
+philips,Pharma & health,Europe,0.411,0.385,-0.026
+goldman,Finance,US,0.281,0.253,-0.028
+amgen,Pharma & health,US,0.131,0.095,-0.035
+bmw,Autos,Europe,0.755,0.719,-0.036
+astrazeneca,Pharma & health,Europe,0.23,0.193,-0.037
+jpmorgan,Finance,US,0.259,0.22,-0.039
+visa,Finance,US,0.146,0.106,-0.04
+intel,Technology,US,0.288,0.247,-0.041
+ibm,Technology,US,0.31,0.266,-0.044
+loreal,Consumer,Europe,1.0,0.956,-0.044
+caterpillar,Industrials,US,0.11,0.055,-0.055
+mastercard,Finance,US,0.226,0.17,-0.056
+pepsico,Consumer,US,0.17,0.11,-0.06
+oracle,Technology,US,0.098,0.036,-0.061
+totalenergies,Energy,Europe,1.0,0.934,-0.066
+heineken,Consumer,Europe,0.455,0.386,-0.068
+blackrock,Finance,US,0.385,0.315,-0.07
+bofa,Finance,US,0.392,0.314,-0.079
+lvmh,Consumer,Europe,1.0,0.907,-0.093
+jnj,Pharma & health,US,0.213,0.116,-0.097
+ge,Industrials,US,0.426,0.32,-0.106
+prosus,Technology,Europe,1.0,0.893,-0.107
+gsk,Pharma & health,Europe,0.316,0.206,-0.11
+volkswagen,Autos,Europe,0.72,0.609,-0.111
+ubs,Finance,Europe,0.764,0.648,-0.116
+morganstanley,Finance,US,0.288,0.16,-0.128
+roche,Pharma & health,Europe,0.292,0.164,-0.128
+santander,Finance,Europe,0.722,0.582,-0.14
+equinor,Energy,Europe,0.854,0.701,-0.153
+sap,Technology,Europe,0.347,0.163,-0.184
+danone,Consumer,Europe,0.551,0.352,-0.199
+bnpparibas,Finance,Europe,1.0,0.789,-0.211
+barclays,Finance,Europe,0.936,0.614,-0.322
+bat,Tobacco,Europe,0.847,0.448,-0.399
