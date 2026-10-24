@@ -1,0 +1,180 @@
+company_id,register_id,register_name,match_method,note
+alphabet,03181945560-59,Google,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 475 EC meeting records 2014-2026
+alphabet,086621031693-51,DeepMind Technologies Limited,alias_exact_name,in snapshots 2019-2023 (5 years); category: Companies & groups; 3 EC meeting records 2014-2026
+alphabet,173057196241-95,Wing Aviation LLC,alias_exact_name,in snapshots 2026-2026 (1 years); category: Companies & groups; 2 EC meeting records 2014-2026
+alphabet,824405140230-24,Waymo,alias_exact_name,in snapshots 2021-2026 (6 years); category: Companies & groups; 10 EC meeting records 2014-2026
+meta,28666427835-74,Meta Platforms Ireland Limited and its various subsidiaries,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Facebook Ireland Limited / Meta Platforms Ireland Limited and its various subsidiaries / Meta Platforms Ireland Limited and its various subsidiaries (f/k/a Facebook Ireland Limited); category: Companies & groups; 295 EC meeting records 2014-2026
+microsoft,0801162959-21,Microsoft Corporation,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 296 EC meeting records 2014-2026
+microsoft,430008722431-29,LinkedIn Ireland,alias_exact_name,in snapshots 2017-2026 (10 years); category: Companies & groups; 53 EC meeting records 2014-2026
+microsoft,487494149616-50,"GitHub, Inc.",alias_exact_name,in snapshots 2024-2026 (3 years); category: Companies & groups; 2 EC meeting records 2014-2026
+microsoft,976086229629-90,"GitHub, Inc.",alias_exact_name,in snapshots 2019-2023 (5 years); category: Companies & groups; 2 EC meeting records 2014-2026
+apple,588327811384-96,Apple Inc.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 181 EC meeting records 2014-2026
+amazon,366117914426-10,Amazon Europe Core SARL,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 234 EC meeting records 2014-2026
+amazon,787264835793-19,"Twitch Interactive, Inc.",alias_exact_name,in snapshots 2020-2026 (7 years); category: Companies & groups; 4 EC meeting records 2014-2026
+oracle,25955391451-88,Oracle,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 34 EC meeting records 2014-2026
+ibm,590598523223-68,IBM Research GmbH,alias_exact_name,in snapshots 2017-2026 (10 years); category: Companies & groups; 4 EC meeting records 2014-2026
+ibm,7721359944-96,IBM Corporation,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 158 EC meeting records 2014-2026
+intel,7459401905-60,Intel Corporation,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 66 EC meeting records 2014-2026
+qualcomm,00358442856-45,QUALCOMM Incorporated,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: QUALCOMM Inc. / QUALCOMM Incorporated; category: Companies & groups; 85 EC meeting records 2014-2026
+qualcomm,019293949200-30,Qualcomm France,alias_exact_name,in snapshots 2024-2026 (3 years); category: Companies & groups; 4 EC meeting records 2014-2026
+qualcomm,174684235534-60,Qualcomm Communications SARL,alias_exact_name,in snapshots 2020-2024 (5 years); category: Companies & groups; 4 EC meeting records 2014-2026
+nvidia,866541247974-60,NVIDIA Corporation,alias_exact_name,in snapshots 2023-2026 (4 years); category: Companies & groups; 47 EC meeting records 2014-2026
+cisco,494613715191-85,Cisco Systems Inc.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 118 EC meeting records 2014-2026
+uber,002278013515-26,Uber,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 110 EC meeting records 2014-2026
+airbnb,823871417098-42,Airbnb Ireland UC,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Airbnb Ireland / Airbnb Ireland UC; category: Companies & groups; 37 EC meeting records 2014-2026
+pfizer,4263301811-33,Pfizer Inc.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 25 EC meeting records 2014-2026
+jnj,75617941310-89,Johnson & Johnson,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 38 EC meeting records 2014-2026
+merck,09824113589-92,Merck Sharp & Dohme Europe Belgium SRL,alias_exact_name,"in snapshots 2016-2026 (11 years); names over time: MSD (Europe), Inc. (Merck Sharp & Dohme) / Merck Sharp & Dohme Europe Belgium SRL; category: Companies & groups; 55 EC meeting records 2014-2026"
+abbvie,934069612666-51,AbbVie,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 9 EC meeting records 2014-2026
+lilly,04657143399-39,Eli Lilly and Company,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 32 EC meeting records 2014-2026
+bms,04437556781-76,Bristol-Myers Squibb Company,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 14 EC meeting records 2014-2026
+bms,37955905654-37,CELGENE,alias_exact_name_windowed,in snapshots 2020-2020 (1 years); counted only 2020- (ownership); category: Companies & groups; 6 EC meeting records 2014-2026
+amgen,42243575237-50,Amgen Inc,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 8 EC meeting records 2014-2026
+amgen,714568146319-95,Horizon Therapeutics Public Limited Company,alias_exact_name_windowed,in snapshots 2024-2024 (1 years); counted only 2024- (ownership); category: Companies & groups; 0 EC meeting records 2014-2026
+gilead,258845020786-10,Gilead Sciences,alias_exact_name,in snapshots 2017-2026 (10 years); category: Companies & groups; 19 EC meeting records 2014-2026
+exxon,0745650927-75,ExxonMobil Petroleum & Chemical,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 104 EC meeting records 2014-2026
+chevron,09981988815-02,Chevron Belgium BV,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Chevron Belgium BV / Chevron Belgium BVBA / Chevron Belgium NV; category: Companies & groups; 8 EC meeting records 2014-2026
+chevron,294419840112-93,REG International Trading & Commodities B.V,alias_exact_name_windowed,in snapshots 2023-2025 (3 years); counted only 2023- (ownership); names over time: CHEVRON RENEWABLE ENERGY GROUP / REG International Trading & Commodities B.V / RENEWABLE ENERGY GROUP; category: Companies & groups; 0 EC meeting records 2014-2026
+conocophillips,1798200413-71,ConocoPhillips,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 17 EC meeting records 2014-2026
+jpmorgan,9171899949-17,JPMorgan Chase & Co.,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: JPMorgan Chase & Co. / JPMorganChase & Co.; category: Companies & groups; 114 EC meeting records 2014-2026
+goldman,701266814986-18,"The Goldman Sachs Group, Inc.",alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 103 EC meeting records 2014-2026
+morganstanley,29701922039-63,Morgan Stanley,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 19 EC meeting records 2014-2026
+bofa,53891615036-88,Bank of America Corporation,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Bank of America / Bank of America Corporation / Bank of America Merrill Lynch; category: Companies & groups; 45 EC meeting records 2014-2026
+citi,00353757573-57,Citigroup Inc.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 74 EC meeting records 2014-2026
+blackrock,51436554494-18,BlackRock,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 78 EC meeting records 2014-2026
+visa,61954192201-58,Visa Europe,alias_exact_name_windowed,in snapshots 2017-2026 (10 years); counted only 2017- (ownership); category: Companies & groups; 26 EC meeting records 2014-2026
+mastercard,58204758673-16,Mastercard Europe,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: MasterCard Europe / Mastercard / Mastercard Europe; category: Companies & groups; 97 EC meeting records 2014-2026
+boeing,62505293737-81,Boeing Belgium SRL,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Boeing Belgium SRL / Boeing International Corporation - Belgium Branch Office; category: Companies & groups; 54 EC meeting records 2014-2026
+lockheed,375910591885-85,Lockheed Martin Global Inc.,alias_exact_name,in snapshots 2025-2026 (2 years); category: Companies & groups; 3 EC meeting records 2014-2026
+rtx,87564644126-75,RTX Corporation,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: RTX Corporation / Raytheon Technologies / United Technologies Corporation; category: Companies & groups; 33 EC meeting records 2014-2026
+generaldynamics,,,not_found,no registration of General Dynamics or its subsidiaries in the 2016-2026 snapshots
+northrop,,,not_found,no registration of Northrop Grumman or its subsidiaries in the 2016-2026 snapshots
+ge,33554118304-69,Avio Aero - GE Avio,alias_exact_name,in snapshots 2016-2016 (1 years); category: Companies & groups; 0 EC meeting records 2014-2026
+ge,4016736872-59,General Electric Company,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 112 EC meeting records 2014-2026
+honeywell,028039833732-63,NOVAR - HONEYWELL COMMERCIAL SECURITY,alias_exact_name,in snapshots 2019-2020 (2 years); category: Companies & groups; 0 EC meeting records 2014-2026
+honeywell,75311753240-67,Honeywell Europe NV,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 47 EC meeting records 2014-2026
+3m,91425447458-88,3M,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 22 EC meeting records 2014-2026
+caterpillar,03717581957-02,Caterpillar Distribution Services Europe bv,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Caterpillar Belgium SA / Caterpillar Distribution Services Europe bv / Caterpillar Distribution Services Europe bvba; category: Companies & groups; 6 EC meeting records 2014-2026
+ford,21851435137-02,Ford Motor Company,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 43 EC meeting records 2014-2026
+gm,245346137135-21,General Motors,alias_exact_name,in snapshots 2021-2026 (5 years); category: Companies & groups; 8 EC meeting records 2014-2026
+gm,348797532881-91,General Motors Company,alias_exact_name,in snapshots 2019-2019 (1 years); category: Companies & groups; 0 EC meeting records 2014-2026
+gm,6781451805-03,Opel Group,alias_exact_name_windowed,in snapshots 2016-2017 (2 years); counted only -2017 (ownership); names over time: Opel Automobile GmbH / Opel Group; category: Companies & groups; 4 EC meeting records 2014-2026
+tesla,547225616323-13,Tesla Motors Netherlands B.V.,alias_exact_name,"in snapshots 2016-2026 (11 years); names over time: Tesla Motors Netherlands B.V. / Tesla Motors, Inc. / Tesla, Inc.; category: Companies & groups; 51 EC meeting records 2014-2026"
+cocacola,00475641564-03,The Coca-Cola Company,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 27 EC meeting records 2014-2026
+pepsico,010212710281-97,PepsiCo,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: PepsiCo / PepsiCo Europe; category: Companies & groups; 37 EC meeting records 2014-2026
+pg,5519077766-10,Procter & Gamble,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 19 EC meeting records 2014-2026
+pmi,51925911965-76,Philip Morris International Inc.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 10 EC meeting records 2014-2026
+pmi,56705163713-93,Swedish Match,alias_exact_name_windowed,in snapshots 2023-2026 (4 years); counted only 2023- (ownership); category: Companies & groups; 0 EC meeting records 2014-2026
+altria,,,not_found,no registration of Altria or its subsidiaries in the 2016-2026 snapshots
+walmart,116598617622-90,"Wal-Mart Stores, Inc. and its subsidiaries and affiliates",alias_exact_name,"in snapshots 2016-2020 (5 years); names over time: Wal-Mart Stores, Inc. and its subsidiaries and affiliates / Wal-mart Stores, Inc. and its subsidiaries and affiliates; category: Companies & groups; 3 EC meeting records 2014-2026"
+walmart,471899552806-47,Walmart,alias_exact_name,in snapshots 2025-2026 (2 years); category: Companies & groups; 1 EC meeting records 2014-2026
+mcdonalds,3830179837-87,McDonald’s Global Franchising Limited,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: McD Europe Franchising LLC / McDonald's Europe / McDonald’s Global Franchising Limited; category: Companies & groups; 15 EC meeting records 2014-2026
+att,92442218459-37,"AT&T, Inc.",alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 57 EC meeting records 2014-2026
+verizon,58885623470-56,Oath EMEA Ltd. / Verizon Media (previously Yahoo! EMEA Ltd.),alias_exact_name_windowed,in snapshots 2018-2021 (4 years); counted only 2018-2021 (ownership); names over time: Oath EMEA Ltd. / Verizon Media (previously Yahoo! EMEA Ltd.) / Yahoo! (Oath EMEA Ltd.) / Yahoo! EMEA Ltd.; category: Companies & groups; 10 EC meeting records 2014-2026
+verizon,814154216145-16,Verizon Communications Inc,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 1 EC meeting records 2014-2026
+comcast,210961624800-36,NBC Universal - News,alias_exact_name,in snapshots 2017-2017 (1 years); category: Companies & groups; 1 EC meeting records 2014-2026
+comcast,62536168216-12,Sky Group,alias_exact_name_windowed,in snapshots 2019-2026 (8 years); counted only 2019- (ownership); names over time: Sky Group / Sky plc; category: Companies & groups; 53 EC meeting records 2014-2026
+comcast,636284018907-42,NBCUniversal International,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 10 EC meeting records 2014-2026
+dow,38235121060-73,Dow Europe GmbH,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 113 EC meeting records 2014-2026
+dow,55291765363-39,Dow Corning Europe,alias_exact_name_windowed,in snapshots 2017-2017 (1 years); counted only 2017- (ownership); category: Companies & groups; 5 EC meeting records 2014-2026
+dupont,3181166932-58,DuPont de Nemours International SARL,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Du Pont de Nemours International SARL / DuPont de Nemours International SARL; category: Companies & groups; 29 EC meeting records 2014-2026
+corteva,448233735022-37,Corteva Agriscience International SARL,alias_exact_name,in snapshots 2019-2026 (8 years); names over time: Corteva Agriscience International SARL / Corteva Agriscience/DuPont International Operations SARL; category: Companies & groups; 24 EC meeting records 2014-2026
+siemens,4266797770-31,Siemens AG,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 172 EC meeting records 2014-2026
+siemens,982823533509-58,Siemens Healthineers AG,alias_exact_name,in snapshots 2019-2026 (8 years); category: Companies & groups; 30 EC meeting records 2014-2026
+basf,7410939793-88,BASF SE,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 103 EC meeting records 2014-2026
+basf,75729476306-17,Wintershall Holding GmbH,alias_exact_name_windowed,in snapshots 2016-2018 (3 years); counted only -2018 (ownership); names over time: Wintershall Dea AG / Wintershall Dea GmbH / Wintershall Holding GmbH; category: Companies & groups; 4 EC meeting records 2014-2026
+bayer,112778840894-52,Bayer Nordic SE,alias_exact_name,in snapshots 2021-2021 (1 years); category: Companies & groups; 1 EC meeting records 2014-2026
+bayer,3523776801-85,Bayer AG,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 105 EC meeting records 2014-2026
+bayer,678841411135-35,Monsanto,alias_exact_name_windowed,in snapshots 2019-2019 (1 years); counted only 2019- (ownership); category: Companies & groups; 4 EC meeting records 2014-2026
+volkswagen,06093891220-52,MAN Truck & Bus SE,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: MAN  SE / MAN Truck & Bus SE; category: Companies & groups; 30 EC meeting records 2014-2026
+volkswagen,256563850024-17,Audi Aktiengesellschaft,alias_exact_name,in snapshots 2024-2024 (1 years); category: Companies & groups; 0 EC meeting records 2014-2026
+volkswagen,3305029916-47,Scania AB (publ),alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 76 EC meeting records 2014-2026
+volkswagen,6504541970-40,Volkswagen Aktiengesellschaft,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 179 EC meeting records 2014-2026
+bmw,7193977808-18,Bayerische Motoren Werke Aktiengesellschaft,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 190 EC meeting records 2014-2026
+mercedes,2349218828-41,Mercedes-Benz Group AG,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Daimler Aktiengesellschaft / Mercedes-Benz Group AG; category: Companies & groups; 113 EC meeting records 2014-2026
+dtelekom,315705321628-69,"Slovak Telekom, a.s.",alias_exact_name,in snapshots 2017-2026 (10 years); category: Companies & groups; 1 EC meeting records 2014-2026
+dtelekom,60052162589-72,Deutsche Telekom,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 153 EC meeting records 2014-2026
+dtelekom,71846703030-55,S.C. TELEKOM ROMANIA COMMUNICATIONS S.A.,alias_exact_name,in snapshots 2016-2018 (3 years); category: Companies & groups; 0 EC meeting records 2014-2026
+dtelekom,87483766827-04,"Slovak Telekom, a. s.",alias_exact_name,in snapshots 2016-2016 (1 years); category: Companies & groups; 0 EC meeting records 2014-2026
+dtelekom,978149419739-16,T-Mobile Austria GmbH,alias_exact_name,in snapshots 2017-2018 (2 years); category: Companies & groups; 1 EC meeting records 2014-2026
+sap,639117311617-01,SAP,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 86 EC meeting records 2014-2026
+allianz,05503341949-54,Allianz SE,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 79 EC meeting records 2014-2026
+deutschebank,271912611231-56,Deutsche Bank AG,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 195 EC meeting records 2014-2026
+deutschebank,407652739335-34,DWS Group GmbH & Co. KGaA,alias_exact_name,in snapshots 2021-2023 (3 years); category: Companies & groups; 1 EC meeting records 2014-2026
+deutschebank,613925152082-56,DWS Group GmbH & Co. KGaA,alias_exact_name,in snapshots 2024-2026 (3 years); category: Companies & groups; 6 EC meeting records 2014-2026
+deutschebank,878819321918-05,DB Privat- und Firmenkundenbank AG,alias_exact_name,in snapshots 2017-2020 (4 years); names over time: DB Privat- und Firmenkundenbank AG / Deutsche Postbank AG; category: Companies & groups; 0 EC meeting records 2014-2026
+airbus,2732167674-76,Airbus,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Airbus / Airbus Group N.V.; category: Companies & groups; 408 EC meeting records 2014-2026
+totalenergies,1849405799-88,TotalEnergies SE,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: TOTAL S.A. / TOTAL S.E. / TotalEnergies SE; category: Companies & groups; 137 EC meeting records 2014-2026
+totalenergies,625822526139-43,TotalEnergies Electricité et Gaz France,alias_exact_name_windowed,in snapshots 2019-2023 (5 years); counted only 2019- (ownership); names over time: Direct Energie / Total Direct Energie / TotalEnergies Electricité et Gaz France; category: Companies & groups; 3 EC meeting records 2014-2026
+sanofi,2946627525-90,SANOFI GENZYME,alias_exact_name,in snapshots 2016-2018 (3 years); names over time: Genzyme a SANOFI Company / SANOFI GENZYME; category: Companies & groups; 0 EC meeting records 2014-2026
+sanofi,61291462764-77,SANOFI,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 67 EC meeting records 2014-2026
+sanofi,792244118299-55,Sanofi Pasteur,alias_exact_name,in snapshots 2016-2016 (1 years); category: Companies & groups; 1 EC meeting records 2014-2026
+loreal,02776221598-67,L'Oréal,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 55 EC meeting records 2014-2026
+lvmh,047152216031-96,Moët Hennessy,alias_exact_name,in snapshots 2016-2025 (10 years); category: Companies & groups; 9 EC meeting records 2014-2026
+lvmh,16094042309-21,LVMH - Moët Hennessy Louis Vuitton,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: LVMH - Moët Hennessy Louis Vuitton / LVMH Publica; category: Companies & groups; 66 EC meeting records 2014-2026
+lvmh,308466020184-62,"Louis Vuitton Malletier, SA",alias_exact_name,in snapshots 2016-2017 (2 years); category: Companies & groups; 2 EC meeting records 2014-2026
+bnpparibas,2115174972-49,BNP Paribas Personal Finance,alias_exact_name,in snapshots 2016-2020 (5 years); category: Companies & groups; 0 EC meeting records 2014-2026
+bnpparibas,59342528247-94,BNP Paribas Securities Services,alias_exact_name,in snapshots 2016-2017 (2 years); category: Companies & groups; 0 EC meeting records 2014-2026
+bnpparibas,78787381113-69,BNP PARIBAS,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 150 EC meeting records 2014-2026
+bnpparibas,90000691010-47,BNP Paribas Cardif,alias_exact_name,in snapshots 2016-2020 (5 years); category: Companies & groups; 2 EC meeting records 2014-2026
+axa,36423781099-10,AXA,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 36 EC meeting records 2014-2026
+axa,647130317683-76,AXA XL,alias_exact_name_windowed,in snapshots 2019-2026 (8 years); counted only 2019- (ownership); names over time: AXA XL / XL Group Ltd / XL Group plc; category: Companies & groups; 1 EC meeting records 2014-2026
+axa,75149096203-49,AXA Investment Managers,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 9 EC meeting records 2014-2026
+danone,65744846168-89,Danone,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 41 EC meeting records 2014-2026
+orange,077243120460-16,Orange Belgium,alias_exact_name,in snapshots 2017-2026 (10 years); category: Companies & groups; 11 EC meeting records 2014-2026
+orange,76704342721-41,Orange,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 151 EC meeting records 2014-2026
+renault,946343776-69,RENAULT,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 78 EC meeting records 2014-2026
+safran,71607351368-56,Safran,alias_exact_name,in snapshots 2016-2020 (5 years); category: Companies & groups; 9 EC meeting records 2014-2026
+safran,764184537594-67,SAFRAN,alias_exact_name,in snapshots 2021-2026 (6 years); category: Companies & groups; 75 EC meeting records 2014-2026
+thales,91711831031-23,THALES,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 102 EC meeting records 2014-2026
+thales,946148347544-40,Thales Norway AS,alias_exact_name,in snapshots 2023-2026 (4 years); category: Companies & groups; 0 EC meeting records 2014-2026
+stellantis,39900807417-87,Peugeot S.A.,alias_exact_name_windowed,in snapshots 2021-2021 (1 years); counted only 2021- (ownership); category: Companies & groups; 6 EC meeting records 2014-2026
+stellantis,7387356890-48,Fiat Chrysler Automobiles,alias_exact_name_windowed,in snapshots 2021-2021 (1 years); counted only 2021- (ownership); category: Companies & groups; 8 EC meeting records 2014-2026
+stellantis,986044541551-20,Stellantis,alias_exact_name,in snapshots 2022-2026 (5 years); category: Companies & groups; 64 EC meeting records 2014-2026
+shell,05032108616-26,Shell Companies,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 188 EC meeting records 2014-2026
+ing,12112965774-95,ING Group,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 53 EC meeting records 2014-2026
+asml,052269393423-46,ASML Netherlands B.V.,alias_exact_name,in snapshots 2025-2026 (2 years); category: Companies & groups; 47 EC meeting records 2014-2026
+asml,070028236358-54,ASML Netherlands B.V.,alias_exact_name,in snapshots 2020-2024 (5 years); category: Companies & groups; 22 EC meeting records 2014-2026
+asml,951243624669-74,ASML Netherlands B.V.,alias_exact_name,in snapshots 2017-2019 (3 years); names over time: ASML Netherlands B.V. / ASML Netherllands B.V.; category: Companies & groups; 2 EC meeting records 2014-2026
+philips,035366013790-68,Koninklijke Philips,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 55 EC meeting records 2014-2026
+philips,255349024952-19,Philips Lighting,alias_exact_name_windowed,in snapshots 2017-2017 (1 years); counted only -2017 (ownership); names over time: Philips Lighting / Philips Lighting BV; category: Companies & groups; 2 EC meeting records 2014-2026
+unilever,6200524920-25,Unilever,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 71 EC meeting records 2014-2026
+heineken,827688315793-86,Heineken N.V.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 27 EC meeting records 2014-2026
+ahold,914893310703-33,Ahold Delhaize,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Ahold / Ahold Delhaize; category: Companies & groups; 16 EC meeting records 2014-2026
+prosus,400320250147-12,Just Eat Takeaway.com N.V.,alias_exact_name_windowed,in snapshots 2026-2026 (1 years); counted only 2026- (ownership); category: Companies & groups; 3 EC meeting records 2014-2026
+prosus,891417815208-71,Prosus,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Naspers / Prosus; category: Companies & groups; 25 EC meeting records 2014-2026
+prosus,910956030915-30,OLX Global BV,alias_exact_name,in snapshots 2019-2026 (8 years); category: Companies & groups; 14 EC meeting records 2014-2026
+bp,3394026642-58,BP p.l.c.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 84 EC meeting records 2014-2026
+bp,798215044252-19,Lightsource bp,alias_exact_name_windowed,in snapshots 2025-2026 (2 years); counted only 2025- (ownership); category: Companies & groups; 6 EC meeting records 2014-2026
+astrazeneca,249402638316-62,AstraZeneca PLC,alias_exact_name,in snapshots 2021-2026 (6 years); category: Companies & groups; 31 EC meeting records 2014-2026
+astrazeneca,42561875992-94,AstraZeneca,alias_exact_name,in snapshots 2016-2020 (5 years); category: Companies & groups; 2 EC meeting records 2014-2026
+astrazeneca,611074012464-89,Alexion Pharmaceuticals,alias_exact_name_windowed,in snapshots 2022-2026 (5 years); counted only 2022- (ownership); category: Companies & groups; 1 EC meeting records 2014-2026
+gsk,062557939516-27,ViiV Healthcare Limited,alias_exact_name,in snapshots 2021-2026 (6 years); category: Companies & groups; 1 EC meeting records 2014-2026
+gsk,7990322925-77,GSK,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: GSK / GlaxoSmithKline; category: Companies & groups; 20 EC meeting records 2014-2026
+hsbc,001866415031-87,HSBC Holdings PLC,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 76 EC meeting records 2014-2026
+barclays,72390466359-39,Barclays PLC,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 46 EC meeting records 2014-2026
+bae,181434848296-60,BAE Systems,alias_exact_name,in snapshots 2023-2025 (3 years); category: Companies & groups; 1 EC meeting records 2014-2026
+bae,87286671805-10,BAE Systems,alias_exact_name,in snapshots 2016-2022 (7 years); category: Companies & groups; 2 EC meeting records 2014-2026
+bat,2427500988-58,British American Tobacco,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 4 EC meeting records 2014-2026
+riotinto,627987212276-53,Rio Tinto,alias_exact_name,in snapshots 2016-2018 (3 years); category: Companies & groups; 9 EC meeting records 2014-2026
+riotinto,801751734399-10,RIO TINTO,alias_exact_name,in snapshots 2019-2020 (2 years); category: Companies & groups; 2 EC meeting records 2014-2026
+riotinto,991744840418-06,Rio Tinto,alias_exact_name,in snapshots 2021-2026 (6 years); category: Companies & groups; 26 EC meeting records 2014-2026
+vodafone,286518651566-82,Vodafone GmbH,alias_exact_name,in snapshots 2024-2026 (3 years); category: Companies & groups; 19 EC meeting records 2014-2026
+vodafone,90142503473-81,Vodafone Belgium SA,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 209 EC meeting records 2014-2026
+nestle,15366395387-57,Nestlé S.A.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 47 EC meeting records 2014-2026
+novartis,91269481588-28,Novartis International AG,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 49 EC meeting records 2014-2026
+roche,18940431725-51,F. Hoffmann-La Roche Ltd,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 16 EC meeting records 2014-2026
+ubs,206549617146-90,Credit Suisse Group AG,alias_exact_name_windowed,in snapshots 2024-2024 (1 years); counted only 2024- (ownership); category: Companies & groups; 10 EC meeting records 2014-2026
+ubs,365453815252-29,UBS Group AG,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 30 EC meeting records 2014-2026
+equinor,4447605981-76,Equinor ASA,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Equinor ASA / Statoil ASA; category: Companies & groups; 94 EC meeting records 2014-2026
+novonordisk,29570313329-11,Novo Nordisk A/S,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Novo Nordisk / Novo Nordisk A/S; category: Companies & groups; 25 EC meeting records 2014-2026
+ericsson,02021363105-42,Ericsson,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 156 EC meeting records 2014-2026
+nokia,35167875358-33,Nokia,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 151 EC meeting records 2014-2026
+nokia,78432668420-81,Alcatel-Lucent,alias_exact_name,in snapshots 2016-2016 (1 years); category: Companies & groups; 8 EC meeting records 2014-2026
+iberdrola,41816938101-07,IBERDROLA,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 108 EC meeting records 2014-2026
+santander,799142914971-03,"Banco Santander, S.A.",alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 173 EC meeting records 2014-2026
+enel,06877217926-31,Enel Green Power S.p.A.,alias_exact_name,in snapshots 2016-2018 (3 years); category: Companies & groups; 3 EC meeting records 2014-2026
+enel,47504237466-74,Endesa,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 18 EC meeting records 2014-2026
+enel,6256831207-27,ENEL SpA,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 165 EC meeting records 2014-2026
+eni,99578067285-35,Eni S.p.A.,alias_exact_name,in snapshots 2016-2026 (11 years); category: Companies & groups; 119 EC meeting records 2014-2026
+spotify,365747616583-15,Spotify,alias_exact_name,in snapshots 2016-2026 (11 years); names over time: Spotify / Spotify AB / Spotify Belgium NV / Spotify Belgium SA; category: Companies & groups; 116 EC meeting records 2014-2026

@@ -54,6 +54,7 @@ LDA_API = "https://lda.gov/api/v1/"
 OUT = RAW / "us_lobby"
 ZIPDIR = OUT / "house_ld2"
 PARSED = OUT / "parsed"
+PARSE_VERSION = 2
 
 
 # ---------------------------------------------------------------------------
@@ -126,6 +127,7 @@ def parse_filing(name, raw):
         "no_lobbying": _t(r, "noLobbying"),
         "income": _amount(_t(r, "income")),
         "expenses": _amount(_t(r, "expenses")),
+        "expenses_method": _t(r, "expensesMethod"),
         "signed": _signed(_t(r, "signedDate")),
         "issues": issues,
         "lobbyists": [[k, v] for k, v in lobbyists.items()],
@@ -136,7 +138,7 @@ def parse_zip(path):
     """Parse one quarterly zip to a list of compact dicts, cached as gzipped JSON."""
     out = PARSED / (path.stem + ".json.gz")
     st = path.stat()
-    stamp = f"{st.st_size}-{int(st.st_mtime)}"
+    stamp = f"v{PARSE_VERSION}-{st.st_size}-{int(st.st_mtime)}"
     if out.exists():
         with gzip.open(out, "rt", encoding="utf-8") as f:
             d = json.load(f)
@@ -158,28 +160,3 @@ def parse_zip(path):
     return recs
 
 
-def _version(r):
-    return (r["signed"], int(r["doc"]) if r["doc"].isdigit() else 0)
-
-
-def load_reports(years=YEARS):
-    """All LD-2 reports for `years`, deduplicated to the latest version per registrant-client-quarter."""
-    paths = [zip_path(y, q) for y in years for q in QUARTERS]
-    workers = max(1, min(8, (os.cpu_count() or 2)))
-    with ProcessPoolExecutor(workers) as ex:
-        parts = list(ex.map(parse_zip, paths))
-    latest = {}
-    n_raw = 0
-    for (y, q), recs in zip([(y, q) for y in years for q in QUARTERS], parts):
-        for r in recs:
-            n_raw += 1
-            ry = int(r["year"]) if r["year"].isdigit() else y
-            rq = int(r["type"][1]) if r["type"][:1] == "Q" and r["type"][1:2].isdigit() else (
-                int(r["type"][0]) if r["type"][:1].isdigit() else q)
-            r["year"], r["quarter"] = ry, rq
-            key = (r["senate_id"] or f"{r['registrant'].upper()}|{r['client'].upper()}", ry, rq)
-            cur = latest.get(key)
-            if cur is None or _version(r) > _version(cur):
-                latest[key] = r
-    print(f"  {n_raw} filings -> {len(latest)} latest-version reports", file=sys.stderr)
-    return list(latest.values())

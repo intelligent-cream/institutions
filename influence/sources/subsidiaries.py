@@ -26,7 +26,15 @@ Caveats
     need an LEI -- are missing, so counts are a lower bound and coverage varies
     by company and country (EU/US entities are over-represented because LEIs
     are required for EU/US financial reporting and trading).
-  * Only children whose entity.status is ACTIVE are counted.
+  * Only children whose entity.status is ACTIVE are counted. low_coverage = 1
+    flags companies with fewer than 10 such children (shares are unreliable).
+  * n_in_tax_havens_by_jurisdiction uses entity.jurisdiction (place of
+    incorporation) instead of the legal-address country; the two rarely differ.
+  * Where companies.csv holds a BRANCH LEI (Deutsche Bank, BNP Paribas,
+    Santander) the head-office legal entity is used instead (lei_used).
+  * Companies whose own record has no reporting children (e.g. Safran, Altria
+    at the time of writing) get n_subsidiaries_with_lei = 0; that is a GLEIF
+    reporting gap, not evidence of no subsidiaries.
   * A parent domiciled in a haven (NL, CH, LU, IE ...) has domestic children
     there, hence n_in_tax_havens_excluding_home (home = parent's LEI legal
     address country, falling back to hq_country).
@@ -78,6 +86,18 @@ def children(lei, rel):
         page += 1
 
 
+def resolve(lei):
+    """Return (lei_to_use, note). Branch LEIs (category BRANCH) have no children;
+    follow their head-office relationship to the legal entity."""
+    rec = json.loads(cached(OUT / f"{lei}_record.json", lambda: get(f"{GLEIF}/{lei}")))["data"]
+    if rec["attributes"]["entity"].get("category") != "BRANCH":
+        return lei, ""
+    ho = json.loads(cached(OUT / f"{lei}_head-office.json",
+                           lambda: get(f"{GLEIF}/{lei}/head-office")))["data"]
+    name = ho["attributes"]["entity"]["legalName"]["name"]
+    return ho["id"], f"companies.csv LEI {lei} is a BRANCH record; used head office {ho['id']} ({name})"
+
+
 def main():
     summary, by_country_rows = [], []
     for c in companies():
@@ -89,6 +109,8 @@ def main():
             summary.append(row)
             print(f"{cid:16} no LEI")
             continue
+        lei, note = resolve(lei)
+        row["lei_used"] = lei
         recs = {}
         for rel in ("ultimate-children", "direct-children"):
             for r in children(lei, rel):
@@ -116,10 +138,11 @@ def main():
             "share_in_tax_havens_excluding_home": round(n_hav_x / n, 4) if n else "",
             "n_in_tax_havens_by_jurisdiction": juris_haven,
             "n_countries": len(countries),
+            "low_coverage": int(n < 10),
             "n_domestic": countries.get(home, 0),
             "top_haven_jurisdictions": ";".join(f"{k}:{v}" for k, v in
                                                 sorted(havens.items(), key=lambda kv: (-kv[1], kv[0]))),
-            "note": "" if n else "no active children reporting this LEI as parent in GLEIF",
+            "note": "; ".join(x for x in (note, "" if n else "no active children reporting this LEI as parent in GLEIF") if x),
         })
         summary.append(row)
         for k, v in sorted(countries.items(), key=lambda kv: (-kv[1], kv[0])):
@@ -127,9 +150,9 @@ def main():
                                     "tax_haven": int(k in TAX_HAVENS)})
         print(f"{cid:16} n={n:5} havens={n_hav:4} ex-home={n_hav_x:4} countries={len(countries)}")
 
-    fields = ["company_id", "lei", "home_country", "n_subsidiaries_with_lei", "n_inactive_excluded",
+    fields = ["company_id", "lei", "lei_used", "home_country", "n_subsidiaries_with_lei", "n_inactive_excluded",
               "n_in_tax_havens", "share_in_tax_havens", "n_in_tax_havens_excluding_home",
-              "share_in_tax_havens_excluding_home", "n_in_tax_havens_by_jurisdiction", "n_countries",
+              "share_in_tax_havens_excluding_home", "n_in_tax_havens_by_jurisdiction", "n_countries", "low_coverage",
               "n_domestic", "top_haven_jurisdictions", "note"]
     write_csv(CLEAN / "subsidiaries.csv", summary, fields)
     write_csv(CLEAN / "subsidiaries_by_country.csv", by_country_rows,

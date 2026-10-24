@@ -434,14 +434,11 @@ def de_history(e):
             break
         seen.add(v["registerEntryId"])
         path = OUT / "de_versions" / f"{reg}_{v['registerEntryId']}.json"
-        fetched = path.exists()
 
         def fetch(v=v):
             time.sleep(0.3)
             return get(DE_VERSION_URL.format(reg=reg, eid=v["registerEntryId"]))
         cur = json.loads(cached(path, fetch))
-        if not fetched:
-            pass
         rec = de_record(cur)
         if rec:
             out.append(rec)
@@ -559,7 +556,7 @@ def main():
                 print(f"  warning: FR {reg_id} ({expected}) not in register")
                 continue
             if e.get("dateCessation"):
-                note = note + f" (dateCessation {e['dateCessation']})" if "deregistered" not in note else note
+                note += f" (dateCessation {e['dateCessation']})"
             add(cid, "FR", reg_id, e["denomination"].strip(), alias, note, lo, hi, fr_records(e))
     del fr
 
