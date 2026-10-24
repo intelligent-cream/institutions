@@ -59,7 +59,7 @@ the same company is counted once. Meetings are counted for every register id mat
 the company (within its ownership window), so a year can have meetings but no snapshot
 values (2015, or a registration that existed between two snapshots).
 The 2022-01 snapshot was taken during the move to the new register: ~45% of
-registrations (and 28 of our companies) carry no financial data there.
+registrations (and 27 of our 104 registered companies) carry no financial data there.
 
 Matching (data/influence/clean/eu_lobby_matches.csv): explicit per-company alias lists
 (ALIASES below) are compared, after normalisation (case, accents, punctuation), for
