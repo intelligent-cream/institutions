@@ -172,6 +172,10 @@ def main():
             "etr_gap": rnd(statutory - book_etr, 4) if statutory is not None and book_etr is not None else "",
             "us_contracts_avg_usd": rnd(wmean("us_contracts_usd")),
             "contracts_per_lobby_usd": rnd(wmean("us_contracts_usd") / us) if us and wmean("us_contracts_usd") else "",
+            "contracts_share_of_revenue": rnd(wmean("us_contracts_usd") / rev_avg, 5)
+            if rev_avg and wmean("us_contracts_usd") is not None else "",
+            "havens_per_bn_revenue": rnd(num(s.get("n_in_tax_havens_excluding_home")) / (rev_avg / 1e9), 4)
+            if rev_avg and num(s.get("n_in_tax_havens_excluding_home")) is not None else "",
             "n_subsidiaries_with_lei": s.get("n_subsidiaries_with_lei", ""),
             "haven_share_ex_home": s.get("share_in_tax_havens_excluding_home", ""),
             "n_havens_ex_home": s.get("n_in_tax_havens_excluding_home", ""),

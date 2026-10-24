@@ -1,0 +1,265 @@
+<style>
+#dash-root { --dash-gutter: max(16px, 2.5vw); }
+.ci { max-width: 1180px; margin-inline: auto; display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); }
+.ci h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.ci-lede { color: var(--color-fg-muted); max-width: 75ch; margin: var(--cds-gap-xs) 0 0; line-height: 1.55; }
+.ci-lede b, .ci-note b, .ci-find b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.ci-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+.ci-tabs button { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); cursor: pointer; margin-bottom: -1px; }
+.ci-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+.ci-tabs button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; border-radius: var(--cds-radius); }
+.ci-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.ci-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: var(--cds-gap-md); }
+.ci-tile, .ci-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.ci-tile { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.ci-lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ci-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.ci-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.ci-sub b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.ci-card { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.ci-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+.ci-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; line-height: 1.5; max-width: 85ch; }
+.ci-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-md); }
+.ci-chart { position: relative; min-height: 320px; }
+.ci-chart.ci-tall { min-height: 420px; }
+.ci-chart.ci-multi { min-height: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: var(--cds-gap-md); }
+.ci-small { position: relative; min-height: 150px; }
+.ci-small h3 { font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); margin: 0 0 2px; }
+.ci-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ci-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ci-sw { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.ci-sw.ci-line { width: 14px; height: 3px; border-radius: 2px; }
+.ci-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; z-index: 3; min-width: 160px; max-width: 260px; }
+.ci-tip .ci-tip-h { color: var(--cds-text-secondary); margin-bottom: 3px; }
+.ci-tip .ci-row { display: flex; justify-content: space-between; gap: 10px; }
+.ci-fail { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ci-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.ci-chart svg text, .ci-small svg text { fill: var(--color-fg-muted); font-size: 11px; font-family: var(--font-anthropic-sans); }
+.ci-chart svg .ci-strong { fill: var(--color-fg); }
+.ci-finds { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: var(--cds-gap-sm); line-height: 1.55; max-width: 85ch; }
+.ci-tablebox { overflow: auto; max-height: 560px; }
+.ci-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.ci-table th { position: sticky; top: 0; background: var(--color-panel); text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; z-index: 1; }
+.ci-table th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.ci-table td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.ci-table th:first-child, .ci-table td:first-child, .ci-table .ci-left { text-align: left; }
+.ci-table tbody tr { cursor: pointer; }
+.ci-table tbody tr:hover td { background: color-mix(in srgb, var(--color-fg) 5%, transparent); }
+.ci-table tbody tr[aria-selected="true"] td { background: color-mix(in srgb, var(--color-fg) 9%, transparent); }
+.ci-tools { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.ci-tools input, .ci-tools select { font: inherit; font-size: var(--cds-font-size-caption); padding: 6px 10px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-width: 0; }
+.ci-pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); }
+.ci-pill.ci-sig { border-color: var(--color-ok); color: var(--color-ok); }
+.ci-pill.ci-weak { border-color: var(--color-warn); color: var(--color-warn); }
+.ci-detail { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: var(--cds-gap-md); }
+.ci-kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; margin: 0; }
+.ci-kv dt { color: var(--color-fg-muted); }
+.ci-kv dd { margin: 0; text-align: right; }
+.ci-method { font-size: var(--cds-font-size-caption); line-height: 1.6; color: var(--color-fg-muted); max-width: 90ch; }
+.ci-method h3 { font-size: var(--cds-font-size-body); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-md) 0 var(--cds-gap-xs); }
+.ci-method ul { margin: 0; padding-left: 1.2em; }
+.ci-method a { color: inherit; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+[data-dash-source-state=empty] { color: transparent; }
+</style>
+
+<div class="ci">
+  <header id="top">
+    <h1>Corporate Influence Profiles</h1>
+    <p class="ci-lede">What 110 of the largest US and European companies spend on lobbying and political giving in Washington, Brussels, Berlin and Paris, set against the taxes they pay, the tax-haven subsidiaries they hold and the federal contracts they win. Built from eight public registers joined on each company's legal entity identifier.</p>
+  </header>
+
+  <nav class="ci-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" id="tab-overview" data-page="overview" aria-selected="true">Overview</button>
+    <button role="tab" id="tab-venues" data-page="venues" aria-selected="false">Washington vs Brussels</button>
+    <button role="tab" id="tab-outcomes" data-page="outcomes" aria-selected="false">Influence vs outcomes</button>
+    <button role="tab" id="tab-companies" data-page="companies" aria-selected="false">Companies</button>
+    <button role="tab" id="tab-method" data-page="method" aria-selected="false">Sources &amp; method</button>
+  </nav>
+
+  <!-- Overview -->
+  <section class="ci-page" id="overview" role="tabpanel" aria-labelledby="tab-overview">
+    <div class="ci-tiles">
+      <div class="ci-tile">
+        <span class="ci-lab">US federal lobbying, 2024</span>
+        <span class="ci-big dash-skeleton" data-source="headline" data-row="0" data-field="us_lobby_2024">—</span>
+        <span class="ci-sub">all 110 companies, incl. US subsidiaries of European firms</span>
+      </div>
+      <div class="ci-tile">
+        <span class="ci-lab">EU lobbying, 2024 (declared)</span>
+        <span class="ci-big dash-skeleton" data-source="headline" data-row="0" data-field="eu_lobby_2024">—</span>
+        <span class="ci-sub"><b data-source="headline" data-row="0" data-field="ec_meetings_2024">—</b> meetings with the Commission</span>
+      </div>
+      <div class="ci-tile">
+        <span class="ci-lab">Lobby on both sides of the Atlantic</span>
+        <span class="ci-big dash-skeleton" data-source="headline" data-row="0" data-field="n_both">—</span>
+        <span class="ci-sub">of <b data-source="headline" data-row="0" data-field="n_companies">—</b> companies, 2019–2024</span>
+      </div>
+      <div class="ci-tile">
+        <span class="ci-lab">Tech: growth in EU lobbying, 2016→2024</span>
+        <span class="ci-big dash-skeleton" data-source="headline" data-row="0" data-field="tech_eu_growth">—</span>
+        <span class="ci-sub">vs <b data-source="headline" data-row="0" data-field="tech_us_growth">—</b> in Washington</span>
+      </div>
+    </div>
+
+    <section class="ci-card" id="findings">
+      <h2>What the data shows</h2>
+      <ol class="ci-finds">
+        <li><b>Brussels is gaining on Washington, led by tech.</b> For the companies present in both registers every year, the EU share of their combined US and EU lobbying went from <b data-source="headline" data-row="0" data-field="eu_share_2016">—</b> in 2016 to <b data-source="headline" data-row="0" data-field="eu_share_2024">—</b> in 2024. Tech firms' EU spend rose <b data-source="headline" data-row="0" data-field="tech_eu_growth">—</b>, over the years the EU passed its platform rules (Digital Services Act and Digital Markets Act).</li>
+        <li><b>European firms are bigger in Washington, but US firms are catching up in Brussels.</b> European-headquartered companies spend <b data-source="headline" data-row="0" data-field="eu_hq_us_lobby">—</b> a year lobbying in Washington, mostly through US subsidiaries, against <b data-source="headline" data-row="0" data-field="us_hq_eu_lobby">—</b> that US companies spend in Brussels. Since 2016, US companies' EU spending grew <b data-source="headline" data-row="0" data-field="us_hq_eu_growth">—</b>, European companies' US spending <b data-source="headline" data-row="0" data-field="eu_hq_us_growth">—</b>.</li>
+        <li><b>More lobbying does not line up with lower tax rates in this sample.</b> Across <b data-source="corr" data-field="n" data-where="x=lobby_per_bn_revenue_usd&amp;y=book_etr">—</b> non-extractive companies the rank correlation between lobbying intensity and the book tax rate is <b data-source="corr" data-field="spearman_rho" data-where="x=lobby_per_bn_revenue_usd&amp;y=book_etr">—</b>. Earlier US-only studies found a negative link; we do not reproduce it across both continents.</li>
+        <li><b>Heavier lobbyists hold more tax-haven subsidiaries, but size explains much of it.</b> Per dollar of revenue the correlation is <b data-source="corr" data-field="spearman_rho" data-where="x=lobby_per_bn_revenue_usd&amp;y=havens_per_bn_revenue">—</b>, and it disappears when firms are compared within their sector (<b data-source="corr" data-field="within_sector_rho" data-where="x=lobby_per_bn_revenue_usd&amp;y=havens_per_bn_revenue">—</b>).</li>
+        <li><b>US lobbying tracks federal contracts.</b> The rank correlation between a company's US lobbying and its federal contract obligations is <b data-source="corr" data-field="spearman_rho" data-where="x=us_lobby_usd&amp;y=us_contracts_avg_usd">—</b> (<b data-source="corr" data-field="n" data-where="x=us_lobby_usd&amp;y=us_contracts_avg_usd">—</b> companies), driven by defence and aerospace.</li>
+      </ol>
+      <p class="ci-note">Associations across about 100 companies, not causal effects. With ten tests, one or two will look significant by chance; see Influence vs outcomes for every test.</p>
+    </section>
+
+    <section class="ci-card" id="reach">
+      <h2>Where US and European companies lobby</h2>
+      <p class="ci-note">Average yearly lobbying spend 2019–2024 by venue, summed over each group's companies. EU, German and French figures are midpoints of declared cost brackets.</p>
+      <div class="ci-legend" id="legend-reach"></div>
+      <div class="ci-chart" id="chart-reach" data-source="reach" style="min-height:220px"></div>
+    </section>
+  </section>
+
+  <!-- Washington vs Brussels -->
+  <section class="ci-page" id="venues" role="tabpanel" aria-labelledby="tab-venues" hidden>
+    <section class="ci-card" id="eu-share">
+      <h2>The EU's share of transatlantic lobbying is rising for US companies</h2>
+      <p class="ci-note">EU share of each group's combined US and EU lobbying, for the companies reported in both registers every year 2016–2024. EU values for a missing year are interpolated from the years around it.</p>
+      <div class="ci-legend" id="legend-share"></div>
+      <div class="ci-chart" id="chart-share" data-source="trend"></div>
+    </section>
+    <section class="ci-card" id="by-sector">
+      <h2>By sector</h2>
+      <p class="ci-note">Same measure per sector, on one scale. Chemicals and agriculture and tech moved furthest toward Brussels.</p>
+      <div class="ci-chart ci-multi" id="chart-sectors" data-source="trend"></div>
+    </section>
+    <section class="ci-card" id="movers">
+      <h2>Companies that moved most</h2>
+      <p class="ci-note">EU share of each company's US+EU lobbying, 2016–17 average (hollow) to 2023–24 average (filled). The twelve biggest moves each way.</p>
+      <div class="ci-chart ci-tall" id="chart-movers" data-source="shift"></div>
+    </section>
+  </section>
+
+  <!-- Influence vs outcomes -->
+  <section class="ci-page" id="outcomes" role="tabpanel" aria-labelledby="tab-outcomes" hidden>
+    <div class="ci-grid2">
+      <section class="ci-card" id="sc-tax">
+        <h2>Lobbying intensity and tax rate</h2>
+        <p class="ci-note">Lobbying across all registers per $1bn of revenue (log scale) against the pooled 2019–2024 book tax rate. Energy and mining are left out because resource taxes dominate their rates.</p>
+        <div class="ci-legend" id="legend-sc"></div>
+        <div class="ci-chart" id="chart-sc-tax" data-source="profile"></div>
+      </section>
+      <section class="ci-card" id="sc-havens">
+        <h2>Lobbying intensity and tax-haven subsidiaries</h2>
+        <p class="ci-note">Both per $1bn of revenue, log scales. Subsidiaries in tax havens outside the home country, from GLEIF ownership records.</p>
+        <div class="ci-chart" id="chart-sc-havens" data-source="profile"></div>
+      </section>
+      <section class="ci-card" id="sc-contracts">
+        <h2>US lobbying and federal contracts</h2>
+        <p class="ci-note">Average yearly US lobbying against average yearly federal contract obligations, 2019–2024, log scales. Companies with no contracts sit on the bottom edge.</p>
+        <div class="ci-chart" id="chart-sc-contracts" data-source="profile"></div>
+      </section>
+      <section class="ci-card" id="sc-pac">
+        <h2>Who the PACs give to</h2>
+        <p class="ci-note">Republican share of each company PAC's giving to federal candidates, 2020–2024 cycles, against total giving. Most split close to even; a few lean hard.</p>
+        <div class="ci-chart" id="chart-sc-pac" data-source="profile"></div>
+      </section>
+    </div>
+    <section class="ci-card" id="tests">
+      <h2>Every test we ran</h2>
+      <p class="ci-note">Spearman rank correlations with permutation p-values (10,000 shuffles). Within-sector compares each firm only with firms in its own sector. Green: p &lt; 0.01; amber: p &lt; 0.05.</p>
+      <div class="ci-tablebox">
+        <table class="ci-table" id="table-corr" data-source="corr" data-row-key="x,y">
+          <thead><tr>
+            <th data-field="test">Test</th><th data-field="n">Companies</th><th data-field="spearman_rho">Correlation</th>
+            <th data-field="p_value">p</th><th data-field="within_sector_rho">Within sector</th><th data-field="within_sector_p">p</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+
+  <!-- Companies -->
+  <section class="ci-page" id="companies" role="tabpanel" aria-labelledby="tab-companies" hidden>
+    <section class="ci-card" id="company-detail">
+      <h2 id="detail-title">Pick a company</h2>
+      <p class="ci-note" id="detail-sub">Click a row in the table below to see that company's profile.</p>
+      <div class="ci-detail">
+        <div>
+          <div class="ci-legend" id="legend-detail"></div>
+          <div class="ci-small" id="chart-detail" data-source="panel" style="min-height:180px"></div>
+        </div>
+        <dl class="ci-kv" id="detail-kv" data-source="profile"></dl>
+      </div>
+    </section>
+    <section class="ci-card" id="company-table">
+      <h2>All companies</h2>
+      <div class="ci-tools">
+        <input id="ci-search" type="search" placeholder="Search companies" aria-label="Search companies">
+        <select id="ci-sector" aria-label="Sector"><option value="">All sectors</option></select>
+        <select id="ci-region" aria-label="Headquarters"><option value="">US and Europe</option><option value="US">US headquarters</option><option value="Europe">European headquarters</option></select>
+      </div>
+      <p class="ci-note">Yearly averages 2019–2024 in USD. Tax rate is pooled over the window and left blank where pooled profit was below 2% of revenue.</p>
+      <div class="ci-tablebox">
+        <table class="ci-table" id="table-companies" data-source="profile" data-row-key="company_id">
+          <thead><tr>
+            <th data-field="name"><button data-sort="name">Company</button></th>
+            <th data-field="sector" class="ci-left"><button data-sort="sector">Sector</button></th>
+            <th data-field="us_lobby_usd"><button data-sort="us_lobby_usd">US lobbying</button></th>
+            <th data-field="eu_lobby_usd"><button data-sort="eu_lobby_usd">EU lobbying</button></th>
+            <th data-field="de_lobby_usd"><button data-sort="de_lobby_usd">Germany</button></th>
+            <th data-field="fr_lobby_usd"><button data-sort="fr_lobby_usd">France</button></th>
+            <th data-field="ec_meetings"><button data-sort="ec_meetings">EC meetings</button></th>
+            <th data-field="pac_2020_2024_usd"><button data-sort="pac_2020_2024_usd">PAC 2020–24</button></th>
+            <th data-field="book_etr"><button data-sort="book_etr">Tax rate</button></th>
+            <th data-field="n_havens_ex_home"><button data-sort="n_havens_ex_home">Haven subs</button></th>
+            <th data-field="us_contracts_avg_usd"><button data-sort="us_contracts_avg_usd">US contracts</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+
+  <!-- Sources & method -->
+  <section class="ci-page" id="method" role="tabpanel" aria-labelledby="tab-method" hidden>
+    <section class="ci-card" id="coverage">
+      <h2>Sources and coverage</h2>
+      <p class="ci-note">Every source is public and downloaded in full by scripts in the institutions repository (influence/sources). Companies counts those with any data from the source.</p>
+      <div class="ci-tablebox">
+        <table class="ci-table" id="table-coverage" data-source="coverage" data-row-key="source_id">
+          <thead><tr>
+            <th data-field="title">Source</th><th data-field="origin" class="ci-left">Where it comes from</th>
+            <th data-field="companies">Companies</th><th data-field="first_year">From</th><th data-field="last_year">To</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="ci-card ci-method" id="method-notes">
+      <h3>How companies are matched</h3>
+      <ul>
+        <li>Each company is pinned to its legal entity identifier (LEI) from GLEIF and its SEC filer number. Chevron's parent has no LEI at all; Exxon and BlackRock changed SEC filer numbers when they formed new holding companies, and both histories are joined.</li>
+        <li>In each register, names are matched with hand-written alias lists and checked by hand. Subsidiaries count only while owned; spin-offs, joint ventures, trade associations and foundations are left out. Every match is listed in a matches file for audit.</li>
+      </ul>
+      <h3>How numbers are built</h3>
+      <ul>
+        <li>US lobbying follows the OpenSecrets convention (in-house expenses, or outside firms' income where no in-house report exists) and matches the official API on spot checks.</li>
+        <li>EU, German and French costs are self-declared in brackets; we use the bracket midpoint. EU costs refer to the financial year two years before each January snapshot.</li>
+        <li>PAC money comes from employees, not company funds, and is kept apart from lobbying spend.</li>
+        <li>Tax rates come from companies' own XBRL filings (SEC, or ESEF in Europe), pooled over 2019–2024. German filers are missing from the open ESEF repository, and Swiss companies file in neither.</li>
+        <li>Tax havens follow the list in Tørsløv, Wier and Zucman, <i>The Missing Profits of Nations</i>. GLEIF only shows subsidiaries that have an LEI and report their parent, so counts are lower bounds.</li>
+        <li>Currencies are converted with ECB annual averages.</li>
+      </ul>
+      <h3>What is new here</h3>
+      <ul>
+        <li>Earlier studies link lobbying to lower tax rates and more contracts in the US only, one source at a time. We found no study joining US and EU lobbying for the same firms with their tax rates, contracts and tax-haven subsidiaries, or counting haven subsidiaries from open GLEIF data.</li>
+        <li>Literature notes, code and every intermediate file: <a href="https://github.com/intelligent-cream/institutions/tree/feature/corporate-influence">github.com/intelligent-cream/institutions</a> (branch feature/corporate-influence).</li>
+      </ul>
+    </section>
+  </section>
+</div>
+<script src="app.js"></script>

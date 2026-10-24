@@ -130,12 +130,6 @@ def main():
     panel = read_csv(DATA / "company_year.csv")
     FINDINGS.mkdir(parents=True, exist_ok=True)
 
-    for r in prof:
-        rev = num(r["revenue_avg_usd"])
-        c = num(r["us_contracts_avg_usd"])
-        r["contracts_share_of_revenue"] = c / rev if c is not None and rev else ""
-        h = num(r["n_havens_ex_home"])
-        r["havens_per_bn_revenue"] = h / (rev / 1e9) if h is not None and rev else ""
 
     tests = [
         correlate(prof, "lobby_per_bn_revenue_usd", "book_etr", "Lobbying intensity vs book tax rate",
