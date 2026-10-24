@@ -48,6 +48,8 @@ def pick(cands, company):
             s += 5
         if a["registration"]["status"] == "ISSUED":
             s += 3
+        if e.get("category") == "BRANCH":
+            s -= 20  # a branch LEI is not the legal entity that owns the group
         if e.get("status") == "ACTIVE":
             s += 2
         return s
@@ -64,13 +66,14 @@ def main():
     rows = []
     for c in seed:
         cands, how = gleif_candidates(c["legal_name"])
-        lei = lei_name = lei_country = ""
+        lei = lei_name = lei_country = lei_category = ""
         conf = 0
         if cands:
             rec, conf = pick(cands, c)
             lei = rec["id"]
             lei_name = rec["attributes"]["entity"]["legalName"]["name"]
             lei_country = rec["attributes"]["entity"]["legalAddress"]["country"]
+            lei_category = rec["attributes"]["entity"].get("category", "")
         if c.get("lei_override") == "NONE":
             # GLEIF reports the parent under a "NO_LEI" exception (e.g. Chevron Corporation).
             lei = lei_name = lei_country = ""
@@ -80,6 +83,9 @@ def main():
             lei, how, conf = rec["id"], "override", 99
             lei_name = rec["attributes"]["entity"]["legalName"]["name"]
             lei_country = rec["attributes"]["entity"]["legalAddress"]["country"]
+            lei_category = rec["attributes"]["entity"].get("category", "")
+        if c.get("lei_override") == "NONE":
+            lei_category = ""
 
         t = SEC_TICKER.get(c["company_id"], c["ticker"] if c["hq_country"] == "US" else "")
         s = by_ticker.get(t.upper()) if t else None
@@ -87,6 +93,7 @@ def main():
             **{k: c[k] for k in ("company_id", "name", "legal_name", "hq_country", "sector")},
             "lei": lei, "lei_legal_name": lei_name, "lei_country": lei_country,
             "lei_match": how, "lei_score": conf,
+            "lei_category": lei_category,
             "sec_cik": str(s["cik_str"]).zfill(10) if s else "", "sec_title": s["title"] if s else "",
             "sec_cik_prior": c.get("sec_cik_prior", ""),
         })

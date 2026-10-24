@@ -5,7 +5,7 @@ Lobbying intensity vs gap below home statutory rate,lobby_per_bn_revenue_usd,etr
 Total lobbying vs share of subsidiaries in tax havens,lobby_total_usd,haven_share_ex_home,88,0.127,0.2342,0.167,0.1992,excludes firms with low GLEIF coverage
 Total lobbying vs number of tax-haven subsidiaries,lobby_total_usd,n_havens_ex_home,88,0.033,0.7689,0.19,0.1387,excludes firms with low GLEIF coverage
 "Lobbying vs tax-haven subsidiaries, both per $bn revenue (size-adjusted)",lobby_per_bn_revenue_usd,havens_per_bn_revenue,75,0.261,0.0245,0.016,0.9099,excludes firms with low GLEIF coverage
-US lobbying vs US federal contracts,us_lobby_usd,us_contracts_avg_usd,0,,,,,too few companies
-US lobbying vs contracts as share of revenue,us_lobby_usd,contracts_share_of_revenue,0,,,,,too few companies
-PAC giving vs book tax rate,pac_2020_2024_usd,book_etr,65,-0.087,0.4894,0.168,0.2843,US PAC givers only; excludes energy and mining
-EU declared spend vs Commission meetings (sanity check),eu_lobby_usd,ec_meetings,106,0.492,0.0001,0.4,0.0005,
+US lobbying vs US federal contracts,us_lobby_usd,us_contracts_avg_usd,110,0.533,0.0001,0.486,0.0001,
+US lobbying vs contracts as share of revenue,us_lobby_usd,contracts_share_of_revenue,95,0.509,0.0001,0.41,0.0001,
+PAC giving vs book tax rate,pac_2020_2024_usd,book_etr,65,-0.087,0.4831,0.168,0.2903,US PAC givers only; excludes energy and mining
+EU declared spend vs Commission meetings (sanity check),eu_lobby_usd,ec_meetings,106,0.492,0.0001,0.4,0.0003,

@@ -12,10 +12,10 @@ Companies: 110. Window: 2019–2024. Firms in the US–EU trend: 95 (present in 
 | Total lobbying vs share of subsidiaries in tax havens | 88 | 0.127 | 0.2342 | 0.167 | 0.1992 | excludes firms with low GLEIF coverage |
 | Total lobbying vs number of tax-haven subsidiaries | 88 | 0.033 | 0.7689 | 0.19 | 0.1387 | excludes firms with low GLEIF coverage |
 | Lobbying vs tax-haven subsidiaries, both per $bn revenue (size-adjusted) | 75 | 0.261 | 0.0245 | 0.016 | 0.9099 | excludes firms with low GLEIF coverage |
-| US lobbying vs US federal contracts | 0 |  |  |  |  | too few companies |
-| US lobbying vs contracts as share of revenue | 0 |  |  |  |  | too few companies |
-| PAC giving vs book tax rate | 65 | -0.087 | 0.4894 | 0.168 | 0.2843 | US PAC givers only; excludes energy and mining |
-| EU declared spend vs Commission meetings (sanity check) | 106 | 0.492 | 0.0001 | 0.4 | 0.0005 |  |
+| US lobbying vs US federal contracts | 110 | 0.533 | 0.0001 | 0.486 | 0.0001 |  |
+| US lobbying vs contracts as share of revenue | 95 | 0.509 | 0.0001 | 0.41 | 0.0001 |  |
+| PAC giving vs book tax rate | 65 | -0.087 | 0.4831 | 0.168 | 0.2903 | US PAC givers only; excludes energy and mining |
+| EU declared spend vs Commission meetings (sanity check) | 106 | 0.492 | 0.0001 | 0.4 | 0.0003 |  |
 
 ## Washington vs Brussels
 

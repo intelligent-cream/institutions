@@ -9,13 +9,15 @@ Method
      P = parent (all awards whose reported parent UEI/DUNS is this entity,
      including the entity itself and its children), C = child, R = recipient
      with no parent on file.
-  2. Matching. A P or R record is accepted only if its normalised name
-     fully matches one of the company's explicit alias patterns (`ACCEPT`,
-     anchored regexes listed by hand after reviewing the candidates; no fuzzy
-     matching). C records are never summed (their awards sit inside their
-     parent's P record), but C records whose name matches an alias and whose
-     parent is NOT accepted are written to the matches file as
-     `child_of_unmatched_parent` so missing parents can be reviewed.
+  2. Matching. A P or R record is accepted if its normalised name fully
+     matches one of the company's explicit alias patterns (`ACCEPT`, anchored
+     regexes written by hand after reviewing the candidates; no fuzzy
+     matching). The recipient profiles of all alias-named records are then
+     read and their parent history followed (see match_company): parents with
+     an alias name, or with the same UEI/DUNS as an accepted record, are
+     added; other parents of alias-named records are written to the matches
+     file as `unmatched_parent_of_alias_record` (not summed) for review.
+     C records are never summed (their awards sit inside a P record).
   3. Amounts. For every accepted record we call
      POST /api/v2/search/spending_over_time/ (group=fiscal_year,
      filters.recipient_id=<hash>-<level>, FY2015-FY2025), which splits
@@ -90,7 +92,7 @@ SEARCH = {
     "visa": ["VISA U.S.A", "VISA USA", "VISA INC", "VISA INTERNATIONAL"],
     "mastercard": ["MASTERCARD"],
     "boeing": ["BOEING"],
-    "lockheed": ["LOCKHEED"],
+    "lockheed": ["LOCKHEED", "SIKORSKY"],
     "rtx": ["RAYTHEON", "RTX ", "UNITED TECHNOLOGIES", "PRATT & WHITNEY", "COLLINS AEROSPACE", "ROCKWELL COLLINS"],
     "generaldynamics": ["GENERAL DYNAMICS", "ELECTRIC BOAT", "GULFSTREAM AEROSPACE", "BATH IRON WORKS"],
     "northrop": ["NORTHROP"],
@@ -217,12 +219,14 @@ ACCEPT = {
     "mastercard": [r"MASTERCARD INCORPORATED"],
     "boeing": [r"BOEING COMPANY THE( INC)?", r"BOEING CO(MPANY)?", r"THE BOEING COMPANY", r"BOEING",
                r"BOEING (AEROSPACE OPERATIONS|INTELLIGENCE & ANALYTICS|SATELLITE SYSTEMS|NORTH AMERICAN|"
-               r"DISTRIBUTION SERVICES DEFENSE|CAPITAL CORPORATION)( INC| LLC)?", r"BOEING AEROSPACE OPERATIONS I",
+               r"DISTRIBUTION SERVICES DEFENSE|DISTRIBUTION SERVICES VI|CAPITAL CORPORATION)( INC| LLC)?", r"BOEING AEROSPACE OPERATIONS I",
                r"BOEING DEFENCE AUSTRALIA LTD"],
     "lockheed": [r"LOCKHEED MARTIN( CORP(ORATION)?| GLOBAL INC| INTEGRATED SYSTEMS (LLC|INC)| SERVICES( INC| LLC)?|"
                  r" ASPEN SYSTEMS CORPORATION| UNMANNED INTEGRATED SYSTEMS INC| OVERSEAS( SERVICES CORPORATION| LLC)|"
                  r" ACULIGHT CORPORATION| UK INSYS LTD| CANADA INC| TACTICAL SYSTEMS COMPANY|"
-                 r" PROCERUS TECHNOLOGIES L C| ENERGY SYSTEMS)?"],
+                 r" PROCERUS TECHNOLOGIES L C| ENERGY SYSTEMS)?",
+                 # Sikorsky acquired from United Technologies in Nov 2015 (FY2016).
+                 r"SIKORSKY (AIRCRAFT CORPORATION|SUPPORT SERVICES INC)"],
     # RTX = Raytheon Technologies (2020 merger of United Technologies and Raytheon Co). Carrier and
     # Otis (spun off 2020) report under their own names and are not matched.
     "rtx": [r"RTX CORPORATION", r"RAYTHEON( COMPANY( INC)?| CO| TECHNOLOGIES CORPORATION| TECHNICAL SERVICES"
@@ -239,9 +243,9 @@ ACCEPT = {
                         r"BATH IRON WORKS CORPORATION"],
     "northrop": [r"NORTHROP GRUMMAN( CORP(ORATION)?| SYSTEMS CORP(ORATION|O)?| INNOVATION SYSTEMS (LLC|INC)|"
                  r" SPACE & MISSION SYSTEMS CORP| DEFENSE MISSION SYSTEMS INC| INFORMATION TECHNOLOGY OVERSEAS INC|"
-                 r" SPERRY MARINE.*| ITALIA SPA| SECURITY SYSTEMS LLC| INTERNATIONAL TRADING INC)"],
+                 r" SPERRY MARINE.*| ITALIA SPA| SECURITY SYSTEMS LLC| INTERNATIONAL TRADING INC)", r"NGC DENMARK APS"],
     "ge": [r"GENERAL ELECTRIC (COMPANY|CO)( INC)?", r"GE AVIATION SYSTEMS (LLC|LIMITED|LTD)", r"GE AEROSPACE INC",
-           r"GENERAL ELECTRIC INTERNATIONAL INC"],
+           r"GENERAL ELECTRIC INTERNATIONAL INC", r"GE AVIATION UK", r"IGE USA INVESTMENTS"],
     "honeywell": [r"HONEYWELL INTERNATIONAL INC(ORPORATED)?", r"HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES LLC",
                   r"HONEYWELL TECHNOLOGY SOLUTIONS INC(ORPORATED)?", r"HONEYWELL INC", r"HONEYWELL INTL",
                   r"HONEYWELL AEROSPACE YEOVIL", r"HONEYWELL GMBH", r"HONEYWELL LIMITED",
@@ -270,7 +274,7 @@ ACCEPT = {
                 r"BUSINESS COMMUNICATIONS( LLC)?|IP PHONE LLC|PHONE LLC( 4822)?|NATIONAL COMMUNICATIONS SERVICES LLC|"
                 r"CABLEVISION OF .+|SPORTSNET NEW ENGLAND LLC|SOUTH EAST PENNSYLVANIA LLC)",
                 r"NBCUNIVERSAL( MEDIA LLC)?"],
-    "dow": [r"DOW CHEMICAL COMPANY THE", r"THE DOW CHEMICAL COMPANY", r"DOW CHEMICAL", r"DOW INC(ORPORATED)?"],
+    "dow": [r"DOW CHEMICAL COMPANY THE", r"THE DOW CHEMICAL COMPANY", r"DOW CHEMICAL", r"DOW INC(ORPORATED)?", r"DOW EUROPE GMBH"],
     # E. I. du Pont records before the 2017 Dow merger / 2019 split are attributed to today's DuPont.
     "dupont": [r"E ?I ?DU ?PONT DE NEMOURS AND COM(PANY)?( 4090)?", r"E I DUPONT DE NEMOURS",
                r"DUPONT DE NEMOURS INC", r"DUPONT SPECIALTY PRODUCTS USA LLC"],
@@ -280,7 +284,7 @@ ACCEPT = {
                 r"GOVERNMENT TECHNOLOGIES INC|HEALTHINEERS .+|HEALTHCARE .+|MEDICAL SOLUTIONS USA INC(ORPORATED)?|"
                 r"MEDICAL SOLUTIONS|BUILDING TECHNOLOGIES.*|CANADA LIMITED|S A|S P A|PLC|LTD|PTE LTD|"
                 r"MOBILITY INC|LOGISTICS AND ASSEMBLY SYSTEMS INC|WATER TECHNOLOGIES CORP|"
-                r"PROCESS SYSTEMS ENGINEERING INC|AIRFIELDS SOLUTIONS I(NC)?)"],
+                r"PROCESS SYSTEMS ENGINEERING (INC|LIMITED)|AIRFIELDS SOLUTIONS I(NC)?)"],
     "basf": [r"BASF (SE|CORPORATION|METALS LLC|FUEL CELL INC)"],
     # Monsanto acquired June 2018; its records under its own parent are not matched (time-consistent).
     "bayer": [r"BAYER (AKTIENGESELLSCHAFT|AG|CORPORATION|HEALTHCARE LLC|CROPSCIENCE LLC|US LLC|PLC)"],
@@ -319,19 +323,22 @@ ACCEPT = {
                r"TRAINING & SIMULATION L.*|LAS FRANCE SAS|ALENIA SPACE .+|OPTRONICS LTD|BELGIUM|COMPONENTS CORP|"
                r"COMMUNICATIONS INC|E SECURITY INC|DIS USA INC)"],
     # Stellantis formed Jan 2021 (FCA + PSA); FCA US / Chrysler Group records are its US predecessor.
-    "stellantis": [r"STELLANTIS N ?V", r"FCA US LLC", r"CHRYSLER GROUP LLC( THE)?", r"FIAT CHRYSLER AUTOMOBILES N V"],
+    "stellantis": [r"STELLANTIS N ?V", r"FCA US LLC", r"CHRYSLER GROUP LLC( THE)?", r"FIAT CHRYSLER AUTOMOBILES N V",
+                   r"FIAT S ?P ?A", r"FCA INTERNATIONAL OPERATIONS LLC"],
     "shell": [r"SHELL OIL( CO(MPANY)?)?", r"SHELL ENERGY NORTH AMERICA US L ?P", r"SHELL EXPLORATION & PRODUCTION COMPANY",
               r"SHELL CHEMICAL YABUCOA INC", r"SHELL (PLC|USA INC|TRADING .+|INTERNATIONAL .+)",
-              r"ROYAL DUTCH SHELL PLC"],
+              r"ROYAL DUTCH SHELL PLC", r"SHELL DEUTSCHLAND GMBH"],
     "ing": [r"ING (BANK .+|GROEP N V|CAPITAL LLC|CAPITAL MANAGEMENT INC)"],
     "asml": [r"ASML (US LLC|HOLDING N V|NETHERLANDS B V)", r"CYMER LLC"],
     "philips": [r"KONINKLIJKE PHILIPS (N V|ELECTRONICS N V)", r"PHILIPS (NORTH AMERICA LLC|ELECTRONICS NORTH AMER(ICA CORP)?|"
                 r"MEDICAL SYSTEMS .+|HEALTHCARE INFORMATICS INC|HEALTHCARE LLC|RS NORTH AMERICA LLC|"
                 r"ELECTRONICS NEDERLAND B V|ULTRASOUND (INC|LLC))", r"RESPIRONICS( NOVAMETRIX LLC| INC)"],
-    "unilever": [r"UNILEVER (PLC|N V|UNITED STATES INC)", r"CONOPCO INC"],
+    "unilever": [r"UNILEVER (PLC|N V|UNITED STATES INC)", r"CONOPCO INC",
+                 r"STICHTING ADMINISTRATIEKANTOOR UNILEVER N V"],
     "heineken": [r"HEINEKEN (N V|USA INC(ORPORATED)?)"],
     "ahold": [r"KONINKLIJKE AHOLD DELHAIZE N V", r"DELHAIZE AMERICA (INC|LLC)", r"AHOLD (USA|DELHAIZE USA) INC",
-              r"STOP & SHOP SUPERMARKET COMPANY LLC( THE)?", r"HANNAFORD BROS CO( LLC)?", r"FOOD LION LLC"],
+              r"STOP & SHOP SUPERMARKET COMPANY LLC( THE)?", r"HANNAFORD BROS CO( LLC)?", r"FOOD LION LLC",
+              r"GEBROEDERS DELHAIZE EN CIE DE LEEUW NV"],
     "prosus": [r"PROSUS N V", r"NASPERS LIMITED"],
     "bp": [r"BP P ?L ?C", r"BP (PRODUCTS NORTH AMERICA INC|EXPLORATION (ALASKA INC|& OIL INC)|OIL INTERNATIONAL LIMITED|"
            r"ENERGY (INC|COMPANY)|AMERICA INC|CORPORATION NORTH AMERICA INC)"],
@@ -358,6 +365,7 @@ ACCEPT = {
     # The Novo Nordisk Foundation is the SAM-reported ultimate owner of Novo Nordisk (it also controls Novonesis).
     "novonordisk": [r"NOVO NORDISK (INC|A S|FONDEN|PHARMACEUTICAL INDUSTRIES LP)"],
     "ericsson": [r"ERICSSON (INC|AB|FEDERAL TECHNOLOGIES GROUP INC|ENTERPRISE WIRELESS SOLUTIONS INC)",
+                 r"TELEFON AB L ?M ERICSSON",
                  r"TELEFONAKTIEBOLAGET L ?M ERICSSON"],
     "nokia": [r"NOKIA (OYJ|OF AMERICA CORPORATION|FEDERAL SOLUTIONS (INC|LLC)|AMERICA INC|SOLUTIONS AND NETWORKS .+|"
               r"SIEMENS NETWORKS (B V|USA LLC))", r"ALCATEL LUCENT USA INC"],
@@ -369,6 +377,24 @@ ACCEPT = {
     "eni": [r"ENI (S P A|SPA|US OPERATING CO INC|PETROLEUM CO INC|TRADING & SHIPPING .+)"],
     "spotify": [r"SPOTIFY (USA INC|AB|TECHNOLOGY S A)"],
 }
+
+
+# Parent records that share a UEI/DUNS with an accepted record but carry another name.
+# Each was checked year by year; only these are summed.
+SHARED_ID_OK = {
+    "rtx": {"ROCKWELL COLLINS AUSTRALIA PTY LIMITED":
+            "SAM artifact: RTX's DUNS; holds RTX's FY2023-25 obligations ($23bn in FY2024)"},
+    "honeywell": {"RESIDEO TECHNOLOGIES INC":
+                  "SAM artifact: parent of Honeywell Federal Manufacturing & Technologies (NNSA Kansas City) "
+                  "FY2022-25; Resideo itself is a 2018 Honeywell spin-off"},
+    "jnj": {"JOHNSON & JOHNSON HEALTHCARE": "J&J US commercial entity"},
+    "alphabet": {"MANDIANT INC": "acquired by Google Sep 2022; obligations only FY2023+"},
+    "safran": {"SAFRAN": "Safran SA under a short name"},
+    "thales": {"THALES": "Thales SA under a short name"},
+}
+# Rejected after review: BALL CORP (shares UEI with BAE Systems Space & Mission Systems,
+# but holds Ball Aerospace's pre-Feb-2024 awards, before BAE owned it), UNILINE D.O.O.,
+# WYOMING BEVERAGES INC, HAGEDORN RESEARCH INSTITUTE (zero).
 
 
 def norm(s):
@@ -407,31 +433,90 @@ def over_time(rid):
     return {int(r["time_period"]["fiscal_year"]): r for r in d["results"]}
 
 
+def match_company(cid):
+    """Return (accepted, flagged): dicts recipient_id -> info.
+
+    Seeds are P/R search hits whose name fully matches an alias. Then the
+    profile of every alias-named record (any level) and of every accepted
+    parent is read, and each parent listed in its `parents` history is
+      * accepted if the parent's name matches an alias, or
+      * accepted if it carries the same UEI or DUNS as an already accepted
+        record AND it was reviewed and listed in SHARED_ID_OK (SAM sometimes
+        files a group's awards under a mis-named parent record with the
+        group's DUNS, e.g. RTX FY2023+ under a record named "ROCKWELL COLLINS
+        AUSTRALIA PTY LIMITED" with RTX's DUNS 001344142); unreviewed ones are
+        flagged as shares_uei_or_duns_rejected,
+      * otherwise flagged (written to the matches file, not summed).
+    """
+    pats = [re.compile(p) for p in ACCEPT.get(cid, [])]
+    ok = lambda name: any(p.fullmatch(norm(name)) for p in pats)  # noqa: E731
+    recs = {}
+    for k in SEARCH.get(cid, []):
+        for r in search(k):
+            recs[r["id"]] = r
+    accepted, flagged, ids = {}, {}, set()
+
+    def accept(rid, name, uei, duns, method, note=""):
+        accepted[rid] = {"recipient_name": name, "uei": uei or "", "level": rid[-1],
+                         "match_method": method, "note": note}
+        ids.update(x for x in (uei, duns) if x)
+
+    hits = [r for r in recs.values() if ok(r["name"])]
+    for r in hits:
+        if r["recipient_level"] in ("P", "R"):
+            accept(r["id"], r["name"], r.get("uei"), r.get("duns"), "alias_fullmatch")
+    todo = [r["id"] for r in hits]
+    seen = set()
+    for _ in range(4):  # iterate until no new parents are accepted
+        before = len(accepted)
+        todo = list(dict.fromkeys(todo + list(accepted)))
+        for rid in todo:
+            if rid in seen:
+                continue
+            seen.add(rid)
+            prof = profile(rid)
+            if rid in accepted:
+                ids.update(x for x in (prof.get("uei"), prof.get("duns")) if x)
+            for par in prof.get("parents") or []:
+                pid = par.get("parent_id")
+                if not pid or pid in accepted:
+                    continue
+                if ok(par.get("parent_name")):
+                    accept(pid, par["parent_name"], par.get("parent_uei"), par.get("parent_duns"),
+                           "parent_name_alias_fullmatch", f"listed as parent of {prof.get('name')}")
+                elif ((par.get("parent_uei") in ids) or (par.get("parent_duns") in ids)) and \
+                        norm(par.get("parent_name")) in SHARED_ID_OK.get(cid, {}):
+                    accept(pid, par.get("parent_name"), par.get("parent_uei"), par.get("parent_duns"),
+                           "parent_shares_uei_or_duns",
+                           f"listed as parent of {prof.get('name')}; same UEI/DUNS as an accepted record; "
+                           + SHARED_ID_OK[cid][norm(par.get("parent_name"))])
+                elif (par.get("parent_uei") in ids) or (par.get("parent_duns") in ids):
+                    flagged.setdefault(pid, {"recipient_name": par.get("parent_name"),
+                                             "uei": par.get("parent_uei") or "", "level": "P",
+                                             "match_method": "shares_uei_or_duns_rejected",
+                                             "note": f"parent of {prof.get('name')} ({rid}) with shared UEI/DUNS; "
+                                                     "rejected after review; not summed"})
+                else:
+                    flagged.setdefault(pid, {"recipient_name": par.get("parent_name"),
+                                             "uei": par.get("parent_uei") or "", "level": "P",
+                                             "match_method": "unmatched_parent_of_alias_record",
+                                             "note": f"parent of {prof.get('name')} ({rid}); not summed"})
+        todo = []
+        if len(accepted) == before:
+            break
+    flagged = {k: v for k, v in flagged.items() if k not in accepted}
+    return accepted, flagged
+
+
 def main():
     only = set(sys.argv[1:])
     cos = [c for c in companies() if not only or c["company_id"] in only]
     rows, matches = [], []
     for c in cos:
         cid = c["company_id"]
-        pats = [re.compile(p) for p in ACCEPT.get(cid, [])]
-        ok = lambda name: any(p.fullmatch(norm(name)) for p in pats)  # noqa: E731
-        recs = {}
-        for k in SEARCH.get(cid, []):
-            for r in search(k):
-                recs[r["id"]] = r
-        accepted = {i: r for i, r in recs.items() if r["recipient_level"] in ("P", "R") and ok(r["name"])}
-        # children with an alias name whose parent we did not accept -> flag for review
-        for i, r in recs.items():
-            if r["recipient_level"] != "C" or not ok(r["name"]):
-                continue
-            prof = profile(i)
-            pid = prof.get("parent_id")
-            if pid and pid not in accepted:
-                matches.append({"company_id": cid, "recipient_name": r["name"], "recipient_id": i,
-                                "uei": r.get("uei") or "", "level": "C", "match_method": "child_of_unmatched_parent",
-                                "note": f"parent: {prof.get('parent_name')} ({pid}); not summed"})
+        accepted, flagged = match_company(cid)
         per_fy = {fy: {"contract": 0.0, "idv": 0.0, "grant": 0.0} for fy in range(FY0, FY1 + 1)}
-        for i, r in sorted(accepted.items(), key=lambda kv: kv[1]["name"]):
+        for i, info in sorted(accepted.items(), key=lambda kv: kv[1]["recipient_name"] or ""):
             ot = over_time(i)
             tot = 0.0
             for fy in range(FY0, FY1 + 1):
@@ -442,18 +527,18 @@ def main():
                 per_fy[fy]["idv"] += x["Idv_Obligations"] or 0
                 per_fy[fy]["grant"] += x["Grant_Obligations"] or 0
                 tot += x["Contract_Obligations"] or 0
-            matches.append({"company_id": cid, "recipient_name": r["name"], "recipient_id": i,
-                            "uei": r.get("uei") or "", "level": r["recipient_level"],
-                            "match_method": "alias_fullmatch",
-                            "contracts_fy2015_2025_usd": round(tot, 2), "note": ""})
+            matches.append({"company_id": cid, "recipient_id": i, **info,
+                            "contracts_fy2015_2025_usd": round(tot, 2)})
+        for i, info in flagged.items():
+            matches.append({"company_id": cid, "recipient_id": i, **info, "contracts_fy2015_2025_usd": ""})
         for fy, v in per_fy.items():
             rows.append({"company_id": cid, "fiscal_year": fy,
                          "contract_obligations_usd": round(v["contract"], 2),
                          "idv_obligations_usd": round(v["idv"], 2),
                          "grants_usd": round(v["grant"], 2),
                          "n_recipient_records": len(accepted), "n_contract_awards": ""})
-        fy24 = per_fy[2024]["contract"]
-        print(f"{cid:16} records={len(accepted):3} FY2024 contracts=${fy24 / 1e6:12,.1f}M", flush=True)
+        print(f"{cid:16} records={len(accepted):3} flagged={len(flagged):3} "
+              f"FY2024 contracts=${per_fy[2024]['contract'] / 1e6:12,.1f}M", flush=True)
     if only:
         return
     write_csv(CLEAN / "us_contracts.csv", rows,
