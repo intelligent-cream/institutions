@@ -1,0 +1,7 @@
+source_id,title,origin,url,companies,first_year,last_year,unit,rows
+us_lobby,US federal lobbying,Lobbying Disclosure Act filings (House Clerk bulk XML),https://lda.gov/,108,2015,2025,year,1210
+eu_lobby,EU lobbying and Commission meetings,EU Transparency Register snapshots; Integrity Watch EU meetings,https://transparency-register.europa.eu/,107,2015,2026,year,1227
+national_lobby,German and French lobby registers,Bundestag Lobbyregister; HATVP répertoire,https://www.lobbyregister.bundestag.de/,99,2019,2026,year,712
+us_pac,US corporate PAC giving,"FEC bulk data (committee, candidate, contribution files)",https://www.fec.gov/data/browse-data/,87,2016,2026,cycle,660
+tax,Effective tax rates,SEC XBRL company facts; ESEF filings via filings.xbrl.org,https://www.sec.gov/edgar/sec-api-documentation,98,2015,2025,fiscal year,982
+subsidiaries,Subsidiaries and tax havens,GLEIF Level 2 relationship data,https://www.gleif.org/,107,,,snapshot,110
